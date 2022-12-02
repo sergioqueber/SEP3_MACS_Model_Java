@@ -1,11 +1,10 @@
-public class QuantitativeFactor
-  extends Factor
+public class QuantitativeFactor extends Factor
 {
   private double value;
 
-  public QuantitativeFactor(String name, int point,double weight, double value)
+  public QuantitativeFactor(String name, int point,double weight, boolean type, double value)
   {
-    super(name,point, weight);
+    super(name,point,weight,type);
     this.value=value;
 
   }
@@ -16,7 +15,7 @@ public class QuantitativeFactor
         return false;
       QuantitativeFactor other= ( QuantitativeFactor) obj;
 
-      return  factor
+      return super.equals(other) && value && other.value;
     }
 
     public String toString()

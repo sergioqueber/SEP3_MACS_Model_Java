@@ -4,4 +4,5 @@ public class Test1
   private int weight;
 
   private int jbfzkjhdvb;
+  private int fuck;
 }

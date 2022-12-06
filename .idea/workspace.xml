@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="552f4f35-2bb7-4532-a073-e6898e7e9499" name="Changes" comment="Factor Class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,11 +70,6 @@
       <updated>1670332272090</updated>
     </task>
     <task id="LOCAL-00004" summary="Factor Class">
-      <created>1670350884717</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1670350884717</updated>
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />

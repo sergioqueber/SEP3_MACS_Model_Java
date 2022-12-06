@@ -1,3 +1,4 @@
+import java.util.*;
 public abstract class Factor
 {
   private String name;

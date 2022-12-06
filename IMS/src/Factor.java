@@ -1,4 +1,4 @@
-public class Factor
+public abstract class Factor
 {
   private String name;
   private int point;
@@ -62,9 +62,8 @@ public class Factor
     return name.equals(other.name)  && point == other.point && weight == other.weight && type == other.type;
   }
 
-public Factor copy(){
-    Factor factor = new Factor(name, point, weight, type);
-   return factor;
-}
+public abstract Factor copy();
+
+public abstract int assignPoints();
 
 }

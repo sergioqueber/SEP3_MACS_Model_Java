@@ -1,3 +1,4 @@
+import java.util.*;
 public abstract class Factor
 {
   private String name;
@@ -45,7 +46,7 @@ public abstract class Factor
     return weight;
   }
 
-  public boolean isType() {
+  public boolean isMA() {
     return type;
   }
 

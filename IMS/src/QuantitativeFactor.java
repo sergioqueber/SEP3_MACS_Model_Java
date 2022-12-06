@@ -1,3 +1,4 @@
+import java.util.*;
 public class QuantitativeFactor extends Factor
 {
   private double value;

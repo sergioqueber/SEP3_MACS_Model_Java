@@ -15,7 +15,7 @@ public class QuantitativeFactor extends Factor
         return false;
       QuantitativeFactor other= ( QuantitativeFactor) obj;
 
-      return super.equals(other) && value && other.value;
+      return super.equals(other) && value == other.value;
     }
 
     public String toString()
@@ -39,11 +39,17 @@ public class QuantitativeFactor extends Factor
 
   }
 
-  public int assignPoint()
+  public boolean isMA(){
+    return ;
+  }
+
+  @Override public int assignPoints()
   {
 
   }
 
-
-
+  @Override public Factor copy()
+  {
+    return null;
+  }
 }

@@ -39,10 +39,6 @@ public class QuantitativeFactor extends Factor
 
   }
 
-  public boolean isMA(){
-    return ;
-  }
-
   @Override public int assignPoints()
   {
 

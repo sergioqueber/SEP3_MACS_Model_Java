@@ -8,6 +8,7 @@ public class QualitativeFactor extends Factor
     this.value = value;
   }
 
+
   public void setValue(QualitativeValue value)
   {
     this.value = value;

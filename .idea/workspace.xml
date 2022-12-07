@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0d988685-00e1-4945-89e2-2edf79d0d7e5" name="Changes" comment="Factor Class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/QualitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QualitativeFactor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/QuantitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QuantitativeFactor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670403182729</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Factor Class">
+      <created>1670405083100</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670405083100</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

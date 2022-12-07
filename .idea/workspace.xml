@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d988685-00e1-4945-89e2-2edf79d0d7e5" name="Changes" comment="Factor Class">
+      <change afterPath="$PROJECT_DIR$/IMS/src/QualitativeFactorList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/QualitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QualitativeFactor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/QuantitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QuantitativeFactor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,5 +98,44 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Factor Class" />
     <option name="LAST_COMMIT_MESSAGE" value="Factor Class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/IMS/src/QuantitativeFactorList.java</url>
+          <line>12</line>
+          <properties class="QuantitativeFactorList" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/IMS/src/QuantitativeFactorList.java</url>
+          <line>70</line>
+          <properties class="QuantitativeFactorList" method="copy">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/IMS/src/QuantitativeFactorList.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/IMS/src/QuantitativeFactorList.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/IMS/src/QuantitativeFactorList.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

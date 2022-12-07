@@ -120,9 +120,10 @@ public class Country
     qualitativeFactorList.get(i).setValue(value);
   }
 
-  public void setFactorValue(int i, QuantitativeFactorList quantitativeFactorList, double value)
+  public void setQuantitativeFactorValue(int i,  double value)
   {
-    quantitativeFactorList.get(i).setValue(value);
+    //quantitativeFactors.getFactor(i).setValue(value);
+    quantitativeFactors.
   }
 
   public double getRemainingWeightPercentage()

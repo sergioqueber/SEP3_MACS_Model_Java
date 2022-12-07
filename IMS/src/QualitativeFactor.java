@@ -1,3 +1,4 @@
+import java.util.*;
 public class QualitativeFactor extends Factor
 {
   private QualitativeValue value;
@@ -7,17 +8,44 @@ public class QualitativeFactor extends Factor
     this.value = value;
   }
 
-  public void setValue(QualitativeValue value){
+
+  public void setValue(QualitativeValue value)
+  {
     this.value = value;
   }
 
-  public QualitativeValue getValue (){
+  public QualitativeValue getValue()
+  {
     return value;
   }
 
-  public boolean isHigherThan (QualitativeFactor factor){
-    switch (factor)
-    case
+  public boolean equals(Object obj)
+  {
+    if (!(obj instanceof QualitativeFactor))
+      return false;
+    QualitativeFactor other= (QualitativeFactor) obj;
+
+    return super.equals(other) && value == other.value;
   }
 
+  public String toString()
+  {
+    return super.toString() + value;
+  }
+
+  public boolean isHigherThan(QualitativeFactor qualitativeFactor){
+    if (getPoint() > qualitativeFactor.getPoint())
+      return true;
+    else
+      return false;
+
+  }
+  @Override public int assignPoints()
+  {
+
+  @Override public Factor copy(QualitativeFactor)
+  {
+    return QualitativeFactor;
+  }
 }
+

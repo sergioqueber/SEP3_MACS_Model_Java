@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="" />
+    <list default="true" id="0d988685-00e1-4945-89e2-2edf79d0d7e5" name="Changes" comment="Factor Class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/QualitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QualitativeFactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/QuantitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QuantitativeFactor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,12 +49,41 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="" />
+      <changelist id="0d988685-00e1-4945-89e2-2edf79d0d7e5" name="Changes" comment="Factor Class" />
       <created>1669977082821</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669977082821</updated>
     </task>
+    <task id="LOCAL-00001" summary="Factor Class">
+      <created>1669985362710</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669985362710</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Factor Class">
+      <created>1669985771747</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669985771747</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Factor Class">
+      <created>1670332272090</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670332272090</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Factor Class">
+      <created>1670403182729</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670403182729</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

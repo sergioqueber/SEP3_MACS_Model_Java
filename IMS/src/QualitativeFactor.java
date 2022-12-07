@@ -1,4 +1,4 @@
-public class QualitativeFactor extends factor
+public class QualitativeFactor extends Factor
 {
   private QualitativeValue value;
 
@@ -7,5 +7,17 @@ public class QualitativeFactor extends factor
     this.value = value;
   }
 
+  public void setValue(QualitativeValue value){
+    this.value = value;
+  }
+
+  public QualitativeValue getValue (){
+    return value;
+  }
+
+  public boolean isHigherThan (QualitativeFactor factor){
+    switch (factor)
+    case
+  }
 
 }

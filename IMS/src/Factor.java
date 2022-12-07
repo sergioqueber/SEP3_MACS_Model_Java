@@ -1,4 +1,5 @@
-public class Factor
+import java.util.*;
+public abstract class Factor
 {
   private String name;
   private int point;
@@ -45,7 +46,7 @@ public class Factor
     return weight;
   }
 
-  public boolean isType() {
+  public boolean isMA() {
     return type;
   }
 
@@ -62,6 +63,8 @@ public class Factor
     return name.equals(other.name)  && point == other.point && weight == other.weight && type == other.type;
   }
 
+public abstract Factor copy();
 
+public abstract int assignPoints();
 
 }

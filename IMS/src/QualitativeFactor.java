@@ -1,3 +1,4 @@
+import java.util.*;
 public class QualitativeFactor extends factor
 {
   private QualitativeValue value;

@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0d988685-00e1-4945-89e2-2edf79d0d7e5" name="Changes" comment="Factor Class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/QuantitativeFactorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QuantitativeFactorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/QualitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QualitativeFactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/QuantitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QuantitativeFactor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="" />
+      <changelist id="0d988685-00e1-4945-89e2-2edf79d0d7e5" name="Changes" comment="Factor Class" />
       <created>1669977082821</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -75,9 +75,11 @@
       <updated>1670332272090</updated>
     </task>
     <task id="LOCAL-00004" summary="Factor Class">
+      <created>1670403182729</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
+      <updated>1670403182729</updated>
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />

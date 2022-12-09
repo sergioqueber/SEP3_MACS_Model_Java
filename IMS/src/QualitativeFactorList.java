@@ -21,6 +21,10 @@ public int getNumberOfFactors()
   return factors.size();
 }
 
+public QualitativeFactor getFactor(int index){
+  return factors.get(index);
+}
+
 public QualitativeFactor[] getAllFactors(){
     return (QualitativeFactor[]) factors.toArray();
 }

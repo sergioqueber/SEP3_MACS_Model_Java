@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d988685-00e1-4945-89e2-2edf79d0d7e5" name="Changes" comment="Factor Class">
-      <change afterPath="$PROJECT_DIR$/IMS/src/QualitativeFactorList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/QualitativeFactorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QualitativeFactorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/QuantitativeFactorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QuantitativeFactorList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-17.0.4-full/lib/src.zip!/java.base/java/lang/Object.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -89,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670405083100</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Factor Class">
+      <created>1670575841441</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670575841441</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,28 +117,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Factor Class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Factor Class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/IMS/src/QuantitativeFactorList.java</url>
-          <line>12</line>
-          <properties class="QuantitativeFactorList" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/IMS/src/QuantitativeFactorList.java</url>
-          <line>70</line>
-          <properties class="QuantitativeFactorList" method="copy">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/IMS/src/QuantitativeFactorList.java</url>
           <line>75</line>

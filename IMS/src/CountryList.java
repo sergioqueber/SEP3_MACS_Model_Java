@@ -3,6 +3,7 @@ import java.util.*;
 public class CountryList
 {
   private ArrayList<Country> countries;
+  private ArrayList<double> ranges;
 
 
   public CountryList()
@@ -39,6 +40,19 @@ public class CountryList
   {
     countries.clear();
   }
+
+  public void defineRange(){
+    for (int i = 0; i<countries.size(); i++){
+      for (int c = 0; c<countries.get(0).getQuantitativeFactors()
+          .getNumberOfFactors(); c++)
+        countries.get(i).getQuantitativeFactors().getValue(c);
+  }
+  public void assignQuantitativePoints(){
+    for (int i = 0; i<countries.size(); i++){
+      countries.get(i).
+    }
+  }
+
 
   public  CountryList[] compareMarketingAttractivenessPunctuation()
   {

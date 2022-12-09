@@ -8,19 +8,18 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageFactorsViewController">
    <children>
-      <TableView fx:id="tableMA" layoutX="43.0" layoutY="142.0" prefHeight="220.0" prefWidth="233.0">
+      <TableView fx:id="tableCS" layoutX="43.0" layoutY="142.0" prefHeight="220.0" prefWidth="233.0">
         <columns>
-          <TableColumn fx:id="factorColumnMA" prefWidth="75.0" text="Factor" />
-          <TableColumn fx:id="weightColumnMA" prefWidth="75.0" text="Weight" />
+          <TableColumn fx:id="factorNames" prefWidth="75.0" text="Factor" />
+          <TableColumn fx:id="weightColumn" prefWidth="75.0" text="Weight" />
         </columns>
       </TableView>
-      <TableView fx:id="tableCS" layoutX="327.0" layoutY="142.0" prefHeight="220.0" prefWidth="233.0">
+      <TableView layoutX="327.0" layoutY="142.0" prefHeight="220.0" prefWidth="233.0">
          <columns>
-            <TableColumn fx:id="factorColumnCS" prefWidth="75.0" text="Factor" />
-            <TableColumn fx:id="weightColumnCS" prefWidth="75.0" text="Weight" />
+            <TableColumn prefWidth="75.0" text="Factor" />
+            <TableColumn prefWidth="75.0" text="Weight" />
          </columns>
       </TableView>
       <TextField fx:id="textFieldFactor" layoutX="125.0" layoutY="36.0" prefHeight="33.0" prefWidth="149.0" />
@@ -65,5 +64,6 @@
             <Font size="14.0" />
          </font>
       </Button>
+      <Button fx:id="edit" layoutX="282.0" layoutY="388.0" mnemonicParsing="false" onAction="#editFactor" text="Edit" />
    </children>
 </Pane>

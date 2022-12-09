@@ -52,44 +52,89 @@ public class ManageFactorsViewController
     private Button saveMAbutton;
 
     @FXML
-    private TableView<Integer> tableCS;
+    private Button edit;
 
 
     @FXML
     private TextField textFieldFactor;
 
+
     @FXML
     private TextField textFieldWeight;
+    @FXML
+    private TableView<Factor> tableCS;
 
     @FXML
-    private TableColumn<Integer, Integer> weightColumnCS;
+    private TableColumn<Factor, String> factorNames;
 
     @FXML
-    private TableColumn<Integer, Integer> weightColumnMA;
+    private TableColumn<Factor, Integer> weightColumn;
 
-  ArrayList MAFactor = new ArrayList();
-  ArrayList MAWeight = new ArrayList();
-@FXML public void addFactor(){
-   MAFactor.add(textFieldFactor.getText());
-   System.out.println(MAFactor);
-   factorColumnMA.setCellValueFactory(new PropertyValueFactory<>(textFieldFactor.getText()));
-   resetField();
+  ArrayList<Factor> MAFactor = new ArrayList<Factor>();
 
-}
+/*@FXML public void addFactor(){
+    if(!(tableCS.getSelectionModel().isSelected(tableCS.getSelectionModel().getSelectedIndex())))
+    {
+        int weight = Integer.parseInt(textFieldWeight.getText());
+        Factor factor = new Factor(textFieldFactor.getText(), weight);
+        MAFactor.add(factor);
+        System.out.println(MAFactor);
+        factorNames.setCellValueFactory(new PropertyValueFactory<>("name"));
+        weightColumn.setCellValueFactory(new PropertyValueFactory<>("value"));
+        tableCS.getItems().add(factor);
+    }
+    else{
+        MAFactor.get(tableCS.getSelectionModel().getSelectedIndex()).setName(textFieldFactor.getText());
+        MAFactor.get(tableCS.getSelectionModel().getSelectedIndex()).setValue(Integer.parseInt(textFieldFactor.getText()));
+        factorNames.setCellValueFactory(new PropertyValueFactory<>("name"));
+        weightColumn.setCellValueFactory(new PropertyValueFactory<>("value"));
+        tableCS.edit(tableCS.getSelectionModel().getSelectedIndex(), );
+    }*/
+    @FXML public void addFactor()
+    {
+        if(!(tableCS.getSelectionModel().isSelected(tableCS.getSelectionModel().getSelectedIndex())))
+        {
+            int weight = Integer.parseInt(textFieldWeight.getText());
+            Factor factor = new Factor(textFieldFactor.getText(), weight);
+            MAFactor.add(factor);
+            System.out.println(MAFactor);
+        }
+        else
+        {
+            MAFactor.get(tableCS.getSelectionModel().getSelectedIndex()).setName(textFieldFactor.getText());
+            MAFactor.get(tableCS.getSelectionModel().getSelectedIndex()).setValue(Integer.parseInt(textFieldWeight.getText()));
+        }
+        factorNames.setCellValueFactory(new PropertyValueFactory<>("name"));
+        weightColumn.setCellValueFactory(new PropertyValueFactory<>("value"));
+        tableCS.getItems().clear();
 
-    @FXML public void addWeight(){
+        for (int i = 0; i < MAFactor.size(); i++)
+        {
+            tableCS.getItems().add(MAFactor.get(i));
+        }
+        resetFields();
+    }
+
+    @FXML public void editFactor(){
+        textFieldFactor.setText(tableCS.getSelectionModel().getSelectedItem().getName());
+        textFieldWeight.setText(String.valueOf(tableCS.getSelectionModel().getSelectedItem().getValue()));
+
+    }
+
+
+    /*@FXML public void addWeight(){
         MAWeight.add(textFieldWeight.getText());
         System.out.println(MAWeight);
         weightColumnMA.setCellValueFactory(new PropertyValueFactory<>(textFieldWeight.getText()));
         resetField();
 
-    }
-public void resetField(){
+    }*/
+public void resetFields(){
   textFieldFactor.setText("");
-
+  textFieldWeight.setText("");
 }
-public void initialize(URL url, ResourceBundle resourceBundle){}
+/*public void initialize(URL url, ResourceBundle resourceBundle){}
 factorColumnMA.setCellValueFactory(new PropertyValueFactory<>(textFieldFactor.getText()));
 weightColumnMA.setCellValueFactory(new PropertyValueFactory<>(textFieldWeight.getText()));
-table.setItems(get)
+table.setItems(get)*/
 }

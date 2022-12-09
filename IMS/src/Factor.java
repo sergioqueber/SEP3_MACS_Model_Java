@@ -45,9 +45,6 @@ public abstract class Factor
   public double getWeight() {
     return weight;
   }
-  public boolean getType(){
-    return type;
-  }
   public boolean isMA() {
     return type;
   }

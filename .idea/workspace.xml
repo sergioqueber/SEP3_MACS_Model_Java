@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d988685-00e1-4945-89e2-2edf79d0d7e5" name="Changes" comment="Factor Class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/QualitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QualitativeFactor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/QuantitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QuantitativeFactor.java" afterDir="false" />
-    </list>
+    <list default="true" id="0d988685-00e1-4945-89e2-2edf79d0d7e5" name="Changes" comment="View" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,5 +95,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="View" />
+    <option name="LAST_COMMIT_MESSAGE" value="View" />
   </component>
 </project>

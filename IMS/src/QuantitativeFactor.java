@@ -35,11 +35,14 @@ public class QuantitativeFactor extends Factor
 
   public boolean isHigherThan(QuantitativeFactor quantitativeFactor)
   {
-
+    if (getPoint() > quantitativeFactor.getPoint())
+      return true;
+    else
+      return false;
   }
 
   @Override public Factor copy()
   {
-    return null;
+    return new QuantitativeFactor(super.getName(),super.getPoint(),super.getWeight(), super.isMA(), getValue());
   }
 }

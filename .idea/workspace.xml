@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b67026fb-925f-4e83-b409-997713481cb2" name="Changes" comment="Factor Class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/Factor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Factor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/QualitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QualitativeFactor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IMS/src/QuantitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QuantitativeFactor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670583575632</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Factor Class">
+      <created>1670590851379</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670590851379</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

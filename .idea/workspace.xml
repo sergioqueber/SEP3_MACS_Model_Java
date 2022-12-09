@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b67026fb-925f-4e83-b409-997713481cb2" name="Changes" comment="Factor Class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/CountryList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/CountryList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/Factor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Factor.java" afterDir="false" />
-    </list>
+    <list default="true" id="b67026fb-925f-4e83-b409-997713481cb2" name="Changes" comment="Factor Class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670577413506</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Factor Class">
+      <created>1670582651243</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670582651243</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -31,7 +31,7 @@ import javafx.scene.layout.Region;
 
     private ViewHandler viewHandler;
 
-    
+
   }
 
 

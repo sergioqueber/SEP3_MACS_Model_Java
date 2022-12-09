@@ -65,8 +65,7 @@ public String toString(){
   }
 
   public QualitativeFactorList copy(){
-    QualitativeFactorList qualitativeFactorList = new QualitativeFactorList(factors);
-    return qualitativeFactorList;
+    return new QualitativeFactorList(factors);
   }
 
   public QualitativeValue getValue(int index)

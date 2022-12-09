@@ -1,4 +1,3 @@
-import java.util.*;
 public class QualitativeFactor extends Factor
 {
   private QualitativeValue value;
@@ -40,12 +39,23 @@ public class QualitativeFactor extends Factor
       return false;
 
   }
-  @Override public int assignPoints()
+  @Override public QualitativeFactor copy()
   {
+    return new QualitativeFactor(super.getName(),super.getPoint(),super.getWeight(), super.isMA(), getValue());
+  }
 
-  @Override public Factor copy(QualitativeFactor)
+  public void assignPoints()
   {
-    return new QualitativeFactor();
+    if (value.equals(QualitativeValue.QualitativeValues.BAD))
+      setPoint(1);
+    if (value.equals(QualitativeValue.QualitativeValues.MEDIUM_BAD))
+      setPoint(2);
+    if (value.equals(QualitativeValue.QualitativeValues.MEDIUM))
+      setPoint(3);
+    if (value.equals(QualitativeValue.QualitativeValues.MEDIUM_GOOD))
+      setPoint(4);
+    if (value.equals(QualitativeValue.QualitativeValues.GOOD))
+      setPoint(5);
   }
 }
 

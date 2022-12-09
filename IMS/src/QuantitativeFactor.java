@@ -1,4 +1,3 @@
-import java.util.*;
 public class QuantitativeFactor extends Factor
 {
   private double value;
@@ -35,11 +34,6 @@ public class QuantitativeFactor extends Factor
   }
 
   public boolean isHigherThan(QuantitativeFactor quantitativeFactor)
-  {
-
-  }
-
-  @Override public int assignPoints()
   {
 
   }

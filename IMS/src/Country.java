@@ -114,19 +114,18 @@ public class Country
         && competitiveStrengthPunctuation == other.competitiveStrengthPunctuation;
   }
 
-  public void setFactorValue(int i, QualitativeFactorList qualitativeFactorList,
-      QualitativeValue value)
+  public void setQualitativeValue(int index, QualitativeValue value)
   {
-    qualitativeFactorList.get(i).setValue(value);
+    qualitativeFactors.getFactor(index).setValue(value);
   }
 
-  public void setFactorValue(int i, QuantitativeFactorList quantitativeFactorList, double value)
+  public void setQuantitativeValue(int index,  double value)
   {
-    quantitativeFactorList.get(i).setValue(value);
+    quantitativeFactors.getFactor(index).setValue(value);
   }
 
   public double getRemainingWeightPercentage()
   {
-
+    return (100-((quantitativeFactors.calculateMAPercentage()+quantitativeFactors.calculateCSPercentage())+(qualitativeFactors.calculateMAPercentage()+qualitativeFactors.calculateCSPercentage())));
   }
 }

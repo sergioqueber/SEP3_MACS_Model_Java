@@ -98,6 +98,10 @@ public double calculateCSPercentage()
   }
   return result;
 }
+public QuantitativeFactor getFactor(int index)
+{
+  return factors.get(index);
+}
 
 
 

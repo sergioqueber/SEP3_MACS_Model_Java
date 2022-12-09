@@ -34,7 +34,6 @@ public class QuantitativeFactor extends Factor
     this.value = value;
   }
 
-
   public boolean isHigherThan(QuantitativeFactor quantitativeFactor)
   {
 

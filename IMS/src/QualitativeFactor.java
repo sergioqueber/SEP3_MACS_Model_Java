@@ -45,7 +45,7 @@ public class QualitativeFactor extends Factor
 
   @Override public QualitativeFactor copy(QualitativeFactor)
   {
-    return new QualitativeFactor(super.getName(),super.getPoint(),super.getWeight(),super.getType(),value);
+    return new QualitativeFactor(super.getName(),super.getPoint(),super.getWeight(),super.isMA(),value);
   }
 }
 

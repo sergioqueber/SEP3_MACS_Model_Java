@@ -2,7 +2,7 @@ import java.util.*;
 
 public class CountryList
 {
-  private ArrayList<CountryList> countries;
+  private ArrayList<Country> countries;
 
 
   public CountryList()
@@ -21,32 +21,28 @@ public class CountryList
       return false;
 
     CountryList other = (CountryList)obj;
-
-    if(!(countries.size() == other.countries.size()))
-      return false;
-
-
+      return (countries == other.countries);
   }
 
 
-  public void addCountry(int index)
+  public void addCountry(Country country)
   {
-    countries.add(index)
+    countries.add(country);
   }
 
   public void removeCountry(int index)
   {
-    countries.remove(index)
+    countries.remove(index);
   }
 
-  public void removeAll()
+  public void clear()
   {
-    countries.removeAll();
+    countries.clear();
   }
 
   public  CountryList[] compareMarketingAttractivenessPunctuation()
   {
-    for (int i; i<CountryList; i++)
+    for (int i; i<countries.size(); i++)
       
 
   }

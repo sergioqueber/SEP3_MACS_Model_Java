@@ -60,7 +60,7 @@ public abstract class Factor
 
     Factor other = (Factor)obj;
 
-    return name.equals(other.name)  && point == other.point && weight == other.weight && type == other.type;
+    return (name.equals(other.name)  && point == other.point && weight == other.weight && type == other.type);
   }
 
 public abstract Factor copy();

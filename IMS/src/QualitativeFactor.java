@@ -45,7 +45,7 @@ public class QualitativeFactor extends Factor
 
   @Override public Factor copy(QualitativeFactor)
   {
-    return QualitativeFactor;
+    return new QualitativeFactor();
   }
 }
 

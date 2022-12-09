@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="552f4f35-2bb7-4532-a073-e6898e7e9499" name="Changes" comment="Factor Class">
-      <change afterPath="$PROJECT_DIR$/IMS/src/CountryList.java" afterDir="false" />
+    <list default="true" id="552f4f35-2bb7-4532-a073-e6898e7e9499" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

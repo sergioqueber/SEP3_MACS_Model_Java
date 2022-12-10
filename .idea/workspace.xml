@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Factor Class">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/QuantitativeFactorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QuantitativeFactorList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/CountryList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/CountryList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +20,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-17.0.4-full/lib/src.zip!/java.base/java/lang/Object.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

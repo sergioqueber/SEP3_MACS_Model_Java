@@ -4,7 +4,7 @@ public class Test
 {
   public static void main(String[] args)
   {
-    QuantitativeFactor factor1 = new QuantitativeFactor("gdp",23,43,true,10000000);
+   /* QuantitativeFactor factor1 = new QuantitativeFactor("gdp",23,43,true,10000000);
     //QuantitativeFactor factor2 = new QuantitativeFactor("gdp",23,43,true,20000000);
     //QuantitativeFactor factor3 = new QuantitativeFactor("gdp",23,43,true,30000000);
 
@@ -36,6 +36,6 @@ public class Test
     System.out.println(listOfCountries.getCountry(1).getQuantitativeFactors().getFactor(0).getPoint());
 
 
-
+*/
   }
 }

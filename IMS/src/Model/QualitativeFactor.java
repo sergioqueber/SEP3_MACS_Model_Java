@@ -1,12 +1,17 @@
+package Model;
+
 public class QualitativeFactor extends Factor
 {
   private QualitativeValue value;
 
-  QualitativeFactor(String name, int point, double weight, boolean type, QualitativeValue value){
+  public QualitativeFactor(String name, int point, double weight, boolean type, QualitativeValue value){
     super(name, point, weight, type);
     this.value = value;
   }
 
+  public QualitativeFactor(String name,double weight, boolean type){
+    super(name,weight,type);
+  }
 
   public void setValue(QualitativeValue value)
   {

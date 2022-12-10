@@ -23,7 +23,7 @@
             <TableColumn fx:id="factorWeightCS" prefWidth="75.0" text="Weight" />
          </columns>
       </TableView>
-      <TextField fx:id="textFieldFactor" layoutX="92.0" layoutY="37.0" prefHeight="33.0" prefWidth="149.0" />
+      <TextField fx:id="textFieldName" layoutX="92.0" layoutY="37.0" prefHeight="33.0" prefWidth="149.0" />
       <TextField fx:id="textFieldWeight" layoutX="312.0" layoutY="37.0" prefHeight="33.0" prefWidth="149.0" />
       <Label fx:id="labelFactor" layoutX="41.0" layoutY="43.0" text="Factor:">
          <font>
@@ -45,7 +45,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button fx:id="saveMAbutton" layoutX="43.0" layoutY="386.0" mnemonicParsing="false" onAction="#addFactor" text="Save MA">
+      <Button fx:id="saveMAbutton" layoutX="43.0" layoutY="386.0" mnemonicParsing="false" onAction="#saveMA" text="Save MA">
          <font>
             <Font size="14.0" />
          </font>

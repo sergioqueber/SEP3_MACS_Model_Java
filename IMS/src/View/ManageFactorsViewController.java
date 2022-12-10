@@ -1,20 +1,26 @@
 package View;
 
-import Model.Factor;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.ResourceBundle;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Region;
 import Model.*;
-
-import java.util.ArrayList;
 
 public class ManageFactorsViewController
 {
 
     private Region root;
-    private ViewHandler viewHandler;
-    private Model model;
+    private ViewHandler2 viewHandler2;
+    private ModelIMS model;
 
     @FXML
     private Button backButton;
@@ -64,8 +70,6 @@ public class ManageFactorsViewController
     private TableColumn<Factor, String> factorNamesCS;
 
     @FXML
-
-    @FXML
     private CheckBox qualitativeCheck;
 
     @FXML
@@ -73,11 +77,12 @@ public class ManageFactorsViewController
 
     private TableColumn<Factor, Double> factorWeightCS;
 
-    public ManageFactorsViewController;
+    public ManageFactorsViewController(){};
 
-    public void init(ViewHandler viewHandler, Region root){
-        this.viewHandler = viewHandler;
+    public void init(ViewHandler2 viewHandler2, Region root, ModelIMS model){
+        this.viewHandler2 = viewHandler2;
         this.root = root;
+        this.model = model;
     }
 
     public Region getRoot(){
@@ -86,10 +91,46 @@ public class ManageFactorsViewController
 
     @FXML public void saveMA(){
         if (!(tableMA.getSelectionModel().isSelected(tableMA.getSelectionModel().getSelectedIndex()))){
-            double weight =  Integer.parseInt(textFieldWeight.getText());
-            QuantitativeFactor factor = new QuantitativeFactor(textFieldName.getText(), weight, quantitativeCheck.isSelected());
-model.getList1().
-
+            if(quantitativeCheck.isSelected())
+            {
+                double weight = Double.parseDouble(textFieldWeight.getText());
+                QuantitativeFactor factor = new QuantitativeFactor(textFieldName.getText(), weight, true);
+                model.getList1().addFactor(factor);
+                System.out.println(model.getList1());
+            }
+            else if (qualitativeCheck.isSelected()){
+                double weight = Double.parseDouble(textFieldWeight.getText());
+                QualitativeFactor factor2 = new QualitativeFactor(textFieldName.getText(), weight, true);
+                model.getList2().addFactor(factor2);
+                System.out.println(model.getList1());
+            }
         }
+        else{
+            if()
+            model.getList1().getFactor(tableMA.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
+            model.getList1().getFactor(tableMA.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
+            System.out.println(model.getList1());
+        }
+
+        factorNameMA.setCellValueFactory(new PropertyValueFactory<>("name"));
+        factorWeightMA.setCellValueFactory(new PropertyValueFactory<>("weight"));
+        tableMA.getItems().clear();
+
+        for (int i = 0; i < model.getList1().getNumberOfFactors(); i++)
+        {
+            tableMA.getItems().add(model.getList1().getFactor(i));
+        }
+        resetFields();
+    }
+
+    @FXML public void editFactor(){
+        textFieldName.setText(tableMA.getSelectionModel().getSelectedItem().getName());
+        textFieldWeight.setText(String.valueOf(tableMA.getSelectionModel().getSelectedItem().getWeight()));
+
+    }
+    public void resetFields()
+    {
+        textFieldName.setText("");
+        textFieldWeight.setText("");
     }
 }

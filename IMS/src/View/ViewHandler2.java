@@ -1,18 +1,24 @@
 package View;
 
+import Model.ModelIMS;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 
-public class ViewHandler
+public class ViewHandler2
 {
   private Scene currentScene;
   private Stage primaryStage;
 
-  public ViewHandler()
+  private ManageFactorsViewController manageFactorsViewController;
+  private ModelIMS model;
+  private Region root;
+
+  public ViewHandler2(ModelIMS model)
   {
     this.currentScene = new Scene(new Region());
+    this.model = model;
   }
 
   public void start(Stage primaryStage)
@@ -22,7 +28,7 @@ public class ViewHandler
   }
   public void openView()
   {
-    Region root = loadSimpleGUIView("ManageFactorsViewController.fxml");
+    Region root = loadManageFactors("ManageFactorsViewController.fxml");
     currentScene.setRoot(root);
     String title = "";
     if (root.getUserData() != null)
@@ -35,14 +41,15 @@ public class ViewHandler
     primaryStage.setHeight(root.getPrefHeight());
     primaryStage.show();
   }
-  private Region loadSimpleGUIView(String fxmlFile)
+  private Region loadManageFactors(String fxmlFile)
   {
-    Region root = null;
     try
     {
       FXMLLoader loader = new FXMLLoader();
       loader.setLocation(getClass().getResource(fxmlFile));
       root = loader.load();
+      manageFactorsViewController = loader.getController();
+      manageFactorsViewController.init(this,root,model);
     }
     catch (Exception e)
     {
@@ -50,5 +57,4 @@ public class ViewHandler
     }
     return root;
   }
-
 }

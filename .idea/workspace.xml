@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d988685-00e1-4945-89e2-2edf79d0d7e5" name="Changes" comment="Factor Class" />
+    <list default="true" id="0d988685-00e1-4945-89e2-2edf79d0d7e5" name="Changes" comment="Factor Class">
+      <change afterPath="$PROJECT_DIR$/GUI/src/HomePageViewController.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/HomePageViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/ManageFactorsViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/ManageFactorsViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/ViewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/ViewHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUI/ManageFactorsViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ManageFactorsViewController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -94,20 +102,13 @@
       <updated>1670403182729</updated>
     </task>
     <task id="LOCAL-00005" summary="Factor Class">
-      <created>1670612435870</created>
+      <created>1670592893315</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1670612435870</updated>
+      <updated>1670592893315</updated>
     </task>
-    <task id="LOCAL-00006" summary="Factor Class">
-      <created>1670612449131</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1670612449131</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

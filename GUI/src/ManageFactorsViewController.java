@@ -72,24 +72,6 @@ public class ManageFactorsViewController
 
   ArrayList<Factor> MAFactor = new ArrayList<Factor>();
 
-/*@FXML public void addFactor(){
-    if(!(tableCS.getSelectionModel().isSelected(tableCS.getSelectionModel().getSelectedIndex())))
-    {
-        int weight = Integer.parseInt(textFieldWeight.getText());
-        Factor factor = new Factor(textFieldFactor.getText(), weight);
-        MAFactor.add(factor);
-        System.out.println(MAFactor);
-        factorNames.setCellValueFactory(new PropertyValueFactory<>("name"));
-        weightColumn.setCellValueFactory(new PropertyValueFactory<>("value"));
-        tableCS.getItems().add(factor);
-    }
-    else{
-        MAFactor.get(tableCS.getSelectionModel().getSelectedIndex()).setName(textFieldFactor.getText());
-        MAFactor.get(tableCS.getSelectionModel().getSelectedIndex()).setValue(Integer.parseInt(textFieldFactor.getText()));
-        factorNames.setCellValueFactory(new PropertyValueFactory<>("name"));
-        weightColumn.setCellValueFactory(new PropertyValueFactory<>("value"));
-        tableCS.edit(tableCS.getSelectionModel().getSelectedIndex(), );
-    }*/
     @FXML public void addFactor()
     {
         if(!(tableCS.getSelectionModel().isSelected(tableCS.getSelectionModel().getSelectedIndex())))
@@ -133,6 +115,22 @@ public void resetFields(){
   textFieldFactor.setText("");
   textFieldWeight.setText("");
 }
+
+public Region getRoot(){
+    return root;
+}
+
+    public void reset()
+    {
+    }
+
+    public void init(ViewHandler viewHandler, Region root)
+    {
+        this.viewHandler = viewHandler;
+        this.root= root;
+    }
+
+
 /*public void initialize(URL url, ResourceBundle resourceBundle){}
 factorColumnMA.setCellValueFactory(new PropertyValueFactory<>(textFieldFactor.getText()));
 weightColumnMA.setCellValueFactory(new PropertyValueFactory<>(textFieldWeight.getText()));

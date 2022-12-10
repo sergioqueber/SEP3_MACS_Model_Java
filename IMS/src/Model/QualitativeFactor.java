@@ -1,4 +1,5 @@
-import java.util.*;
+package Model;
+
 public class QualitativeFactor extends Factor
 {
   private QualitativeValue value;

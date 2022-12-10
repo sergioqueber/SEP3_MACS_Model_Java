@@ -1,5 +1,5 @@
+package Model;
 
-import java.util.*;
 public class Country
 {
   private String name;

@@ -1,4 +1,5 @@
-import java.util.*;
+package Model;
+
 public class QuantitativeFactor extends Factor
 {
   private double value;
@@ -8,6 +9,10 @@ public class QuantitativeFactor extends Factor
     super(name,point,weight,type);
     this.value=value;
 
+  }
+
+  public QuantitativeFactor(String name, double weight, boolean type){
+    super(name,weight,type);
   }
 
   public boolean equals(Object obj)

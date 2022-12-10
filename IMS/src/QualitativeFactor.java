@@ -8,6 +8,7 @@ public class QualitativeFactor extends Factor
     this.value = value;
   }
 
+
   public void setValue(QualitativeValue value)
   {
     this.value = value;
@@ -40,11 +41,11 @@ public class QualitativeFactor extends Factor
 
   }
   @Override public int assignPoints()
-  {
+  {}
 
-  @Override public Factor copy(QualitativeFactor)
+  @Override public QualitativeFactor copy(QualitativeFactor)
   {
-    return QualitativeFactor;
+    return new QualitativeFactor(super.getName(),super.getPoint(),super.getWeight(),super.getType(),value);
   }
 }
 

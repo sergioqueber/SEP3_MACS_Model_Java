@@ -18,8 +18,8 @@ public class Country
       QuantitativeFactorList quantitativeFactors)
   {
     this.name = name;
-    this.qualitativeFactors = qualitativeFactors;
-    this.quantitativeFactors = quantitativeFactors;
+    this.qualitativeFactors = qualitativeFactors.copy();
+    this.quantitativeFactors = quantitativeFactors.copy();
   }
 
   public Country(String name, QualitativeFactorList qualitativeFactors,
@@ -27,8 +27,8 @@ public class Country
       double marketAttractivenessPunctuation, double competitiveStrengthPunctuation)
   {
     this.name = name;
-    this.qualitativeFactors = qualitativeFactors;
-    this.quantitativeFactors = quantitativeFactors;
+    this.qualitativeFactors = qualitativeFactors.copy();
+    this.quantitativeFactors = quantitativeFactors.copy();
     this.marketAttractivenessPunctuation = marketAttractivenessPunctuation;
     this.competitiveStrengthPunctuation = competitiveStrengthPunctuation;
   }

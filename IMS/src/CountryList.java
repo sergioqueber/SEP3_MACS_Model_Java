@@ -3,7 +3,7 @@ import java.util.*;
 public class CountryList
 {
   private ArrayList<Country> countries;
-  private ArrayList<double> ranges;
+  private ArrayList<Double> ranges = new ArrayList<Double>();
 
 
   public CountryList()
@@ -42,23 +42,33 @@ public class CountryList
   }
 
   public void defineRange(){
-    for (int i = 0; i<countries.size(); i++){
-      for (int c = 0; c<countries.get(0).getQuantitativeFactors()
-          .getNumberOfFactors(); c++)
-        countries.get(i).getQuantitativeFactors().getValue(c);
+    for (int c = 0; c<countries.get(0).getQuantitativeFactors()
+        .getNumberOfFactors(); c++) {
+      ArrayList<Double> values  = new ArrayList<Double>();
+    for (int i = 0; i<countries.size(); i++) {
+      values.add(countries.get(i).getQuantitativeFactors().getValue(c));
+    }
+    Collections.sort(values);
+    System.out.println(values);
+    ranges.add((double)values.get(values.size()-1) - values.get(0));
+    }
   }
-  public void assignQuantitativePoints(){
+  /*public void assignQuantitativePoints(){
     for (int i = 0; i<countries.size(); i++){
       countries.get(i).
     }
+  }*/
+
+  public ArrayList<Double> getRanges()
+  {
+    return ranges;
   }
 
-
-  public  CountryList[] compareMarketingAttractivenessPunctuation()
+  /*public  CountryList[] compareMarketingAttractivenessPunctuation()
   {
     for (int i; i<countries.size(); i++)
       
 
-  }
+  }*/
 
 }

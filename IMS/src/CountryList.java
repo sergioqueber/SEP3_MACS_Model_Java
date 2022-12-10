@@ -12,6 +12,9 @@ public class CountryList
     countries = new ArrayList<>();
   }
 
+  public Country getCountry(int index){
+    return countries.get(index);
+  }
   public String toString()
   {
     return countries.toString();

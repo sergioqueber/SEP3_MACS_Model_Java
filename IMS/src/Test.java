@@ -30,6 +30,9 @@ public class Test
     listOfCountries.defineRange();
     System.out.println(listOfCountries.getRanges());
 
+    listOfCountries.assignQuantitativePoints();
+    System.out.println(listOfCountries.getCountry(1).getQuantitativeFactors().getFactor(0).getPoint());
+
 
 
   }

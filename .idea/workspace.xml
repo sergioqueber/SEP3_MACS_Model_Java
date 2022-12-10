@@ -2,13 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d988685-00e1-4945-89e2-2edf79d0d7e5" name="Changes" comment="Factor Class">
-      <change afterPath="$PROJECT_DIR$/GUI/src/HomePageViewController.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/src/HomePageViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/EditCountryViewController.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/EditCountryViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/HomeView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/HomeViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/ManageCountriesViewController.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/ManageCountriesViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/HomePageViewController.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/HomePageViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/HomePageViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/src/ManageFactorsViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/ManageFactorsViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/src/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/MyApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/src/ViewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/ViewHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GUI/ManageFactorsViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ManageFactorsViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUI/MyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/MyApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUI/ViewHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ViewHandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +60,12 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asvie\Documents\GitHub\SEP3-Spolishzuelans\SEP3-Spolishzuelans\GUI\src" />
+      <recent name="C:\Users\asvie\Documents\GitHub\SEP3-Spolishzuelans\SEP3-Spolishzuelans\GUI" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MyApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyApplication" />
@@ -108,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670592893315</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Factor Class">
+      <created>1670686784851</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670686784851</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +186,10 @@
           <line>42</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

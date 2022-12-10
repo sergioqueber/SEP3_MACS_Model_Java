@@ -1,48 +1,44 @@
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Region;
 import javafx.stage.Stage;
-import java.io.IOException;
 
-public class ViewHandler
-{
+
+public class ViewHandler{
+
   private Scene currentScene;
-
-  private Region root;
   private Stage primaryStage;
   private ViewHandler viewHandler;
-  private HomePageViewController homePageViewController;
+  private Region root;
+  private HomeViewController homeViewController;
+  private ManageCountriesViewController manageCountriesViewController;
   private ManageFactorsViewController manageFactorsViewController;
 
 
-  public ViewHandler()
-  {
-    this.currentScene = new Scene(new Region());
+  public ViewHandler(){
+    this.currentScene= new Scene(new Region());
   }
 
-  public void start(Stage primaryStage) throws IOException
-  {
-    this.primaryStage = primaryStage;
-    this.primaryStage.setTitle("IMS Calculator");
-    openView("Home");
-  }
-  public void openView(String fxml)
-  {
 
-    switch (fxml){
-      case "Home":
-        System.out.println("1");
-        root = loadHome("HomePageViewController.fxml");
-        System.out.println("2");
+
+
+  public void openView(String window){
+    root = null;
+    switch(window){
+      case "Home Page":
+        root = loadHomePageView("HomeView.fxml");
         break;
       case "Manage Factors":
-        root= loadManageFactors("ManageFactorsViewController.fxml");
+        root = loadManageFactorsView("ManageFactorsViewController.fxml");
+        break;
+      case "Manage Countries":
+        root = loadManagCountriesView("ManageCountriesViewController.fxml");
         break;
     }
     currentScene.setRoot(root);
     String title = "";
-    if (root.getUserData() != null)
-    {
+    if (root.getUserData() != null){
       title += root.getUserData();
     }
     primaryStage.setTitle(title);
@@ -51,55 +47,62 @@ public class ViewHandler
     primaryStage.setHeight(root.getPrefHeight());
     primaryStage.show();
   }
+
+  public void start(Stage primaryStage) {
+    this.primaryStage = primaryStage;
+    openView("Home Page");
+  }
   public void closeView(){
     primaryStage.close();
   }
-  private Region loadHome(String fxmlFile)
-  {
-    if (homePageViewController == null)
-    {
-      try{
-      FXMLLoader loader = new FXMLLoader();
-      loader.setLocation(getClass().getResource(fxmlFile));
-        System.out.println("3");
-        root = loader.load();
-        System.out.println("4");
-      homePageViewController = loader.getController();
-      homePageViewController.init(this, root);
-    }    catch (Exception e){
-     e.printStackTrace();
-    }
-  }
-else
-    {
-      homePageViewController.reset();
-    }
-return homePageViewController.getRoot();
-
-  }
 
 
-  private Region loadManageFactors(String fxmlFile)
-  {
-    if (manageFactorsViewController == null)
-    {
-      try
-      {
+  private Region loadHomePageView(String fxmFile){
+    if (homeViewController == null){
+      try {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource(fxmlFile));
+        loader.setLocation(getClass().getResource(fxmFile));
         root = loader.load();
-        manageFactorsViewController = loader.getController();
-        manageFactorsViewController.init(this, root);
       }
       catch (Exception e)
       {
         e.printStackTrace();
       }
     }
-    else{ manageFactorsViewController.reset();}
-      return manageFactorsViewController.getRoot();
-
+    return root;
   }
 
 
+  private Region loadManageFactorsView(String fxmFile){
+    if (manageFactorsViewController == null){
+      try {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource(fxmFile));
+        root = loader.load();
+      }
+      catch (Exception e)
+      {
+        e.printStackTrace();
+      }
+    }
+    return root;
+  }
+
+  private Region loadManagCountriesView(String fxmFile){
+    if (manageFactorsViewController == null){
+      try {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource(fxmFile));
+        root = loader.load();
+      }
+      catch (Exception e)
+      {
+        e.printStackTrace();
+      }
+    }
+    return root;
+  }
 }
+
+
+

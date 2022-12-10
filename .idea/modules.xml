@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/IMS/IMS.iml" filepath="$PROJECT_DIR$/IMS/IMS.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SEP3-Spolishzuelans.iml" filepath="$PROJECT_DIR$/.idea/SEP3-Spolishzuelans.iml" />
       <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/peo/peo.iml" filepath="$PROJECT_DIR$/peo/peo.iml" />
     </modules>
   </component>
 </project>

@@ -3,12 +3,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Region;
 
-import java.io.IOException;
-
-public class HomePageViewController
-{
-  @FXML
-  private Button calculateIMSbutton;
+public class HomeViewController
+{ @FXML
+private Button calculateIMSbutton;
 
   @FXML
   private Button deleteAllDataButton;
@@ -31,7 +28,7 @@ public class HomePageViewController
   private Region root;
   private ViewHandler viewHandler;
 
-  public HomePageViewController(Region root, ViewHandler viewHandler)
+  public HomeViewController(Region root, ViewHandler viewHandler)
   {
     this.root = root;
     this.viewHandler = viewHandler;

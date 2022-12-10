@@ -6,7 +6,8 @@ import java.io.IOException;
 
 public class MyApplication extends Application
 {
-  public void start(Stage primaryStage) throws IOException
+  @Override
+  public void start(Stage primaryStage) throws FileNotFoundException
   {
     ViewHandler view = new ViewHandler();
     view.start(primaryStage);

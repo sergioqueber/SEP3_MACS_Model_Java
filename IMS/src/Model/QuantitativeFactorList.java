@@ -9,7 +9,7 @@ public class QuantitativeFactorList
 
   public QuantitativeFactorList()
   {
-  factors= new ArrayList<>();
+  factors= new ArrayList<QuantitativeFactor>();
   }
 
   public QuantitativeFactorList(ArrayList factors){
@@ -71,7 +71,11 @@ public class QuantitativeFactorList
 
 
 public QuantitativeFactorList copy(){
-    return new QuantitativeFactorList(factors);
+    QuantitativeFactorList other =  new QuantitativeFactorList();
+    for (int i = 0; i < factors.size(); i++){
+      other.addFactor((QuantitativeFactor)factors.get(i).copy());
+    }
+    return other;
 }
 
 public double getValue(int index)
@@ -102,7 +106,7 @@ public double calculateCSPercentage()
 }
 public QuantitativeFactor getFactor(int index)
 {
-  factors.get(index)
+  return factors.get(index);
 }
 
 

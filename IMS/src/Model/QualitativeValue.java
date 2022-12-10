@@ -3,6 +3,6 @@ package Model;
 public class QualitativeValue
 {
   enum QualitativeValues{
-    LOW, MEDIUM_LOW, MEDIUM, MEDIUM_HIGH, HIGH
+    BAD, MEDIUM_BAD, MEDIUM, MEDIUM_GOOD, GOOD
   }
 }

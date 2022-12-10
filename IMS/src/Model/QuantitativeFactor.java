@@ -1,5 +1,3 @@
-package Model;
-
 public class QuantitativeFactor extends Factor
 {
   private double value;
@@ -9,10 +7,6 @@ public class QuantitativeFactor extends Factor
     super(name,point,weight,type);
     this.value=value;
 
-  }
-
-  public QuantitativeFactor(String name, double weight, boolean type){
-    super(name,weight,type);
   }
 
   public boolean equals(Object obj)
@@ -41,16 +35,14 @@ public class QuantitativeFactor extends Factor
 
   public boolean isHigherThan(QuantitativeFactor quantitativeFactor)
   {
-
-  }
-
-  @Override public int assignPoints()
-  {
-
+    if (getPoint() > quantitativeFactor.getPoint())
+      return true;
+    else
+      return false;
   }
 
   @Override public Factor copy()
   {
-    return null;
+    return new QuantitativeFactor(super.getName(),super.getPoint(),super.getWeight(), super.isMA(), getValue());
   }
 }

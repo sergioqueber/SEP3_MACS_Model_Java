@@ -18,8 +18,8 @@ public class Country
       QuantitativeFactorList quantitativeFactors)
   {
     this.name = name;
-    this.qualitativeFactors = qualitativeFactors;
-    this.quantitativeFactors = quantitativeFactors;
+    this.qualitativeFactors = qualitativeFactors.copy();
+    this.quantitativeFactors = quantitativeFactors.copy();
   }
 
   public Country(String name, QualitativeFactorList qualitativeFactors,
@@ -27,8 +27,8 @@ public class Country
       double marketAttractivenessPunctuation, double competitiveStrengthPunctuation)
   {
     this.name = name;
-    this.qualitativeFactors = qualitativeFactors;
-    this.quantitativeFactors = quantitativeFactors;
+    this.qualitativeFactors = qualitativeFactors.copy();
+    this.quantitativeFactors = quantitativeFactors.copy();
     this.marketAttractivenessPunctuation = marketAttractivenessPunctuation;
     this.competitiveStrengthPunctuation = competitiveStrengthPunctuation;
   }
@@ -114,20 +114,18 @@ public class Country
         && competitiveStrengthPunctuation == other.competitiveStrengthPunctuation;
   }
 
-  public void setFactorValue(int i, QualitativeFactorList qualitativeFactorList,
-      QualitativeValue value)
+  public void setQualitativeValue(int index, QualitativeValue value)
   {
-    qualitativeFactorList.get(i).setValue(value);
+    qualitativeFactors.getFactor(index).setValue(value);
   }
 
-  public void setQuantitativeFactorValue(int i,  double value)
+  public void setQuantitativeValue(int index,  double value)
   {
-    //quantitativeFactors.getFactor(i).setValue(value);
-    quantitativeFactors.
+    quantitativeFactors.getFactor(index).setValue(value);
   }
 
   public double getRemainingWeightPercentage()
   {
-
+    return (100-((quantitativeFactors.calculateMAPercentage()+quantitativeFactors.calculateCSPercentage())+(qualitativeFactors.calculateMAPercentage()+qualitativeFactors.calculateCSPercentage())));
   }
 }

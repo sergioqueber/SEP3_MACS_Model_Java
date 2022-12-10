@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class QualitativeFactorList
 {
@@ -19,6 +19,10 @@ public void addFactor(QualitativeFactor factor){
 public int getNumberOfFactors()
 {
   return factors.size();
+}
+
+public QualitativeFactor getFactor(int index){
+  return factors.get(index);
 }
 
 public QualitativeFactor[] getAllFactors(){

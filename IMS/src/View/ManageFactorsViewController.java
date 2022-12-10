@@ -10,7 +10,8 @@ import Model.*;
 import java.util.ArrayList;
 
 public class ManageFactorsViewController
-{ private
+{
+
     private Region root;
     private ViewHandler viewHandler;
     private Model model;
@@ -87,7 +88,7 @@ public class ManageFactorsViewController
         if (!(tableMA.getSelectionModel().isSelected(tableMA.getSelectionModel().getSelectedIndex()))){
             double weight =  Integer.parseInt(textFieldWeight.getText());
             QuantitativeFactor factor = new QuantitativeFactor(textFieldName.getText(), weight, quantitativeCheck.isSelected());
-
+model.getList1().
 
         }
     }

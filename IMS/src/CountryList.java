@@ -12,9 +12,11 @@ public class CountryList
     countries = new ArrayList<>();
   }
 
-  public Country getCountry(int index){
+  public Country getCountry(int index)
+  {
     return countries.get(index);
   }
+
   public String toString()
   {
     return countries.toString();
@@ -108,7 +110,63 @@ public class CountryList
       }
     }
   }
-  public ArrayList<Double> getRanges(){
+
+  public ArrayList<Double> getRanges()
+  {
     return ranges;
+  }
+
+  public void WeightedMAPointsCalculation()
+  {
+    for (int i = 0; i < countries.size(); i++)
+    {
+      for (int c = 0;
+           c < countries.get(0).getQuantitativeFactors().getMAFactors().size(); c++)
+      {
+        countries.get(i).getQuantitativeFactors().getMAFactors().get(c).setWeightedPoints(
+            (countries.get(i).getQuantitativeFactors().getMAFactors().get(c).getPoint())
+                * ((countries.get(i).getQuantitativeFactors().getMAFactors().get(c).getWeight())/100));
+        countries.get(i).setMarketAttractivenessPunctuation(
+            (countries.get(i).getMarketAttractivenessPunctuation()) + (countries.get(i).getQuantitativeFactors().getMAFactors()
+                .get(c).getWeightedPoints()));
+      }
+      for (int c = 0;
+           c < countries.get(0).getQualitativeFactors().getMAFactors().size(); c++)
+      {
+        countries.get(i).getQualitativeFactors().getMAFactors().get(c).setWeightedPoints(
+            (countries.get(i).getQualitativeFactors().getMAFactors().get(c).getPoint())
+                * ((countries.get(i).getQualitativeFactors().getMAFactors().get(c).getWeight())/100));
+        countries.get(i).setMarketAttractivenessPunctuation(
+            (countries.get(i).getMarketAttractivenessPunctuation()) + (countries.get(i).getQualitativeFactors().getMAFactors()
+                .get(c).getWeightedPoints()));
+      }
+    }
+  }
+
+  public void WeightedCSPointsCalculation()
+  {
+    for (int i = 0; i < countries.size(); i++)
+    {
+      for (int c = 0;
+           c < countries.get(0).getQuantitativeFactors().getCSFactors().size(); c++)
+      {
+        countries.get(i).getQuantitativeFactors().getCSFactors().get(c).setWeightedPoints(
+            (countries.get(i).getQuantitativeFactors().getCSFactors().get(c).getPoint())
+                * ((countries.get(i).getQuantitativeFactors().getCSFactors().get(c).getWeight())/100));
+        countries.get(i).setCompetitiveStrengthPunctuation(
+            (countries.get(i).getCompetitiveStrengthPunctuation()) + (countries.get(i).getQuantitativeFactors().getCSFactors()
+                .get(c).getWeightedPoints()));
+      }
+      for (int c = 0;
+           c < countries.get(0).getQualitativeFactors().getCSFactors().size(); c++)
+      {
+        countries.get(i).getQualitativeFactors().getCSFactors().get(c).setWeightedPoints(
+            (countries.get(i).getQualitativeFactors().getCSFactors().get(c).getPoint())
+                * ((countries.get(i).getQualitativeFactors().getCSFactors().get(c).getWeight())/100));
+        countries.get(i).setCompetitiveStrengthPunctuation(
+            (countries.get(i).getCompetitiveStrengthPunctuation()) + (countries.get(i).getQualitativeFactors().getCSFactors()
+                .get(c).getWeightedPoints()));
+      }
+    }
   }
 }

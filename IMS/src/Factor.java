@@ -4,6 +4,8 @@ public abstract class Factor
   private int point;
   private double weight;
   private boolean type;
+  private double weightedPoints = 0;
+
 
   public Factor(String name, int point, double weight, boolean type)
   {
@@ -39,6 +41,11 @@ public abstract class Factor
     this.type = type;
   }
 
+  public void setWeightedPoints(double weightedPoints)
+  {
+    this.weightedPoints = weightedPoints;
+  }
+
   public String getName()
   {
     return name;
@@ -57,6 +64,11 @@ public abstract class Factor
   public boolean isMA()
   {
     return type;
+  }
+
+  public double getWeightedPoints()
+  {
+    return weightedPoints;
   }
 
   public String toString()

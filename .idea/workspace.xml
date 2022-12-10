@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Factor Class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Country.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IMS/src/CountryList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/CountryList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Factor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Factor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/CountryList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/CountryList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/Factor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Factor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Test.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +176,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670598861271</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Factor Class">
+      <created>1670687441058</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670687441058</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Factor Class">
+      <created>1670687762943</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1670687762943</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

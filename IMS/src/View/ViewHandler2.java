@@ -59,15 +59,15 @@ public class ViewHandler2
     }
     return root;
   }
-  private Region loadHomePage(String fxmlFile){
+  /*private Region loadHomePage(String fxmlFile){
     try{
       FXMLLoader loader = new FXMLLoader();
       loader.setLocation(getClass().getResource(fxmlFile));
       root = loader.load();
       homePageViewController = loader.getController();
       homePageViewController.init(this,root,model);
-    }
-  }
+    }catch ()
+  }*/
 
 }
 

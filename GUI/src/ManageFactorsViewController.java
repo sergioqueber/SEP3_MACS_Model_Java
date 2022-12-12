@@ -1,3 +1,6 @@
+package GUI.src;
+
+import GUI.src.ViewHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 

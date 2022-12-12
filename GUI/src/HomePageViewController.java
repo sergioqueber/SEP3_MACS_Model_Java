@@ -4,9 +4,10 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.Region;
 
 import java.io.IOException;
-
+/*
 public class HomePageViewController
 {
+
   @FXML
   private Button calculateIMSbutton;
 
@@ -72,4 +73,4 @@ public class HomePageViewController
   }
 */
 
-}
+

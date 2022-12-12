@@ -1,7 +1,10 @@
+package GUI.src;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Region;
+import javafx.scene.text.Text;
 
 public class HomeViewController
 { @FXML
@@ -24,6 +27,10 @@ private Button calculateIMSbutton;
 
   @FXML
   private Button manageFactorsButton;
+
+  @FXML
+  private Text hola;
+
 
   private Region root;
   private ViewHandler viewHandler;

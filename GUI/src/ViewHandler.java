@@ -1,6 +1,8 @@
+package GUI.src;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 
@@ -13,10 +15,12 @@ public class ViewHandler{
   private Region root;
   private HomeViewController homeViewController;
   private ManageCountriesViewController manageCountriesViewController;
-  private ManageFactorsViewController manageFactorsViewController;
+  //private ManageFactorsViewController manageFactorsViewController;
 
 
   public ViewHandler(){
+//    root = new Region();
+    Scene s = new Scene(new Pane());
     this.currentScene= new Scene(new Region());
   }
 
@@ -27,14 +31,14 @@ public class ViewHandler{
     root = null;
     switch(window){
       case "Home Page":
-        root = loadHomePageView("HomeView.fxml");
-        break;
+        root = loadHomeViewController("HomeView.fxml");
+  /*     break;
       case "Manage Factors":
         root = loadManageFactorsView("ManageFactorsViewController.fxml");
         break;
       case "Manage Countries":
         root = loadManagCountriesView("ManageCountriesViewController.fxml");
-        break;
+        break;*/
     }
     currentScene.setRoot(root);
     String title = "";
@@ -57,12 +61,14 @@ public class ViewHandler{
   }
 
 
-  private Region loadHomePageView(String fxmFile){
+  private Region loadHomeViewController(String fxmFile){
     if (homeViewController == null){
       try {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(fxmFile));
         root = loader.load();
+        homeViewController = loader.getController();
+        homeViewController.init(this, root);
       }
       catch (Exception e)
       {
@@ -72,7 +78,7 @@ public class ViewHandler{
     return root;
   }
 
-
+/*
   private Region loadManageFactorsView(String fxmFile){
     if (manageFactorsViewController == null){
       try {
@@ -87,9 +93,10 @@ public class ViewHandler{
     }
     return root;
   }
-
+*/
+  /*
   private Region loadManagCountriesView(String fxmFile){
-    if (manageFactorsViewController == null){
+    if (manageCountriesViewController == null){
       try {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(fxmFile));
@@ -102,6 +109,7 @@ public class ViewHandler{
     }
     return root;
   }
+  */
 }
 
 

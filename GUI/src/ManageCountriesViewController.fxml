@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="452.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.src.ManageCountriesViewController">
    <children>
       <Label fx:id="countryLabel" layoutX="63.0" layoutY="58.0" text="GUI.src.Country:">
@@ -21,7 +20,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="editCountryButton" layoutX="330.0" layoutY="211.0" mnemonicParsing="false" onAction="#editCountry" prefHeight="29.0" prefWidth="117.0" text="Edit GUI.src.Country">
+      <Button fx:id="editCountryButton" layoutX="330.0" layoutY="211.0" mnemonicParsing="false" onAction="#IMScalculatorPressed" prefHeight="29.0" prefWidth="117.0" text="Edit GUI.src.Country">
          <font>
             <Font size="14.0" />
          </font>
@@ -31,7 +30,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="backButton" layoutX="36.0" layoutY="388.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="53.0" text="Back">
+      <Button fx:id="backButton" layoutX="36.0" layoutY="388.0" mnemonicParsing="false" onAction="#back" prefHeight="29.0" prefWidth="53.0" text="Back">
          <font>
             <Font size="14.0" />
          </font>

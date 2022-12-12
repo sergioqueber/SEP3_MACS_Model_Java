@@ -12,6 +12,8 @@ import java.util.ArrayList;
 
 public class ManageCountriesViewController
 {
+  private Region root;
+  private ViewHandler viewHandler;
 
   @FXML private Button addCountryButton;
 
@@ -49,6 +51,10 @@ public class ManageCountriesViewController
     }
     resetFields();
   }
+  public void init (ViewHandler viewHandler, Region root){
+    this.viewHandler = viewHandler;
+    this.root = root;
+  }
 
   public void resetFields()
   {
@@ -59,6 +65,13 @@ public class ManageCountriesViewController
   {
     countryTextField.setText(listView.getSelectionModel().getSelectedItem().getName());
 
+  }
+
+  @FXML public void back(){
+    viewHandler.openView("Home Page");
+  }
+  @FXML private void IMScalculatorPressed(){
+    viewHandler.openView("IMS Calculator");
   }
 
 }

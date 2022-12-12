@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePageViewController">
-
-</AnchorPane>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.src.HomePageViewController">
+   <children>
+      <Button fx:id="manageFactorsButton" layoutX="242.0" layoutY="137.0" mnemonicParsing="false" onAction="#ManageFactorsPressed" prefHeight="29.0" prefWidth="132.0" text="Manage Factors">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="manageCountriesButton" layoutX="242.0" layoutY="185.0" mnemonicParsing="false" onAction="#ManageCountriesPressed" text="Manage Countries">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="IMScalculationButton" layoutX="242.0" layoutY="232.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="132.0" text="IMS Calculation">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="label1" layoutX="249.0" layoutY="63.0" prefHeight="27.0" prefWidth="119.0" text="IMS Calculator">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteAllDataButton" layoutX="14.0" layoutY="347.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="132.0" text="Delete all data">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

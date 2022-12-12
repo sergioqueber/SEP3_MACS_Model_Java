@@ -1,3 +1,4 @@
+package GUI.src;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -14,6 +15,7 @@ public class ViewHandler{
   private HomePageViewController homePageViewController;
   private ManageCountriesViewController manageCountriesViewController;
   private ManageFactorsViewController manageFactorsViewController;
+  private EditCountryViewController editCountryViewController;
 
 
   public ViewHandler(){
@@ -33,7 +35,10 @@ public class ViewHandler{
         root = loadManageFactorsView("ManageFactorsViewController.fxml");
         break;
       case "Manage Countries":
-        root = loadManagCountriesView("ManageCountriesViewController.fxml");
+        root = loadManageCountriesView("ManageCountriesViewController.fxml");
+        break;
+      case "IMS Calculator":
+        root = loadEditCountryViewController("EditCountryViewController.fxml");
         break;
     }
     currentScene.setRoot(root);
@@ -63,6 +68,8 @@ public class ViewHandler{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(fxmFile));
         root = loader.load();
+        homePageViewController = loader.getController();
+        homePageViewController.init(this, root);
       }
       catch (Exception e)
       {
@@ -79,6 +86,8 @@ public class ViewHandler{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(fxmFile));
         root = loader.load();
+        manageFactorsViewController = loader.getController();
+        manageFactorsViewController.init(this,root);
       }
       catch (Exception e)
       {
@@ -88,12 +97,14 @@ public class ViewHandler{
     return root;
   }
 
-  private Region loadManagCountriesView(String fxmFile){
-    if (manageFactorsViewController == null){
+  private Region loadManageCountriesView(String fxmFile){
+    if (manageCountriesViewController == null){
       try {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(fxmFile));
         root = loader.load();
+        manageCountriesViewController = loader.getController();
+        manageCountriesViewController.init(this, root);
       }
       catch (Exception e)
       {
@@ -102,6 +113,24 @@ public class ViewHandler{
     }
     return root;
   }
+
+  private Region loadEditCountryViewController(String fxmFile){
+    if (editCountryViewController == null){
+      try {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource(fxmFile));
+        root = loader.load();
+        editCountryViewController = loader.getController();
+        editCountryViewController.init(this, root);
+      }
+      catch (Exception e)
+      {
+        e.printStackTrace();
+      }
+    }
+    return root;
+  }
+
 }
 
 

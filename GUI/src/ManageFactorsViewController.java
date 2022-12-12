@@ -70,7 +70,19 @@ public class ManageFactorsViewController
     @FXML
     private TableColumn<Factor, Integer> weightColumn;
 
+
+    public void ManageFactorsViewController(){}
   ArrayList<Factor> MAFactor = new ArrayList<Factor>();
+
+    public Region getRoot(){
+        return root;
+    }
+
+    public void init(ViewHandler viewHandler, Region root){
+    this.viewHandler = viewHandler;
+    this.root = root;
+}
+
 
     @FXML public void addFactor()
     {
@@ -97,6 +109,7 @@ public class ManageFactorsViewController
         resetFields();
     }
 
+
     @FXML public void editFactor(){
         textFieldFactor.setText(tableCS.getSelectionModel().getSelectedItem().getName());
         textFieldWeight.setText(String.valueOf(tableCS.getSelectionModel().getSelectedItem().getValue()));
@@ -116,19 +129,14 @@ public void resetFields(){
   textFieldWeight.setText("");
 }
 
-public Region getRoot(){
-    return root;
-}
+    @FXML public void back(){
+        viewHandler.openView("Home Page");
+    }
 
     public void reset()
     {
     }
 
-    public void init(ViewHandler viewHandler, Region root)
-    {
-        this.viewHandler = viewHandler;
-        this.root= root;
-    }
 
 
 /*public void initialize(URL url, ResourceBundle resourceBundle){}

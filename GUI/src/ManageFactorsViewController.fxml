@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageFactorsViewController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.src.ManageFactorsViewController">
    <children>
       <TableView fx:id="tableCS" layoutX="43.0" layoutY="142.0" prefHeight="220.0" prefWidth="233.0">
         <columns>
@@ -54,7 +54,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="backButton" layoutX="226.0" layoutY="438.0" mnemonicParsing="false" text="Back">
+      <Button fx:id="backButton" layoutX="226.0" layoutY="438.0" mnemonicParsing="false" onAction="#back" text="Back">
          <font>
             <Font size="14.0" />
          </font>

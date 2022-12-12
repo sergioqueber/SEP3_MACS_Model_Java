@@ -7,11 +7,11 @@ import javafx.stage.Stage;
 
 public class ViewHandler{
 
-  private Scene currentScene;
+  private final Scene currentScene;
   private Stage primaryStage;
   private ViewHandler viewHandler;
   private Region root;
-  private HomeViewController homeViewController;
+  private HomePageViewController homePageViewController;
   private ManageCountriesViewController manageCountriesViewController;
   private ManageFactorsViewController manageFactorsViewController;
 
@@ -27,7 +27,7 @@ public class ViewHandler{
     root = null;
     switch(window){
       case "Home Page":
-        root = loadHomePageView("HomeView.fxml");
+        root = loadHomePageView("HomePageView.fxml");
         break;
       case "Manage Factors":
         root = loadManageFactorsView("ManageFactorsViewController.fxml");
@@ -58,7 +58,7 @@ public class ViewHandler{
 
 
   private Region loadHomePageView(String fxmFile){
-    if (homeViewController == null){
+    if (homePageViewController == null){
       try {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(fxmFile));

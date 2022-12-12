@@ -3,9 +3,6 @@ package View;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.ResourceBundle;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
@@ -116,8 +113,10 @@ public class ManageFactorsViewController
             }
             else
             {
-                model.getList1().getFactor(quantiTableMA.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
-                model.getList1().getFactor(quantiTableMA.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
+                model.getList1().getCSFactors().get(quantiTableMA.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
+                model.getList1().getCSFactors().get(quantiTableMA.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
+                //model.getList1().getFactor(quantiTableMA.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
+                //model.getList1().getFactor(quantiTableMA.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
                 System.out.println(model.getList1());
             }
             quantiFactorNameMA.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -138,8 +137,10 @@ public class ManageFactorsViewController
             }
             else
             {
-                model.getList2().getFactor(qualiTableMA.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
-                model.getList2().getFactor(qualiTableMA.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
+                model.getList2().getCSFactors().get(qualiTableMA.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
+                model.getList2().getCSFactors().get(qualiTableMA.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
+                //model.getList2().getFactor(qualiTableMA.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
+                //model.getList2().getFactor(qualiTableMA.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
                 System.out.println(model.getList2());
             }
             qualiFactorNameMA.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -165,8 +166,10 @@ public class ManageFactorsViewController
             }
             else
             {
-                model.getList1().getFactor(quantiTableCS.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
-                model.getList1().getFactor(quantiTableCS.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
+                model.getList1().getCSFactors().get(quantiTableCS.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
+                model.getList1().getCSFactors().get(quantiTableCS.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
+                //model.getList1().getFactor(quantiTableCS.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
+                //model.getList1().getFactor(quantiTableCS.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
                 System.out.println(model.getList1());
             }
             quantiFactorNameCS.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -187,8 +190,10 @@ public class ManageFactorsViewController
             }
             else
             {
-                model.getList2().getFactor(qualiTableCS.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
-                model.getList2().getFactor(qualiTableCS.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
+                model.getList2().getCSFactors().get(qualiTableCS.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
+                model.getList2().getCSFactors().get(qualiTableCS.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
+                //model.getList2().getFactor(qualiTableCS.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
+                //model.getList2().getFactor(qualiTableCS.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
                 System.out.println(model.getList2());
             }
             qualiFactorNameCS.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -204,17 +209,104 @@ public class ManageFactorsViewController
         resetFields();
     }
 
+    /*public void refresh(){
+        qualiTableCS.getItems().clear();
+        for (int i = 0; i < model.getList1().getMAFactors().size(); i++)
+        {
+            quantiTableMA.getItems().add(model.getList1().getMAFactors().get(i));
+        }
+        for (int i = 0; i < model.getList2().getMAFactors().size(); i++)
+        {
+            qualiTableMA.getItems().add(model.getList2().getMAFactors().get(i));
+        }
+        for (int i = 0; i < model.getList1().getCSFactors().size(); i++)
+        {
+            quantiTableCS.getItems().add(model.getList1().getCSFactors().get(i));
+        }
+        for (int i = 0; i < model.getList2().getCSFactors().size(); i++)
+        {
+            qualiTableCS.getItems().add(model.getList2().getCSFactors().get(i));
+        }
+
+    }*/
     @FXML public void editFactor(){
     if(quantiTableMA.getSelectionModel().isSelected(quantiTableMA.getSelectionModel().getSelectedIndex()))
     {
         textFieldName.setText(quantiTableMA.getSelectionModel().getSelectedItem().getName());
         textFieldWeight.setText(String.valueOf(quantiTableMA.getSelectionModel().getSelectedItem().getWeight()));
+        quantitativeCheck.setSelected(true);
     }
     else if (qualiTableMA.getSelectionModel().isSelected(qualiTableMA.getSelectionModel().getSelectedIndex()))
     {
         textFieldName.setText(qualiTableMA.getSelectionModel().getSelectedItem().getName());
         textFieldWeight.setText(String.valueOf(qualiTableMA.getSelectionModel().getSelectedItem().getWeight()));
+        qualitativeCheck.setSelected(true);
+
     }
+    if(quantiTableCS.getSelectionModel().isSelected(quantiTableCS.getSelectionModel().getSelectedIndex()))
+    {
+        textFieldName.setText(quantiTableCS.getSelectionModel().getSelectedItem().getName());
+        textFieldWeight.setText(String.valueOf(quantiTableCS.getSelectionModel().getSelectedItem().getWeight()));
+        quantitativeCheck.setSelected(true);
+    }
+    else if (qualiTableCS.getSelectionModel().isSelected(qualiTableCS.getSelectionModel().getSelectedIndex()))
+    {
+        textFieldName.setText(qualiTableCS.getSelectionModel().getSelectedItem().getName());
+        textFieldWeight.setText(String.valueOf(qualiTableCS.getSelectionModel().getSelectedItem().getWeight()));
+        qualitativeCheck.setSelected(true);
+    }
+
+
+    }
+
+    @FXML public void deleteFactor(){
+        if(quantiTableMA.getSelectionModel().isSelected(quantiTableMA.getSelectionModel().getSelectedIndex())){
+            model.getList1().removeFactorByName(model.getList1().getMAFactors().get(quantiTableMA.getSelectionModel().getSelectedIndex()).getName());
+            System.out.println(model.getList1());
+            quantiFactorNameMA.setCellValueFactory(new PropertyValueFactory<>("name"));
+            quantiFactorWeightMA.setCellValueFactory(new PropertyValueFactory<>("weight"));
+            quantiTableMA.getItems().clear();
+
+            for (int i = 0; i < model.getList1().getMAFactors().size(); i++)
+            {
+                quantiTableMA.getItems().add(model.getList1().getMAFactors().get(i));
+            }
+        }
+        else if (qualiTableMA.getSelectionModel().isSelected(qualiTableMA.getSelectionModel().getSelectedIndex())){
+            model.getList2().removeFactorByName(model.getList2().getMAFactors().get(qualiTableMA.getSelectionModel().getSelectedIndex()).getName());
+            qualiFactorNameMA.setCellValueFactory(new PropertyValueFactory<>("name"));
+            qualiFactorWeightMA.setCellValueFactory(new PropertyValueFactory<>("weight"));
+            qualiTableMA.getItems().clear();
+
+            for (int i = 0; i < model.getList2().getMAFactors().size(); i++)
+            {
+                qualiTableMA.getItems().add(model.getList2().getMAFactors().get(i));
+            }
+        }
+        if(quantiTableCS.getSelectionModel().isSelected(quantiTableCS.getSelectionModel().getSelectedIndex())){
+            model.getList1().removeFactorByName(model.getList1().getCSFactors().get(quantiTableCS.getSelectionModel().getSelectedIndex()).getName());
+            System.out.println(model.getList1());
+            quantiFactorNameCS.setCellValueFactory(new PropertyValueFactory<>("name"));
+            quantiFactorWeightCS.setCellValueFactory(new PropertyValueFactory<>("weight"));
+            quantiTableCS.getItems().clear();
+
+            for (int i = 0; i < model.getList1().getCSFactors().size(); i++)
+            {
+                quantiTableCS.getItems().add(model.getList1().getCSFactors().get(i));
+            }
+        }
+        else if (qualiTableCS.getSelectionModel().isSelected(qualiTableCS.getSelectionModel().getSelectedIndex())){
+            model.getList2().removeFactorByName(model.getList2().getCSFactors().get(qualiTableCS.getSelectionModel().getSelectedIndex()).getName());
+            qualiFactorNameCS.setCellValueFactory(new PropertyValueFactory<>("name"));
+            qualiFactorWeightCS.setCellValueFactory(new PropertyValueFactory<>("weight"));
+            qualiTableCS.getItems().clear();
+
+            for (int i = 0; i < model.getList2().getCSFactors().size(); i++)
+            {
+                qualiTableCS.getItems().add(model.getList2().getCSFactors().get(i));
+            }
+        }
+
     }
     public void resetFields()
     {

@@ -36,6 +36,16 @@ public class QuantitativeFactorList
     factors.remove(index);
   }
 
+  public void removeFactorByName(String name){
+    for(int i = 0; i < factors.size(); i++){
+      if (factors.get(i).getName() == name)
+      {
+        factors.remove(i);
+        break;
+      }
+    }
+  }
+
   public void removeAllFactors()
   {
     factors.removeAll(factors);

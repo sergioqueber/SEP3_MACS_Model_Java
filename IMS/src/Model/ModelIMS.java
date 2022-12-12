@@ -4,6 +4,7 @@ public class ModelIMS
 {
   private QuantitativeFactorList list1;
   private QualitativeFactorList list2;
+  private CountryList countryList;
 
   public ModelIMS(){
     list1 = new QuantitativeFactorList();
@@ -18,5 +19,9 @@ public class ModelIMS
   public QualitativeFactorList getList2()
   {
     return list2;
+  }
+
+  public CountryList getCountryList(){
+    return countryList;
   }
 }

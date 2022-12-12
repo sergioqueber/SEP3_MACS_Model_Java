@@ -24,7 +24,7 @@ public class Test
     System.out.println(country3.getQuantitativeFactors().getFactor(0).getValue());
     System.out.println(country2.getQuantitativeFactors().getValue(0));
 
-    CountryList listOfCountries = new CountryList();
+    Model.CountryList listOfCountries = new Model.CountryList();
     listOfCountries.addCountry(country1);
     listOfCountries.addCountry(country2);
     listOfCountries.addCountry(country3);

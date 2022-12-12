@@ -1,0 +1,138 @@
+Index: IMS/src/Country.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nimport java.util.*;\r\npublic class Country\r\n{\r\n  private String name;\r\n  private QualitativeFactorList qualitativeFactors;\r\n  private QuantitativeFactorList quantitativeFactors;\r\n  private double finalPunctuation;\r\n  private double marketAttractivenessPunctuation;\r\n  private double competitiveStrengthPunctuation;\r\n\r\n  public Country(String name)\r\n  {\r\n    this.name = name;\r\n  }\r\n\r\n  public Country(String name, QualitativeFactorList qualitativeFactors,\r\n      QuantitativeFactorList quantitativeFactors)\r\n  {\r\n    this.name = name;\r\n    this.qualitativeFactors = qualitativeFactors;\r\n    this.quantitativeFactors = quantitativeFactors;\r\n  }\r\n\r\n  public Country(String name, QualitativeFactorList qualitativeFactors,\r\n      QuantitativeFactorList quantitativeFactors, double finalPunctuation,\r\n      double marketAttractivenessPunctuation, double competitiveStrengthPunctuation)\r\n  {\r\n    this.name = name;\r\n    this.qualitativeFactors = qualitativeFactors;\r\n    this.quantitativeFactors = quantitativeFactors;\r\n    this.marketAttractivenessPunctuation = marketAttractivenessPunctuation;\r\n    this.competitiveStrengthPunctuation = competitiveStrengthPunctuation;\r\n  }\r\n\r\n  public String getName()\r\n  {\r\n    return name;\r\n  }\r\n\r\n  public QualitativeFactorList getQualitativeFactors()\r\n  {\r\n    return qualitativeFactors;\r\n  }\r\n\r\n  public QuantitativeFactorList getQuantitativeFactors()\r\n  {\r\n    return quantitativeFactors;\r\n  }\r\n\r\n  public double getFinalPunctuation()\r\n  {\r\n    return finalPunctuation;\r\n  }\r\n\r\n  public double getMarketAttractivenessPunctuation()\r\n  {\r\n    return marketAttractivenessPunctuation;\r\n  }\r\n\r\n  public double getCompetitiveStrengthPunctuation()\r\n  {\r\n    return competitiveStrengthPunctuation;\r\n  }\r\n\r\n  public void setName(String name)\r\n  {\r\n    this.name = name;\r\n  }\r\n\r\n  public void setQualitativeFactors(QualitativeFactorList qualitativeFactors)\r\n  {\r\n    this.qualitativeFactors = qualitativeFactors;\r\n  }\r\n\r\n  public void setQuantitativeFactors(QuantitativeFactorList quantitativeFactors)\r\n  {\r\n    this.quantitativeFactors = quantitativeFactors;\r\n  }\r\n\r\n  public void setFinalPunctuation(double finalPunctuation)\r\n  {\r\n    this.finalPunctuation = finalPunctuation;\r\n  }\r\n\r\n  public void setMarketAttractivenessPunctuation(\r\n      double marketAttractivenessPunctuation)\r\n  {\r\n    this.marketAttractivenessPunctuation = marketAttractivenessPunctuation;\r\n  }\r\n\r\n  public void setCompetitiveStrengthPunctuation(\r\n      double competitiveStrengthPunctuation)\r\n  {\r\n    this.competitiveStrengthPunctuation = competitiveStrengthPunctuation;\r\n  }\r\n\r\n  public String toString()\r\n  {\r\n    return \"Name: \" + name + \"\\nFinal Punctuation: \" + finalPunctuation + \"\\nMarket Attractiveness Punctuation: \"\r\n        + marketAttractivenessPunctuation + \"\\nCompetitive Strength Punctuation: \"\r\n        + competitiveStrengthPunctuation;\r\n  }\r\n\r\n  public boolean equals(Object obj)\r\n  {\r\n    if (!(obj instanceof Country))\r\n      return false;\r\n\r\n    Country other = (Country) obj;\r\n\r\n    return name.equals(other.name) && finalPunctuation == other.finalPunctuation\r\n        && marketAttractivenessPunctuation == other.marketAttractivenessPunctuation\r\n        && competitiveStrengthPunctuation == other.competitiveStrengthPunctuation;\r\n  }\r\n\r\n  public void setFactorValue(int i, QualitativeFactorList qualitativeFactorList,\r\n      QualitativeValue value)\r\n  {\r\n    qualitativeFactorList.get(i).setValue(value);\r\n  }\r\n\r\n  public void setQuantitativeFactorValue(int i,  double value)\r\n  {\r\n    //quantitativeFactors.getFactor(i).setValue(value);\r\n    quantitativeFactors.\r\n  }\r\n\r\n  public double getRemainingWeightPercentage()\r\n  {\r\n\r\n  }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/IMS/src/Country.java b/IMS/src/Country.java
+--- a/IMS/src/Country.java	(revision 2ef139891598252888b9607d0774a5a63ece4e65)
++++ b/IMS/src/Country.java	(date 1670850997247)
+@@ -104,11 +104,9 @@
+ 
+   public boolean equals(Object obj)
+   {
+-    if (!(obj instanceof Country))
++    if (!(obj instanceof Country other))
+       return false;
+ 
+-    Country other = (Country) obj;
+-
+     return name.equals(other.name) && finalPunctuation == other.finalPunctuation
+         && marketAttractivenessPunctuation == other.marketAttractivenessPunctuation
+         && competitiveStrengthPunctuation == other.competitiveStrengthPunctuation;
+Index: IMS/src/QualitativeFactorList.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.ArrayList;\r\n\r\npublic class QualitativeFactorList\r\n{\r\n  private ArrayList<QualitativeFactor> factors;\r\n\r\npublic QualitativeFactorList(){\r\n  factors = new ArrayList<>();\r\n}\r\n\r\npublic QualitativeFactorList(ArrayList factors){\r\n  this.factors = factors;\r\n}\r\n\r\npublic void addFactor(QualitativeFactor factor){\r\n  factors.add(factor);\r\n}\r\n\r\npublic int getNumberOfFactors()\r\n{\r\n  return factors.size();\r\n}\r\n\r\npublic QualitativeFactor[] getAllFactors(){\r\n    return (QualitativeFactor[]) factors.toArray();\r\n}\r\n\r\npublic void removeFactor (int index){\r\n  factors.remove(index);\r\n}\r\n\r\npublic void removeAllFactors (){\r\n  factors.removeAll(factors);\r\n}\r\n\r\npublic String toString(){\r\n  return factors.toString();\r\n}\r\n\r\n  public ArrayList<Factor> getMAFactors()\r\n  {\r\n    ArrayList<Factor> MAFactors = new ArrayList<Factor>();\r\n    for (int i=0; i<factors.size(); i++ )\r\n    {\r\n      if (factors.get(i).isMA() )\r\n        MAFactors.add(factors.get(i));\r\n    }\r\n    return MAFactors;\r\n  }\r\n\r\n\r\n  public ArrayList<Factor> getCSFactors()\r\n  {\r\n    ArrayList<Factor> CSFactors = new ArrayList<Factor>();\r\n    for (int i=0; i<factors.size(); i++ )\r\n    {\r\n      if (!(factors.get(i).isMA() ))\r\n        CSFactors.add(factors.get(i));\r\n    }\r\n    return CSFactors;\r\n  }\r\n\r\n  public QualitativeFactorList copy(){\r\n    return new QualitativeFactorList(factors);\r\n  }\r\n\r\n  public QualitativeValue getValue(int index)\r\n  {\r\n    return factors.get(index).getValue();\r\n  }\r\n\r\n  public double calculateMAPercentage()\r\n  {\r\n    double MAPercentage = 0;\r\n    for (int i=0; i<factors.size(); i++ )\r\n    {\r\n      if (factors.get(i).isMA() )\r\n        MAPercentage = MAPercentage + factors.get(i).getWeight() ;\r\n    }\r\n    return MAPercentage;\r\n  }\r\n\r\n  public double calculateCSPercentage()\r\n  {\r\n    double result = 0;\r\n    for (int i=0; i<factors.size(); i++ )\r\n    {\r\n      if (!(factors.get(i).isMA() ))\r\n        result = result + factors.get(i).getWeight() ;\r\n    }\r\n    return result;\r\n  }\r\n}\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/IMS/src/QualitativeFactorList.java b/IMS/src/QualitativeFactorList.java
+--- a/IMS/src/QualitativeFactorList.java	(revision 2ef139891598252888b9607d0774a5a63ece4e65)
++++ b/IMS/src/QualitativeFactorList.java	(date 1670850997335)
+@@ -2,7 +2,7 @@
+ 
+ public class QualitativeFactorList
+ {
+-  private ArrayList<QualitativeFactor> factors;
++  private final ArrayList<QualitativeFactor> factors;
+ 
+ public QualitativeFactorList(){
+   factors = new ArrayList<>();
+Index: IMS/src/QualitativeFactor.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.*;\r\npublic class QualitativeFactor extends Factor\r\n{\r\n  private QualitativeValue value;\r\n\r\n  QualitativeFactor(String name, int point, double weight, boolean type, QualitativeValue value){\r\n    super(name, point, weight, type);\r\n    this.value = value;\r\n  }\r\n\r\n  public void setValue(QualitativeValue value)\r\n  {\r\n    this.value = value;\r\n  }\r\n\r\n  public QualitativeValue getValue()\r\n  {\r\n    return value;\r\n  }\r\n\r\n  public boolean equals(Object obj)\r\n  {\r\n    if (!(obj instanceof QualitativeFactor))\r\n      return false;\r\n    QualitativeFactor other= (QualitativeFactor) obj;\r\n\r\n    return super.equals(other) && value == other.value;\r\n  }\r\n\r\n  public String toString()\r\n  {\r\n    return super.toString() + value;\r\n  }\r\n\r\n  public boolean isHigherThan(QualitativeFactor qualitativeFactor){\r\n    if (getPoint() > qualitativeFactor.getPoint())\r\n      return true;\r\n    else\r\n      return false;\r\n\r\n  }\r\n  @Override public int assignPoints()\r\n  {\r\n\r\n  @Override public Factor copy(QualitativeFactor)\r\n  {\r\n    return QualitativeFactor;\r\n  }\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/IMS/src/QualitativeFactor.java b/IMS/src/QualitativeFactor.java
+--- a/IMS/src/QualitativeFactor.java	(revision 2ef139891598252888b9607d0774a5a63ece4e65)
++++ b/IMS/src/QualitativeFactor.java	(date 1670850997304)
+@@ -20,9 +20,8 @@
+ 
+   public boolean equals(Object obj)
+   {
+-    if (!(obj instanceof QualitativeFactor))
++    if (!(obj instanceof QualitativeFactor other))
+       return false;
+-    QualitativeFactor other= (QualitativeFactor) obj;
+ 
+     return super.equals(other) && value == other.value;
+   }
+@@ -33,10 +32,7 @@
+   }
+ 
+   public boolean isHigherThan(QualitativeFactor qualitativeFactor){
+-    if (getPoint() > qualitativeFactor.getPoint())
+-      return true;
+-    else
+-      return false;
++    return getPoint() > qualitativeFactor.getPoint();
+ 
+   }
+   @Override public int assignPoints()
+Index: IMS/src/QuantitativeFactorList.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.*;\r\n\r\npublic class QuantitativeFactorList\r\n{\r\n  private ArrayList<QuantitativeFactor> factors;\r\n\r\n\r\n  public QuantitativeFactorList()\r\n  {\r\n  factors= new ArrayList<>();\r\n  }\r\n\r\n  public QuantitativeFactorList(ArrayList factors){\r\n    this.factors = factors;\r\n  }\r\n\r\n  public void addFactor(QuantitativeFactor factor)\r\n  {\r\n    factors.add(factor);\r\n  }\r\n\r\n  public int getNumberOfFactors()\r\n  {\r\n    return factors.size();\r\n  }\r\n\r\n  public QuantitativeFactor[] getAllFactors()\r\n  {\r\n    return (QuantitativeFactor[]) factors.toArray();\r\n  }\r\n\r\n  public void removeFactor(int index)\r\n  {\r\n    factors.remove(index);\r\n  }\r\n\r\n  public void removeAllFactors()\r\n  {\r\n    factors.removeAll(factors);\r\n  }\r\n\r\n  public String toString()\r\n  {\r\n   return factors.toString();\r\n  }\r\n\r\n  public ArrayList<Factor> getMAFactors()\r\n  {\r\n    ArrayList<Factor> MAFactors = new ArrayList<Factor>();\r\n    for (int i=0; i<factors.size(); i++ )\r\n    {\r\n      if (factors.get(i).isMA() )\r\n    MAFactors.add(factors.get(i));\r\n    }\r\n      return MAFactors;\r\n  }\r\n\r\n\r\n  public ArrayList<Factor> getCSFactors()\r\n  {\r\n    ArrayList<Factor> CSFactors = new ArrayList<Factor>();\r\n    for (int i=0; i<factors.size(); i++ )\r\n    {\r\n      if (!(factors.get(i).isMA() ))\r\n        CSFactors.add(factors.get(i));\r\n    }\r\n    return CSFactors;\r\n  }\r\n\r\n\r\npublic QuantitativeFactorList copy(){\r\n    return new QuantitativeFactorList(factors);\r\n}\r\n\r\npublic double getValue(int index)\r\n{\r\n  return factors.get(index).getValue();\r\n}\r\n\r\npublic double calculateMAPercentage()\r\n{\r\n  double MAPercentage = 0;\r\n  for (int i=0; i<factors.size(); i++ )\r\n  {\r\n    if (factors.get(i).isMA() )\r\n      MAPercentage = MAPercentage + factors.get(i).getWeight() ;\r\n  }\r\n  return MAPercentage;\r\n}\r\n\r\npublic double calculateCSPercentage()\r\n{\r\n  double result = 0;\r\n  for (int i=0; i<factors.size(); i++ )\r\n  {\r\n    if (!(factors.get(i).isMA() ))\r\n      result = result + factors.get(i).getWeight() ;\r\n  }\r\n  return result;\r\n}\r\npublic QuantitativeFactor getFactor(int index)\r\n{\r\n  factors.get(index)\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n }\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/IMS/src/QuantitativeFactorList.java b/IMS/src/QuantitativeFactorList.java
+--- a/IMS/src/QuantitativeFactorList.java	(revision 2ef139891598252888b9607d0774a5a63ece4e65)
++++ b/IMS/src/QuantitativeFactorList.java	(date 1670850997278)
+@@ -2,7 +2,7 @@
+ 
+ public class QuantitativeFactorList
+ {
+-  private ArrayList<QuantitativeFactor> factors;
++  private final ArrayList<QuantitativeFactor> factors;
+ 
+ 
+   public QuantitativeFactorList()
+Index: IMS/src/QuantitativeFactor.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.*;\r\npublic class QuantitativeFactor extends Factor\r\n{\r\n  private double value;\r\n\r\n  public QuantitativeFactor(String name, int point,double weight, boolean type, double value)\r\n  {\r\n    super(name,point,weight,type);\r\n    this.value=value;\r\n\r\n  }\r\n\r\n  public boolean equals(Object obj)\r\n    {\r\n      if (!(obj instanceof QuantitativeFactor))\r\n        return false;\r\n      QuantitativeFactor other= ( QuantitativeFactor) obj;\r\n\r\n      return super.equals(other) && value == other.value;\r\n    }\r\n\r\n    public String toString()\r\n    {\r\n      return super.toString() + value;\r\n    }\r\n\r\n  public double getValue()\r\n  {\r\n    return value;\r\n  }\r\n\r\n  public void setValue(double value)\r\n  {\r\n    this.value = value;\r\n  }\r\n\r\n  public boolean isHigherThan(QuantitativeFactor quantitativeFactor)\r\n  {\r\n\r\n  }\r\n\r\n  @Override public int assignPoints()\r\n  {\r\n\r\n  }\r\n\r\n  @Override public Factor copy()\r\n  {\r\n    return null;\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/IMS/src/QuantitativeFactor.java b/IMS/src/QuantitativeFactor.java
+--- a/IMS/src/QuantitativeFactor.java	(revision 2ef139891598252888b9607d0774a5a63ece4e65)
++++ b/IMS/src/QuantitativeFactor.java	(date 1670850997292)
+@@ -12,9 +12,8 @@
+ 
+   public boolean equals(Object obj)
+     {
+-      if (!(obj instanceof QuantitativeFactor))
++      if (!(obj instanceof QuantitativeFactor other))
+         return false;
+-      QuantitativeFactor other= ( QuantitativeFactor) obj;
+ 
+       return super.equals(other) && value == other.value;
+     }
+Index: IMS/src/Factor.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.*;\r\npublic abstract class Factor\r\n{\r\n  private String name;\r\n  private int point;\r\n  private double weight;\r\n  private boolean type;\r\n\r\n  public Factor(String name, int point, double weight, boolean type) {\r\n    this.name = name;\r\n    this.point = point;\r\n    this.weight = weight;\r\n    this.type = type;\r\n  }\r\n\r\n  public Factor(String name, boolean type){\r\n    this.name = name;\r\n    this.type = type;\r\n  }\r\n\r\n  public void setName(String name){\r\n    this.name = name;\r\n  }\r\n\r\n  public void setPoint(int point) {\r\n    this.point = point;\r\n  }\r\n\r\n  public void setWeight(double weight) {\r\n    this.weight = weight;\r\n  }\r\n\r\n  public void setType(boolean type) {\r\n    this.type = type;\r\n  }\r\n\r\n  public String getName() {\r\n    return name;\r\n  }\r\n\r\n  public int getPoint() {\r\n    return point;\r\n  }\r\n\r\n  public double getWeight() {\r\n    return weight;\r\n  }\r\n\r\n  public boolean isMA() {\r\n    return type;\r\n  }\r\n\r\n  public String toString(){\r\n    return \"Name: \" + name + \"\\nPoint: \" + point + \"\\nWeight: \" + weight + \"\\nType: \" + type;\r\n  }\r\n\r\n  public boolean equals(Object obj){\r\n    if(!(obj instanceof Factor))\r\n      return false;\r\n\r\n    Factor other = (Factor)obj;\r\n\r\n    return name.equals(other.name)  && point == other.point && weight == other.weight && type == other.type;\r\n  }\r\n\r\npublic abstract Factor copy();\r\n\r\npublic abstract int assignPoints();\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/IMS/src/Factor.java b/IMS/src/Factor.java
+--- a/IMS/src/Factor.java	(revision 2ef139891598252888b9607d0774a5a63ece4e65)
++++ b/IMS/src/Factor.java	(date 1670850997321)
+@@ -55,11 +55,9 @@
+   }
+ 
+   public boolean equals(Object obj){
+-    if(!(obj instanceof Factor))
++    if(!(obj instanceof Factor other))
+       return false;
+ 
+-    Factor other = (Factor)obj;
+-
+     return name.equals(other.name)  && point == other.point && weight == other.weight && type == other.type;
+   }
+ 

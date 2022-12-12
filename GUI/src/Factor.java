@@ -1,3 +1,5 @@
+package GUI.src;
+
 import javafx.beans.value.ObservableValue;
 import javafx.scene.control.TableColumn;
 import javafx.util.Callback;

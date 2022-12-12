@@ -10,8 +10,8 @@
    <children>
       <VBox alignment="CENTER" layoutX="228.0" layoutY="100.0" prefHeight="200.0" prefWidth="145.0" spacing="20.0">
          <children>
-            <Button fx:id="manageFactors" mnemonicParsing="false" text="Manage Factors" />
-            <Button fx:id="manageCountries" mnemonicParsing="false" text="ManageCountries" />
+            <Button fx:id="manageFactors" mnemonicParsing="false" onAction="#ManageFactorsPressed" text="Manage Factors" />
+            <Button fx:id="manageCountries" mnemonicParsing="false" onAction="#ManageCountriesPressed" text="ManageCountries" />
             <Button fx:id="calculateIMS" mnemonicParsing="false" text="Calculate IMS" />
          </children>
       </VBox>

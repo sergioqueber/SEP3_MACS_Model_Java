@@ -1,40 +1,82 @@
 package View;
 
+import Model.Country;
+import Model.ModelIMS;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Region;
-  public class ManageCountriesViewController {
 
-    @FXML
-    private Button back;
+import java.util.ArrayList;
 
-    @FXML
-    private Label country;
+public class ManageCountriesViewController {
 
-    @FXML
-    private TextField countryInput;
+  private Region root;
+  private ViewHandler2 viewHandler2;
+  private ModelIMS model;
 
-    @FXML
-    private ListView<?> countryList;
+  @FXML private Button addCountryButton;
 
-    @FXML
-    private Button deleteCountry;
+  @FXML private Button backButton;
 
-    @FXML
-    private Button manageFactors;
+  @FXML private Label countryLabel;
 
-    @FXML
-    private Button saveCountry;
+  @FXML private TextField countryTextField;
 
-    private Region root;
+  @FXML private Button editCountryButton;
 
-    private ViewHandler viewHandler;
+  @FXML private Button manageFactorsButton;
 
+  @FXML private ListView<Country> listView;
+
+  ArrayList<Country> CountryList = new ArrayList<Country>();
+
+  @FXML public void addCountry()
+  {
+    if (!(listView.getSelectionModel().isSelected(listView.getSelectionModel().getSelectedIndex())))
+    {
+      Country country = new Country(countryTextField.getText());
+      CountryList.add(country);
+      System.out.println(CountryList);
+    }
+    else
+    {
+      CountryList.get(listView.getSelectionModel().getSelectedIndex()).setName(countryTextField.getText());
+    }
+    listView.getItems().clear();
+
+    for (int i = 0; i < CountryList.size(); i++)
+    {
+      listView.getItems().add(CountryList.get(i));
+    }
+    resetFields();
+  }
+  public void init (ViewHandler2 viewHandler2, Region root, ModelIMS model){
+    this.viewHandler2 = viewHandler2;
+    this.root = root;
+    this.model = model;
+  }
+
+  public void resetFields()
+  {
+    countryTextField.setText("");
+  }
+
+  @FXML public void editCountry()
+  {
+    countryTextField.setText(listView.getSelectionModel().getSelectedItem().getName());
 
   }
+
+  @FXML public void back(){
+    viewHandler2.openView("Home Page");
+  }
+  @FXML private void IMScalculatorPressed(){
+    viewHandler2.openView("IMS Calculator");
+  }
+}
 
 
 

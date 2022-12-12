@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Factor Class">
+      <change afterPath="$PROJECT_DIR$/IMS/src/View/EditCountryView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/Country.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IMS/src/View/HomePageView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/HomePageView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IMS/src/View/HomePageViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/HomePageViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/ManageCountriesView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ManageCountriesView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/ManageCountriesViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ManageCountriesViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/ManageFactorsViewController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ManageFactorsViewController.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IMS/src/View/ManageFactorsViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ManageFactorsViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IMS/src/View/ViewHandler2.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ViewHandler2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/HomePageView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/HomePageView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/HomePageViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/HomePageViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ManageCountriesView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ManageCountriesView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ManageCountriesViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ManageCountriesViewController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ManageFactorsViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ManageFactorsViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ManageFactorsViewController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ManageFactorsViewController.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ViewHandler2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ViewHandler2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +74,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.MyApplication">
+    <configuration name="GUI.src.MyApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.src.MyApplication" />
+      <module name="SEP3-Spolishzuelans" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyApplication" />
       <module name="GUI" />
@@ -80,6 +104,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MyApplication" />
+        <item itemvalue="Application.GUI.src.MyApplication" />
         <item itemvalue="Application.MyApplication (1)" />
       </list>
     </recent_temporary>

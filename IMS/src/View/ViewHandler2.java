@@ -14,6 +14,7 @@ public class ViewHandler2
   private ManageFactorsViewController manageFactorsViewController;
   private ManageCountriesViewController manageCountriesViewController;
   private HomePageViewController homePageViewController;
+  private EditCountryViewController editCountryViewController;
   private ModelIMS model;
   private Region root;
 
@@ -23,7 +24,7 @@ public class ViewHandler2
     this.model = model;
   }
 
-  public void start(Stage primaryStage)
+  /*public void start(Stage primaryStage)
   {
     this.primaryStage = primaryStage;
     openView("Manage Factors");
@@ -51,7 +52,7 @@ public class ViewHandler2
     primaryStage.setWidth(root.getPrefWidth());
     primaryStage.setHeight(root.getPrefHeight());
     primaryStage.show();
-  }
+  }*/
   private Region loadManageFactors(String fxmlFile)
   {
     try
@@ -68,7 +69,7 @@ public class ViewHandler2
     }
     return root;
   }
-  private Region loadHomePage(String fxmlFile){
+  /*private Region loadHomePage(String fxmlFile){
     try{
       FXMLLoader loader = new FXMLLoader();
       loader.setLocation(getClass().getResource(fxmlFile));
@@ -80,8 +81,97 @@ public class ViewHandler2
       e.printStackTrace();
     }
     return root;
+  }*/
+  public void openView(String window){
+    root = null;
+    switch(window){
+      case "Home Page":
+        root = loadHomePageView("HomePageView.fxml");
+        break;
+      case "Manage Factors":
+        root = loadManageFactors("ManageFactorsViewController.fxml");
+        break;
+      case "Manage Countries":
+        root = loadManageCountriesView("ManageCountriesViewController.fxml");
+        break;
+      /*case "IMS Calculator":
+        root = loadEditCountryViewController("EditCountryViewController.fxml");
+        break;*/
+    }
+    currentScene.setRoot(root);
+    String title = "";
+    if (root.getUserData() != null){
+      title += root.getUserData();
+    }
+    primaryStage.setTitle(title);
+    primaryStage.setScene(currentScene);
+    primaryStage.setWidth(root.getPrefWidth());
+    primaryStage.setHeight(root.getPrefHeight());
+    primaryStage.show();
   }
 
+  public void start(Stage primaryStage) {
+    this.primaryStage = primaryStage;
+    openView("Home Page");
+  }
+  public void closeView(){
+    primaryStage.close();
+  }
+
+
+  private Region loadHomePageView(String fxmFile)
+  {
+    //if (homePageViewController == null){
+    try
+    {
+      FXMLLoader loader = new FXMLLoader();
+      loader.setLocation(getClass().getResource(fxmFile));
+      root = loader.load();
+      homePageViewController = loader.getController();
+      homePageViewController.init(this, root);
+    }
+    catch (Exception e)
+    {
+      e.printStackTrace();
+    }
+  //}
+    return root;
+  }
+
+
+  private Region loadManageCountriesView(String fxmFile){
+    if (manageCountriesViewController == null){
+      try {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource(fxmFile));
+        root = loader.load();
+        manageCountriesViewController = loader.getController();
+        manageCountriesViewController.init(this, root,model);
+      }
+      catch (Exception e)
+      {
+        e.printStackTrace();
+      }
+    }
+    return root;
+  }
+
+  /*private Region loadEditCountryViewController(String fxmFile){
+    if (editCountryViewController == null){
+      try {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource(fxmFile));
+        root = loader.load();
+        editCountryViewController = loader.getController();
+        editCountryViewController.init(this, root);
+      }
+      catch (Exception e)
+      {
+        e.printStackTrace();
+      }
+    }
+    return root;
+  }*/
 }
 
 

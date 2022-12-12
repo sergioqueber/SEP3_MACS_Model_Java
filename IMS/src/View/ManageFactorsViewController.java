@@ -318,4 +318,8 @@ public class ManageFactorsViewController
         qualitativeCheck.setSelected(false);
         quantitativeCheck.setSelected(false);
     }
+
+    @FXML public void back(){
+        viewHandler2.openView("Home Page");
+    }
 }

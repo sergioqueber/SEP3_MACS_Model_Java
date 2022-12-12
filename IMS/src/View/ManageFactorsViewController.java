@@ -261,7 +261,10 @@ public class ManageFactorsViewController
 
     @FXML public void deleteFactor(){
         if(quantiTableMA.getSelectionModel().isSelected(quantiTableMA.getSelectionModel().getSelectedIndex())){
-            model.getList1().removeFactorByName(model.getList1().getMAFactors().get(quantiTableMA.getSelectionModel().getSelectedIndex()).getName());
+            model.getList1().removeFactorByName(model.getList1().getMAFactors().get(quantiTableMA.getSelectionModel
+
+
+                ().getSelectedIndex()).getName());
             System.out.println(model.getList1());
             quantiFactorNameMA.setCellValueFactory(new PropertyValueFactory<>("name"));
             quantiFactorWeightMA.setCellValueFactory(new PropertyValueFactory<>("weight"));

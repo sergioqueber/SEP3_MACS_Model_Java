@@ -121,7 +121,8 @@ public class Country
 
   public void setQuantitativeValue(int index,  double value)
   {
-    quantitativeFactors.getFactor(index).setValue(value);
+    quantitativeFactors.getFactor(index).setVa
+  lue(value);
   }
 
   public double getRemainingWeightPercentage()

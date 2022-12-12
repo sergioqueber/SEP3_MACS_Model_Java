@@ -26,12 +26,21 @@ public class ViewHandler2
   public void start(Stage primaryStage)
   {
     this.primaryStage = primaryStage;
-    openView();
+    openView("Manage Factors");
   }
-  public void openView()
+  public void openView(String id)
   {
-    Region root = loadManageFactors("ManageFactorsViewController.fxml");
-    currentScene.setRoot(root);
+    switch (id)
+    {
+      case "Manage Factors":
+        root = loadManageFactors("ManageFactorsViewController.fxml");
+        currentScene.setRoot(root);
+        break;
+      case "Home Page":
+        Region root = loadHomePage("HomePageView.fxml");
+        currentScene.setRoot(root);
+        break;
+    }
     String title = "";
     if (root.getUserData() != null)
     {
@@ -59,15 +68,19 @@ public class ViewHandler2
     }
     return root;
   }
-  /*private Region loadHomePage(String fxmlFile){
+  private Region loadHomePage(String fxmlFile){
     try{
       FXMLLoader loader = new FXMLLoader();
       loader.setLocation(getClass().getResource(fxmlFile));
       root = loader.load();
       homePageViewController = loader.getController();
       homePageViewController.init(this,root,model);
-    }catch ()
-  }*/
+    }
+    catch (Exception e){
+      e.printStackTrace();
+    }
+    return root;
+  }
 
 }
 

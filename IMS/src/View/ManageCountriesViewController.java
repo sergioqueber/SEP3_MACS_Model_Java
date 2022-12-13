@@ -29,6 +29,7 @@ public class ManageCountriesViewController {
   @FXML private Button deleteCountryButton;
 
   @FXML private Button manageFactorsButton;
+  @FXML private Button editButton;
 
   @FXML private ListView<String> listView;
 
@@ -64,6 +65,16 @@ public class ManageCountriesViewController {
     resetFields();
   }
 
+  @FXML public void editCountry()
+  {
+
+    if (listView.getSelectionModel().isSelected(listView.getSelectionModel().getSelectedIndex()))
+    {
+      countryTextField.setText(model.getList3().getCountry(listView.getSelectionModel().getSelectedIndex()).getName());
+    }
+
+  }
+     
   private void resetFields()
   {
     countryTextField.setText("");
@@ -88,7 +99,16 @@ public class ManageCountriesViewController {
 
   @FXML public void manageFactors()
   {
-viewHandler2.openView("Edit Country");
+      if(listView.getSelectionModel().isSelected(listView.getSelectionModel().getSelectedIndex())){
+        model.getList3().getCountry(listView.getSelectionModel().getSelectedIndex());
+        
+      }
+      {
+
+        viewHandler2.openView("Edit Country");
+      }
+
+
   }
 
   @FXML public void back(){

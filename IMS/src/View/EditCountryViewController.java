@@ -114,7 +114,7 @@ public class EditCountryViewController
   public Region getRoot(){
     return root;
   }
-
+/*
   @FXML public void saveMA(){
     if(quantitativeCheck.isSelected()){
       model.getCountryList().getCountry(model.getSelectedCountryIndex()).setQuantitativeValueCS();
@@ -164,5 +164,7 @@ public class EditCountryViewController
   public void resetFields(){
      textFieldValue.setText("");
      textFieldSource.setText("");
+
+ */
   }
-}
+

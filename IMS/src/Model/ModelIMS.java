@@ -24,7 +24,7 @@ public class ModelIMS
     return list2;
   }
 
-  public CountryList getCountryList(){
+  public CountryList getList3(){
     return list3;
   }
 
@@ -36,5 +36,9 @@ public class ModelIMS
   public int getSelectedCountryIndex()
   {
     return selectedCountry;
+  }
+
+  public void getSelectedCountryIndex(int selectedIndex)
+  {
   }
 }

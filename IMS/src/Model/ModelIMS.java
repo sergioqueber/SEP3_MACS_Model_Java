@@ -5,6 +5,7 @@ public class ModelIMS
   private QuantitativeFactorList list1;
   private QualitativeFactorList list2;
   private CountryList countryList;
+  private int selectedCountry;
 
   public ModelIMS(){
     list1 = new QuantitativeFactorList();
@@ -23,5 +24,15 @@ public class ModelIMS
 
   public CountryList getCountryList(){
     return countryList;
+  }
+
+  public void setSelectedCountry(int index)
+  {
+    selectedCountry = index;
+  }
+
+  public int getSelectedCountryIndex()
+  {
+    return selectedCountry;
   }
 }

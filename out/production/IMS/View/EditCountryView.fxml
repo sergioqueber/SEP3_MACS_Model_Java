@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ManageFactorsViewController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.EditCountryViewController">
     <children>
         <TableView fx:id="quantiTableMA" layoutX="24.0" layoutY="142.0" prefHeight="99.0" prefWidth="271.0">
             <columns>
-                <TableColumn fx:id="quantiFactorNameMA" prefWidth="75.0" text="Factor" />
+                <TableColumn fx:id="qualiFactorNameMA" prefWidth="75.0" text="Factor" />
                 <TableColumn fx:id="quantiFactorWeightMA" prefWidth="55.20001220703125" text="Weight" />
             <TableColumn prefWidth="68.79998779296875" text="Value" />
             <TableColumn prefWidth="70.20001220703125" text="Source" />
@@ -64,7 +64,7 @@
         <Button fx:id="edit" layoutX="282.0" layoutY="388.0" mnemonicParsing="false" onAction="#editFactor" text="Edit" />
         <CheckBox fx:id="quantitativeCheck" layoutX="489.0" layoutY="35.0" mnemonicParsing="false" text="Quantitative" />
         <CheckBox fx:id="qualitativeCheck" layoutX="490.0" layoutY="55.0" mnemonicParsing="false" text="Qualitative" />
-      <TableView fx:id="quantiTableMA1" layoutX="24.0" layoutY="266.0" prefHeight="99.0" prefWidth="271.0">
+      <TableView fx:id="qualiTableMA" layoutX="24.0" layoutY="266.0" prefHeight="99.0" prefWidth="271.0">
          <columns>
             <TableColumn fx:id="quantiFactorNameMA1" prefWidth="75.0" text="Factor" />
             <TableColumn fx:id="quantiFactorWeightMA1" prefWidth="55.20001220703125" text="Weight" />
@@ -72,7 +72,7 @@
             <TableColumn prefWidth="70.20001220703125" text="Source" />
          </columns>
       </TableView>
-      <TableView fx:id="quantiTableMA2" layoutX="312.0" layoutY="142.0" prefHeight="99.0" prefWidth="271.0">
+      <TableView fx:id="quantiTableCS" layoutX="312.0" layoutY="142.0" prefHeight="99.0" prefWidth="271.0">
          <columns>
             <TableColumn fx:id="quantiFactorNameMA2" prefWidth="75.0" text="Factor" />
             <TableColumn fx:id="quantiFactorWeightMA2" prefWidth="55.20001220703125" text="Weight" />
@@ -80,7 +80,7 @@
             <TableColumn prefWidth="70.20001220703125" text="Source" />
          </columns>
       </TableView>
-      <TableView fx:id="quantiTableMA3" layoutX="312.0" layoutY="266.0" prefHeight="99.0" prefWidth="271.0">
+      <TableView fx:id="qualiTableCS" layoutX="312.0" layoutY="266.0" prefHeight="99.0" prefWidth="271.0">
          <columns>
             <TableColumn fx:id="quantiFactorNameMA3" prefWidth="75.0" text="Factor" />
             <TableColumn fx:id="quantiFactorWeightMA3" prefWidth="55.20001220703125" text="Weight" />

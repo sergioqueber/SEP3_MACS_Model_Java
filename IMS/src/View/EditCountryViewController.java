@@ -117,7 +117,7 @@ public class EditCountryViewController
 
   @FXML public void saveMA(){
     if(quantitativeCheck.isSelected()){
-      model.getCountryList().getCountry(model.getSelectedCountryIndex()).setQuantitativeValueCS();    getQuantitativeFactors().getMAFactors().get(quantiTableMA.getSelectionModel().getSelectedIndex()).se
+      model.getCountryList().getCountry(model.getSelectedCountryIndex()).setQuantitativeValueCS();
 
       model.getList1().getCSFactors().get(quantiTableMA.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
       model.getList1().getCSFactors().get(quantiTableMA.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));

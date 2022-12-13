@@ -57,7 +57,6 @@ public class CountryList
         values.add(countries.get(i).getQuantitativeFactors().getValue(c));
       }
       Collections.sort(values);
-      System.out.println(values);
       ranges.add((double) values.get(values.size() - 1) - values.get(0));
       maxValues.add(values.get(values.size() - 1));
       minValues.add(values.get(0));
@@ -116,7 +115,7 @@ public class CountryList
     return ranges;
   }
 
-  public void WeightedMAPointsCalculation()
+  public void weightedMAPointsCalculation()
   {
     for (int i = 0; i < countries.size(); i++)
     {
@@ -143,7 +142,7 @@ public class CountryList
     }
   }
 
-  public void WeightedCSPointsCalculation()
+  public void weightedCSPointsCalculation()
   {
     for (int i = 0; i < countries.size(); i++)
     {

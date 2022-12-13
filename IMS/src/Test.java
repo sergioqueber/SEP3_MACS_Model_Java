@@ -36,8 +36,8 @@ public class Test
     listOfCountries.assignQuantitativePoints();
     System.out.println(listOfCountries.getCountry(1).getQuantitativeFactors().getFactor(0).getPoint());
 
-    listOfCountries.WeightedMAPointsCalculation();
-    listOfCountries.WeightedCSPointsCalculation();
+    listOfCountries.weightedMAPointsCalculation();
+    listOfCountries.weightedCSPointsCalculation();
     System.out.println(listOfCountries.getCountry(1).getMarketAttractivenessPunctuation());
     System.out.println(listOfCountries.getCountry(1).getCompetitiveStrengthPunctuation());
 

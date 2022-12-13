@@ -63,6 +63,17 @@ public class CountryList
     }
   }
 
+  public void assignQualitativePoints()
+  {
+    for (int c = 0; c < countries.get(0).getQualitativeFactors().getNumberOfFactors(); c++)
+    {
+      for (int i = 0; i < countries.size(); i++)
+      {
+        countries.get(i).getQualitativeFactors().getFactor(c).assignPoints();
+      }
+    }
+  }
+
   public void assignQuantitativePoints()
   {
     for (int c = 0; c < countries.get(0).getQuantitativeFactors()
@@ -109,18 +120,6 @@ public class CountryList
       }
     }
   }
-
-  public void assignQualitativePoints()
-  {
-    for (int c = 0; c < countries.get(0).getQualitativeFactors().getNumberOfFactors(); c++)
-    {
-      for (int i = 0; i < countries.size(); i++)
-      {
-        countries.get(i).getQualitativeFactors().getFactor(c).assignPoints();
-      }
-    }
-  }
-
 
   public ArrayList<Double> getRanges()
   {

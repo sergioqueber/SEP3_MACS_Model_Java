@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Factor Class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/CountryList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/CountryList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/QualitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QualitativeFactor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/QualitativeFactorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QualitativeFactorList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/QualitativeValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/QualitativeValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IMS/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670693107116</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Factor Class">
+      <created>1670941646765</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1670941646765</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -4,13 +4,14 @@ public class Test
   {
     QuantitativeFactor factor1 = new QuantitativeFactor("gdp",0,15,true,10000000);
     QuantitativeFactor factor2 = new QuantitativeFactor("Growth",0,20,false,10000000);
-    QualitativeFactor factor3 = new QualitativeFactor("gdp",23,43,true, QualitativeValue.QualitativeValues.BAD);
+    QualitativeFactor factor3 = new QualitativeFactor("gdp",0,20,true, QualitativeValue.QualitativeValues.BAD);
 
     QuantitativeFactorList list = new QuantitativeFactorList();
     list.addFactor(factor1);
     list.addFactor(factor2);
 
     QualitativeFactorList list2 = new QualitativeFactorList();
+    list2.addFactor(factor3);
 
 
     Country country1 = new Country("Australia",list2, list);
@@ -21,7 +22,8 @@ public class Test
     country3.setQuantitativeValue(0,30000000);
     country2.setQuantitativeValue(1,20000000);
     country3.setQuantitativeValue(1,30000000);
-
+    country2.setQualitativeValue(0, QualitativeValue.QualitativeValues.MEDIUM_BAD);
+    country3.setQualitativeValue(0, QualitativeValue.QualitativeValues.GOOD);
     //System.out.println(country3.getQuantitativeFactors().getFactor(0).getValue());
     //System.out.println(country2.getQuantitativeFactors().getValue(0));
 
@@ -31,18 +33,22 @@ public class Test
     listOfCountries.addCountry(country3);
 
     listOfCountries.defineRange();
-    System.out.println(listOfCountries.getRanges());
 
     listOfCountries.assignQuantitativePoints();
-    System.out.println(listOfCountries.getCountry(1).getQuantitativeFactors().getFactor(0).getPoint());
+    listOfCountries.assignQualitativePoints();
 
     listOfCountries.weightedMAPointsCalculation();
     listOfCountries.weightedCSPointsCalculation();
+    System.out.println("Country1");
+    System.out.println(listOfCountries.getCountry(0).getMarketAttractivenessPunctuation());
+    System.out.println(listOfCountries.getCountry(0).getCompetitiveStrengthPunctuation());
+    System.out.println("Country2");
     System.out.println(listOfCountries.getCountry(1).getMarketAttractivenessPunctuation());
     System.out.println(listOfCountries.getCountry(1).getCompetitiveStrengthPunctuation());
+    System.out.println("Country3");
+    System.out.println(listOfCountries.getCountry(2).getMarketAttractivenessPunctuation());
+    System.out.println(listOfCountries.getCountry(2).getCompetitiveStrengthPunctuation());
 
-    System.out.println(listOfCountries.getCountry(1).getRemainingMAWeightPercentage());
-    System.out.println(listOfCountries.getCountry(1).getRemainingCSWeightPercentage());
 
 
 

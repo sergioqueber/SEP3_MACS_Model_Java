@@ -56,9 +56,9 @@ public class QuantitativeFactorList
    return factors.toString();
   }
 
-  public ArrayList<Factor> getMAFactors()
+  public ArrayList<QuantitativeFactor> getMAFactors()
   {
-    ArrayList<Factor> MAFactors = new ArrayList<Factor>();
+    ArrayList<QuantitativeFactor> MAFactors = new ArrayList<QuantitativeFactor>();
     for (int i=0; i<factors.size(); i++ )
     {
       if (factors.get(i).isMA() )
@@ -68,9 +68,9 @@ public class QuantitativeFactorList
   }
 
 
-  public ArrayList<Factor> getCSFactors()
+  public ArrayList<QuantitativeFactor> getCSFactors()
   {
-    ArrayList<Factor> CSFactors = new ArrayList<Factor>();
+    ArrayList<QuantitativeFactor> CSFactors = new ArrayList<QuantitativeFactor>();
     for (int i=0; i<factors.size(); i++ )
     {
       if (!(factors.get(i).isMA() ))

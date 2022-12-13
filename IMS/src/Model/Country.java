@@ -116,12 +116,20 @@ public class Country
 
   public void setQualitativeValue(int index, QualitativeValue value)
   {
-    qualitativeFactors.getFactor(index).setValue(value);
+    qualitativeFactors.getMAFactors().get(index).setValue(value);
   }
 
-  public void setQuantitativeValue(int index,  double value)
+  public void setQualitativeValueCS(int index, QualitativeValue value){
+    qualitativeFactors.getCSFactors().get(index).setValue(value);
+  }
+
+  public void setQuantitativeValueMA(int index,  double value)
   {
-    quantitativeFactors.getFactor(index).setValue(value);
+    quantitativeFactors.getMAFactors().get(index).setValue(value);
+  }
+
+  public void setQuantitativeValueCS(int index, double value){
+    quantitativeFactors.getCSFactors().get(index).setValue(value);
   }
 
   public double getRemainingWeightPercentage()

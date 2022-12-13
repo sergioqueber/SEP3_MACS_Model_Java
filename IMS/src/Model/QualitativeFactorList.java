@@ -50,9 +50,9 @@ public String toString(){
   return factors.toString();
 }
 
-  public ArrayList<Factor> getMAFactors()
+  public ArrayList<QualitativeFactor> getMAFactors()
   {
-    ArrayList<Factor> MAFactors = new ArrayList<Factor>();
+    ArrayList<QualitativeFactor> MAFactors = new ArrayList<QualitativeFactor>();
     for (int i=0; i<factors.size(); i++ )
     {
       if (factors.get(i).isMA() )
@@ -62,9 +62,9 @@ public String toString(){
   }
 
 
-  public ArrayList<Factor> getCSFactors()
+  public ArrayList<QualitativeFactor> getCSFactors()
   {
-    ArrayList<Factor> CSFactors = new ArrayList<Factor>();
+    ArrayList<QualitativeFactor> CSFactors = new ArrayList<QualitativeFactor>();
     for (int i=0; i<factors.size(); i++ )
     {
       if (!(factors.get(i).isMA() ))

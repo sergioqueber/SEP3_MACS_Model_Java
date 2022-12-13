@@ -52,5 +52,8 @@ public class HomePageViewController
   @FXML private void ManageCountriesPressed(){
     viewHandler2.openView("Manage Countries");
   }
+  @FXML private void calculatorPressed(){
+    viewHandler2.openView("IMS Calculator");
+  }
 
 }

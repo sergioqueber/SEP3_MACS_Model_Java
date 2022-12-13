@@ -12,7 +12,7 @@
          <children>
             <Button fx:id="manageFactors" mnemonicParsing="false" onAction="#ManageFactorsPressed" text="Manage Factors" />
             <Button fx:id="manageCountries" mnemonicParsing="false" onAction="#ManageCountriesPressed" text="ManageCountries" />
-            <Button fx:id="calculateIMS" mnemonicParsing="false" text="Calculate IMS" />
+            <Button fx:id="calculateIMS" mnemonicParsing="false" onAction="#calculatorPressed" text="Calculate IMS" />
          </children>
       </VBox>
       <Label fx:id="title" layoutX="243.0" layoutY="53.0" text="IMS Calculator">

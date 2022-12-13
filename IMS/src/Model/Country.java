@@ -33,10 +33,6 @@ public class Country
     this.competitiveStrengthPunctuation = competitiveStrengthPunctuation;
   }
 
-  public String getName()
-  {
-    return name;
-  }
 
   public QualitativeFactorList getQualitativeFactors()
   {
@@ -127,5 +123,9 @@ public class Country
   public double getRemainingWeightPercentage()
   {
     return (100-((quantitativeFactors.calculateMAPercentage()+quantitativeFactors.calculateCSPercentage())+(qualitativeFactors.calculateMAPercentage()+qualitativeFactors.calculateCSPercentage())));
+  }
+
+  public String getName()
+  {return name;
   }
 }

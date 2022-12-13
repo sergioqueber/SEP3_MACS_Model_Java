@@ -1,3 +1,5 @@
+package Model;
+
 import java.util.*;
 
 public class CountryList
@@ -32,6 +34,11 @@ public class CountryList
   public void addCountry(Country country)
   {
     countries.add(country);
+  }
+
+  public ArrayList<Country> getCountries()
+  {
+    return countries;
   }
 
   public void removeCountry(int index)
@@ -111,4 +118,6 @@ public class CountryList
   public ArrayList<Double> getRanges(){
     return ranges;
   }
+
+
 }

@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Factor Class">
-      <change beforePath="$PROJECT_DIR$/IMS/src/Model/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/Model/QualitativeFactorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/QualitativeFactorList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/Model/QuantitativeFactorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/QuantitativeFactorList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" afterDir="false" />
+    <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/ModelIMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/ModelIMS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,5 +197,8 @@
     <MESSAGE value="View" />
     <MESSAGE value="Factor Class" />
     <option name="LAST_COMMIT_MESSAGE" value="Factor Class" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SEP3_Spolishzuelans$MyApplication.ic" NAME="MyApplication Coverage Results" MODIFIED="1670947569142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

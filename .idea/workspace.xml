@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Factor Class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/QualitativeFactorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/QualitativeFactorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/QuantitativeFactorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/QuantitativeFactorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,21 +41,21 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sergi/OneDrive/Documentos/GitHub/SEP3-Spolishzuelans/IMS/src/View&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Samuele Biondi\Documents\GitHub\SEP3-Spolishzuelans\GUI\src" />
-      <recent name="C:\Users\Samuele Biondi\Documents\GitHub\SEP3-Spolishzuelans\GUI" />
-      <recent name="C:\Users\asvie\Documents\GitHub\SEP3-Spolishzuelans\SEP3-Spolishzuelans\GUI\src" />
-      <recent name="C:\Users\asvie\Documents\GitHub\SEP3-Spolishzuelans\SEP3-Spolishzuelans\GUI" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sergi\OneDrive\Documentos\GitHub\SEP3-Spolishzuelans\IMS\src\View" />
     </key>
-    <key name="ExtractSuperBase.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sergi\OneDrive\Documentos\GitHub\SEP3-Spolishzuelans\IMS\src\View" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="View" />
     </key>
   </component>
@@ -70,9 +73,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyApplication" />
+      <module name="GUI" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="liberica-17" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="MyApplication" />
       <module name="IMS" />
       <method v="2">
@@ -83,13 +91,14 @@
       <list>
         <item itemvalue="Application.MyApplication" />
         <item itemvalue="Application.GUI.src.MyApplication" />
+        <item itemvalue="Application.MyApplication (1)" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Factor Class" />
+      <changelist id="0d988685-00e1-4945-89e2-2edf79d0d7e5" name="Changes" comment="Factor Class" />
       <created>1669977082821</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -124,27 +133,55 @@
       <updated>1670403182729</updated>
     </task>
     <task id="LOCAL-00005" summary="Factor Class">
-      <created>1670592893315</created>
+      <created>1670704780296</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1670592893315</updated>
+      <updated>1670704780296</updated>
     </task>
     <task id="LOCAL-00006" summary="Factor Class">
-      <created>1670686784851</created>
+      <created>1670724105847</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1670686784851</updated>
+      <updated>1670724105847</updated>
     </task>
     <task id="LOCAL-00007" summary="Factor Class">
-      <created>1670958422238</created>
+      <created>1670812004225</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1670958422238</updated>
+      <updated>1670812004225</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Factor Class">
+      <created>1670840496148</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670840496148</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Factor Class">
+      <created>1670878020033</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670878020033</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Factor Class">
+      <created>1670922666295</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670922666295</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Factor Class">
+      <created>1670958500438</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670958500438</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,35 +197,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="View" />
     <MESSAGE value="Factor Class" />
     <option name="LAST_COMMIT_MESSAGE" value="Factor Class" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/GUI/src/MyApplication.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/IMS/src/Model/ModelIMS.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/IMS/src/Model/ModelIMS.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.IllegalStateException" package="java.lang" />
-          <option name="timeStamp" value="6" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SEP3_Spolishzuelans$MyApplication.ic" NAME="MyApplication Coverage Results" MODIFIED="1670947569142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -110,13 +110,24 @@ public class CountryList
     }
   }
 
+  public void assignQualitativePoints()
+  {
+    for (int c = 0; c < countries.get(0).getQualitativeFactors().getNumberOfFactors(); c++)
+    {
+      for (int i = 0; i < countries.size(); i++)
+      {
+        countries.get(i).getQualitativeFactors().getFactor(c).assignPoints();
+      }
+    }
+  }
+
+
   public ArrayList<Double> getRanges()
   {
     return ranges;
   }
 
-  public void weightedMAPointsCalculation()
-  {
+  public void weightedMAPointsCalculation() {
     for (int i = 0; i < countries.size(); i++)
     {
       for (int c = 0;

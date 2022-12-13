@@ -1,19 +1,20 @@
 public class QualitativeFactor extends Factor
 {
-  private QualitativeValue value;
+  private QualitativeValue.QualitativeValues value;
 
-  QualitativeFactor(String name, int point, double weight, boolean type, QualitativeValue value){
+  QualitativeFactor(String name, int point, double weight, boolean type,
+      QualitativeValue.QualitativeValues values )
+  {
     super(name, point, weight, type);
-    this.value = value;
+    this.value =values;
   }
 
-
-  public void setValue(QualitativeValue value)
+  public void setValue(QualitativeValue.QualitativeValues value)
   {
     this.value = value;
   }
 
-  public QualitativeValue getValue()
+  public QualitativeValue.QualitativeValues getValue()
   {
     return value;
   }
@@ -22,7 +23,7 @@ public class QualitativeFactor extends Factor
   {
     if (!(obj instanceof QualitativeFactor))
       return false;
-    QualitativeFactor other= (QualitativeFactor) obj;
+    QualitativeFactor other = (QualitativeFactor) obj;
 
     return super.equals(other) && value == other.value;
   }
@@ -32,16 +33,18 @@ public class QualitativeFactor extends Factor
     return super.toString() + value;
   }
 
-  public boolean isHigherThan(QualitativeFactor qualitativeFactor){
+  public boolean isHigherThan(QualitativeFactor qualitativeFactor)
+  {
     if (getPoint() > qualitativeFactor.getPoint())
       return true;
     else
       return false;
 
   }
+
   @Override public QualitativeFactor copy()
   {
-    return new QualitativeFactor(super.getName(),super.getPoint(),super.getWeight(), super.isMA(), getValue());
+    return new QualitativeFactor(super.getName(), super.getPoint(), super.getWeight(), super.isMA(), getValue());
   }
 
   public void assignPoints()

@@ -1,5 +1,6 @@
 package View;
 
+
 import Model.ModelIMS;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -15,6 +16,7 @@ public class ViewHandler2
   private ManageCountriesViewController manageCountriesViewController;
   private HomePageViewController homePageViewController;
   private EditCountryViewController editCountryViewController;
+  private IMSCalculatorViewController imsCalculatorViewController;
   private ModelIMS model;
   private Region root;
 
@@ -92,11 +94,14 @@ public class ViewHandler2
         root = loadManageFactors("ManageFactorsViewController.fxml");
         break;
       case "Manage Countries":
-        root = loadManageCountriesView("ManageCountriesViewController.fxml");
+        root = loadManageCountriesView("ManageCountriesView.fxml");
         break;
-      /*case "IMS Calculator":
-        root = loadEditCountryViewController("EditCountryViewController.fxml");
-        break;*/
+      case "Edit Country":
+        root = loadEditCountryViewController("EditCountryView.fxml");
+        break;
+      case "IMS Calculator":
+        root = loadIMSCalculatorViewController("IMSCalculatorViewController.fxml");
+        break;
     }
     currentScene.setRoot(root);
     String title = "";
@@ -156,14 +161,14 @@ public class ViewHandler2
     return root;
   }
 
-  /*private Region loadEditCountryViewController(String fxmFile){
+  private Region loadEditCountryViewController(String fxmFile){
     if (editCountryViewController == null){
       try {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(fxmFile));
         root = loader.load();
         editCountryViewController = loader.getController();
-        editCountryViewController.init(this, root);
+        editCountryViewController.init(this, root, model);
       }
       catch (Exception e)
       {
@@ -171,7 +176,24 @@ public class ViewHandler2
       }
     }
     return root;
-  }*/
+  }
+
+  private Region loadIMSCalculatorViewController(String fxmFile){
+    if (imsCalculatorViewController == null){
+      try {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource(fxmFile));
+        root = loader.load();
+        imsCalculatorViewController = loader.getController();
+        imsCalculatorViewController.init(this, root, model);
+      }
+      catch (Exception e)
+      {
+        e.printStackTrace();
+      }
+    }
+    return root;
+  }
 }
 
 

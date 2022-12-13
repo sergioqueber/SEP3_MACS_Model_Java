@@ -7,6 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Region;
 
 import java.util.ArrayList;
@@ -25,33 +26,14 @@ public class ManageCountriesViewController {
 
   @FXML private TextField countryTextField;
 
-  @FXML private Button editCountryButton;
+  @FXML private Button deleteCountryButton;
 
   @FXML private Button manageFactorsButton;
 
-  @FXML private ListView<Country> listView;
+  @FXML private ListView<String> listView;
 
-  ArrayList<Country> CountryList = new ArrayList<Country>();
+  public ManageCountriesViewController(){
 
-  @FXML public void addCountry()
-  {
-    if (!(listView.getSelectionModel().isSelected(listView.getSelectionModel().getSelectedIndex())))
-    {
-      Country country = new Country(countryTextField.getText());
-      CountryList.add(country);
-      System.out.println(CountryList);
-    }
-    else
-    {
-      CountryList.get(listView.getSelectionModel().getSelectedIndex()).setName(countryTextField.getText());
-    }
-    listView.getItems().clear();
-
-    for (int i = 0; i < CountryList.size(); i++)
-    {
-      listView.getItems().add(CountryList.get(i));
-    }
-    resetFields();
   }
   public void init (ViewHandler2 viewHandler2, Region root, ModelIMS model){
     this.viewHandler2 = viewHandler2;
@@ -59,23 +41,60 @@ public class ManageCountriesViewController {
     this.model = model;
   }
 
-  public void resetFields()
+  @FXML public void addCountry()
+  {
+    if (!(listView.getSelectionModel().isSelected(listView.getSelectionModel().getSelectedIndex())))
+    {
+      Country country = new Country(countryTextField.getText());
+      model.getList3().addCountry(country);
+      for (int i = 0; i < model.getList3().getCountries().size(); i ++ )
+        System.out.println(model.getList3().getCountries().get(i));
+    }
+    else
+    {
+      model.getList3().getCountry(listView.getSelectionModel().getSelectedIndex()).setName(countryTextField.getText());
+      System.out.println(model.getList3().getCountries());
+    }
+    listView.getItems().clear();
+
+    for (int i = 0; i < model.getList3().getCountries().size(); i++)
+    {
+      listView.getItems().add(model.getList3().getCountries().get(i).getName());
+    }
+    resetFields();
+  }
+
+  private void resetFields()
   {
     countryTextField.setText("");
   }
 
-  @FXML public void editCountry()
-  {
-    countryTextField.setText(listView.getSelectionModel().getSelectedItem().getName());
 
+  public void deleteCountry(){
+  if(listView.getSelectionModel().isSelected(listView.getSelectionModel().getSelectedIndex())){
+    model.getList3().removeCountry(listView.getSelectionModel().getSelectedIndex());
+    System.out.println(model.getList3());
+    listView.getItems().clear();
+
+    for (int i = 0; i < model.getList3().getCountries().size(); i++)
+    {
+      listView.getItems().add(model.getList3().getCountry(i).getName());
+    }
+}
+  }
+
+
+
+
+  @FXML public void manageFactors()
+  {
+viewHandler2.openView("Edit Country");
   }
 
   @FXML public void back(){
     viewHandler2.openView("Home Page");
   }
-  @FXML private void IMScalculatorPressed(){
-    viewHandler2.openView("IMS Calculator");
-  }
+
 }
 
 

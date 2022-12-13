@@ -36,6 +36,11 @@ public class CountryList
     countries.add(country);
   }
 
+  public ArrayList<Country> getCountries()
+  {
+    return countries;
+  }
+
   public void removeCountry(int index)
   {
     countries.remove(index);
@@ -113,4 +118,6 @@ public class CountryList
   public ArrayList<Double> getRanges(){
     return ranges;
   }
+
+
 }

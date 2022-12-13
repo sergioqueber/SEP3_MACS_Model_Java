@@ -4,6 +4,7 @@ import GUI.src.ViewHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import javafx.scene.control.Button;
@@ -129,7 +130,8 @@ public void resetFields(){
   textFieldWeight.setText("");
 }
 
-    @FXML public void back(){
+    @FXML public void back() throws IOException
+    {
         viewHandler.openView("Home Page");
     }
 

@@ -6,8 +6,8 @@ public class Country
   private QualitativeFactorList qualitativeFactors;
   private QuantitativeFactorList quantitativeFactors;
   private double finalPunctuation;
-  private double marketAttractivenessPunctuation;
-  private double competitiveStrengthPunctuation;
+  private double marketAttractivenessPunctuation = 0;
+  private double competitiveStrengthPunctuation = 0;
 
   public Country(String name)
   {
@@ -132,9 +132,12 @@ public class Country
     quantitativeFactors.getCSFactors().get(index).setValue(value);
   }
 
-  public double getRemainingWeightPercentage()
+  public double getRemainingMAWeightPercentage()
   {
-    return (100-((quantitativeFactors.calculateMAPercentage()+quantitativeFactors.calculateCSPercentage())+(qualitativeFactors.calculateMAPercentage()+qualitativeFactors.calculateCSPercentage())));
+    return (100-((quantitativeFactors.calculateMAPercentage())+(qualitativeFactors.calculateMAPercentage())));
+  }
+  public double getRemainingCSWeightPercentage(){
+    return (100-((quantitativeFactors.calculateCSPercentage())+(qualitativeFactors.calculateCSPercentage())));
   }
 
 }

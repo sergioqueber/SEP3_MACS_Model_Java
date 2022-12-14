@@ -1,5 +1,4 @@
 package Model;
-
 import java.util.*;
 
 public class CountryList
@@ -14,9 +13,11 @@ public class CountryList
     countries = new ArrayList<>();
   }
 
-  public Country getCountry(int index){
+  public Country getCountry(int index)
+  {
     return countries.get(index);
   }
+
   public String toString()
   {
     return countries.toString();
@@ -34,11 +35,6 @@ public class CountryList
   public void addCountry(Country country)
   {
     countries.add(country);
-  }
-
-  public ArrayList<Country> getCountries()
-  {
-    return countries;
   }
 
   public void removeCountry(int index)
@@ -62,10 +58,20 @@ public class CountryList
         values.add(countries.get(i).getQuantitativeFactors().getValue(c));
       }
       Collections.sort(values);
-      System.out.println(values);
       ranges.add((double) values.get(values.size() - 1) - values.get(0));
       maxValues.add(values.get(values.size() - 1));
       minValues.add(values.get(0));
+    }
+  }
+
+  public void assignQualitativePoints()
+  {
+    for (int c = 0; c < countries.get(0).getQualitativeFactors().getNumberOfFactors(); c++)
+    {
+      for (int i = 0; i < countries.size(); i++)
+      {
+        countries.get(i).getQualitativeFactors().getFactor(c).assignPoints();
+      }
     }
   }
 
@@ -115,9 +121,62 @@ public class CountryList
       }
     }
   }
-  public ArrayList<Double> getRanges(){
+
+  public ArrayList<Double> getRanges()
+  {
     return ranges;
   }
 
+  public void weightedMAPointsCalculation() {
+    for (int i = 0; i < countries.size(); i++)
+    {
+      for (int c = 0;
+           c < countries.get(0).getQuantitativeFactors().getMAFactors().size(); c++)
+      {
+        countries.get(i).getQuantitativeFactors().getMAFactors().get(c).setWeightedPoints(
+            (countries.get(i).getQuantitativeFactors().getMAFactors().get(c).getPoint())
+                * ((countries.get(i).getQuantitativeFactors().getMAFactors().get(c).getWeight())/100));
+        countries.get(i).setMarketAttractivenessPunctuation(
+            (countries.get(i).getMarketAttractivenessPunctuation()) + (countries.get(i).getQuantitativeFactors().getMAFactors()
+                .get(c).getWeightedPoints()));
+      }
+      for (int c = 0;
+           c < countries.get(0).getQualitativeFactors().getMAFactors().size(); c++)
+      {
+        countries.get(i).getQualitativeFactors().getMAFactors().get(c).setWeightedPoints(
+            (countries.get(i).getQualitativeFactors().getMAFactors().get(c).getPoint())
+                * ((countries.get(i).getQualitativeFactors().getMAFactors().get(c).getWeight())/100));
+        countries.get(i).setMarketAttractivenessPunctuation(
+            (countries.get(i).getMarketAttractivenessPunctuation()) + (countries.get(i).getQualitativeFactors().getMAFactors()
+                .get(c).getWeightedPoints()));
+      }
+    }
+  }
 
+  public void weightedCSPointsCalculation()
+  {
+    for (int i = 0; i < countries.size(); i++)
+    {
+      for (int c = 0;
+           c < countries.get(0).getQuantitativeFactors().getCSFactors().size(); c++)
+      {
+        countries.get(i).getQuantitativeFactors().getCSFactors().get(c).setWeightedPoints(
+            (countries.get(i).getQuantitativeFactors().getCSFactors().get(c).getPoint())
+                * ((countries.get(i).getQuantitativeFactors().getCSFactors().get(c).getWeight())/100));
+        countries.get(i).setCompetitiveStrengthPunctuation(
+            (countries.get(i).getCompetitiveStrengthPunctuation()) + (countries.get(i).getQuantitativeFactors().getCSFactors()
+                .get(c).getWeightedPoints()));
+      }
+      for (int c = 0;
+           c < countries.get(0).getQualitativeFactors().getCSFactors().size(); c++)
+      {
+        countries.get(i).getQualitativeFactors().getCSFactors().get(c).setWeightedPoints(
+            (countries.get(i).getQualitativeFactors().getCSFactors().get(c).getPoint())
+                * ((countries.get(i).getQualitativeFactors().getCSFactors().get(c).getWeight())/100));
+        countries.get(i).setCompetitiveStrengthPunctuation(
+            (countries.get(i).getCompetitiveStrengthPunctuation()) + (countries.get(i).getQualitativeFactors().getCSFactors()
+                .get(c).getWeightedPoints()));
+      }
+    }
+  }
 }

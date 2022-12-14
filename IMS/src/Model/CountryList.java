@@ -18,6 +18,11 @@ public class CountryList
     return countries.get(index);
   }
 
+  public ArrayList<Country> getCountries()
+  {
+    return countries;
+  }
+
   public String toString()
   {
     return countries.toString();

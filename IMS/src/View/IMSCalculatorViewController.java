@@ -39,27 +39,23 @@ public class IMSCalculatorViewController implements Initializable
     this.model = model;
   }
 
-  XYChart.Series series1 = new XYChart.Series();
-  XYChart.Series series2 = new XYChart.Series();
+  //XYChart.Series series1 = new XYChart.Series();
+  //XYChart.Series series2 = new XYChart.Series();
 
 
   @Override public void initialize(URL location, ResourceBundle resources)
   {
-    /*
-   for(int i = 0; i < model.getList3().getCountries().size(); i++ ){
-XYChart.Series series = new XYChart.Series();
-series.setName(model.getList3().getCountries().get(i).getName());
-series.getData().add(new XYChart.Data((model.getList3().getCountries().get(i).getCompetitiveStrengthPunctuation()),(model.getList3().getCountries().get(i).getMarketAttractivenessPunctuation())));
-
-bubbleChart.getData().addAll(series);
-*/
-
-
+    XYChart.Series series = new XYChart.Series();
+    for (int i = 0; i < model.getList3().getCountries().size(); i++)
+    {
+      series.setName(model.getList3().getCountry(i).getName());
+      series.getData().add(new XYChart.Data(
+          (model.getList3().getCountries().get(i).getCompetitiveStrengthPunctuation()),
+          (model.getList3().getCountries().get(i).getMarketAttractivenessPunctuation()),0.5));
+      bubbleChart.getData().add(series);
 
 
-
-
-
+/*
    bubbleChart.getXAxis().setLabel("Competitive Strength");
     bubbleChart.getYAxis().setLabel("Market Attractiveness");
 
@@ -70,7 +66,8 @@ bubbleChart.getData().addAll(series);
     series2.getData().add(new XYChart.Data(2,1,0.5));
 
     bubbleChart.getData().addAll(series1, series2);
+*/
 
-
+    }
   }
 }

@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/Model/CountryList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/CountryList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/IMSCalculatorViewController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/IMSCalculatorViewController.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IMS/src/View/IMSCalculatorViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/IMSCalculatorViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/View/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/Country.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/CountryList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/CountryList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/Factor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/Factor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IMS/View/IMSCalculatorViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/IMSCalculatorViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/Test.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671011736953</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Commit">
+      <created>1671021980981</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1671021980981</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

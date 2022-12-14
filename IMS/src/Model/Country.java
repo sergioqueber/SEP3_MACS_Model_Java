@@ -114,12 +114,12 @@ public class Country
         && competitiveStrengthPunctuation == other.competitiveStrengthPunctuation;
   }
 
-  public void setQualitativeValue(int index, QualitativeValue value)
+  public void setQualitativeValue(int index, QualitativeValue.QualitativeValues value)
   {
     qualitativeFactors.getMAFactors().get(index).setValue(value);
   }
 
-  public void setQualitativeValueCS(int index, QualitativeValue value){
+  public void setQualitativeValueCS(int index, QualitativeValue.QualitativeValues value){
     qualitativeFactors.getCSFactors().get(index).setValue(value);
   }
 

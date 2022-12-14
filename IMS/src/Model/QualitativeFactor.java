@@ -2,9 +2,9 @@ package Model;
 
 public class QualitativeFactor extends Factor
 {
-  private QualitativeValue value;
+  private QualitativeValue.QualitativeValues value;
 
-  public QualitativeFactor(String name, int point, double weight, boolean type, QualitativeValue value){
+  public QualitativeFactor(String name, int point, double weight, boolean type, QualitativeValue.QualitativeValues value){
     super(name, point, weight, type);
     this.value = value;
   }
@@ -13,12 +13,12 @@ public class QualitativeFactor extends Factor
     super(name,weight,type);
   }
 
-  public void setValue(QualitativeValue value)
+  public void setValue(QualitativeValue.QualitativeValues value)
   {
     this.value = value;
   }
 
-  public QualitativeValue getValue()
+  public QualitativeValue.QualitativeValues getValue()
   {
     return value;
   }

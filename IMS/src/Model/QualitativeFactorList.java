@@ -77,7 +77,7 @@ public String toString(){
     return new QualitativeFactorList(factors);
   }
 
-  public QualitativeValue getValue(int index)
+  public QualitativeValue.QualitativeValues getValue(int index)
   {
     return factors.get(index).getValue();
   }

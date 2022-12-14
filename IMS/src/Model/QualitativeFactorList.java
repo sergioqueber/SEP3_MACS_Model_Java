@@ -1,3 +1,4 @@
+package Model;
 import java.util.*;
 
 public class QualitativeFactorList
@@ -32,7 +33,15 @@ public QualitativeFactor[] getAllFactors(){
 public void removeFactor (int index){
   factors.remove(index);
 }
-
+  public void removeFactorByName(String name){
+    for(int i = 0; i < factors.size(); i++){
+      if (factors.get(i).getName() == name)
+      {
+        factors.remove(i);
+        break;
+      }
+    }
+  }
 public void removeAllFactors (){
   factors.removeAll(factors);
 }
@@ -41,9 +50,9 @@ public String toString(){
   return factors.toString();
 }
 
-  public ArrayList<Factor> getMAFactors()
+  public ArrayList<QualitativeFactor> getMAFactors()
   {
-    ArrayList<Factor> MAFactors = new ArrayList<Factor>();
+    ArrayList<QualitativeFactor> MAFactors = new ArrayList<QualitativeFactor>();
     for (int i=0; i<factors.size(); i++ )
     {
       if (factors.get(i).isMA() )
@@ -53,9 +62,9 @@ public String toString(){
   }
 
 
-  public ArrayList<Factor> getCSFactors()
+  public ArrayList<QualitativeFactor> getCSFactors()
   {
-    ArrayList<Factor> CSFactors = new ArrayList<Factor>();
+    ArrayList<QualitativeFactor> CSFactors = new ArrayList<QualitativeFactor>();
     for (int i=0; i<factors.size(); i++ )
     {
       if (!(factors.get(i).isMA() ))

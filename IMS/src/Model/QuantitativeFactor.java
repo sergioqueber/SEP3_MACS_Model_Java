@@ -1,3 +1,4 @@
+package Model;
 public class QuantitativeFactor extends Factor
 {
   private double value;
@@ -8,7 +9,9 @@ public class QuantitativeFactor extends Factor
     this.value=value;
 
   }
-
+  public QuantitativeFactor(String name, double weight, boolean type){
+    super(name,weight,type);
+  }
   public boolean equals(Object obj)
     {
       if (!(obj instanceof QuantitativeFactor))
@@ -20,7 +23,7 @@ public class QuantitativeFactor extends Factor
 
     public String toString()
     {
-      return super.toString() + value;
+      return super.toString() + "\nValue: " + value;
     }
 
   public double getValue()

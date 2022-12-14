@@ -1,3 +1,4 @@
+package Model;
 public abstract class Factor
 {
   private String name;
@@ -15,6 +16,11 @@ public abstract class Factor
     this.type = type;
   }
 
+  public Factor(String name, double weight, boolean type){
+    this.name = name;
+    this.type = type;
+    this.weight = weight;
+  }
   public Factor(String name, boolean type)
   {
     this.name = name;

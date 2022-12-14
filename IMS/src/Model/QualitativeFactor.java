@@ -1,12 +1,16 @@
+package Model;
+
 public class QualitativeFactor extends Factor
 {
   private QualitativeValue.QualitativeValues value;
 
-  QualitativeFactor(String name, int point, double weight, boolean type,
-      QualitativeValue.QualitativeValues values )
-  {
+  public QualitativeFactor(String name, int point, double weight, boolean type, QualitativeValue.QualitativeValues value){
     super(name, point, weight, type);
-    this.value =values;
+    this.value = value;
+  }
+
+  public QualitativeFactor(String name,double weight, boolean type){
+    super(name,weight,type);
   }
 
   public void setValue(QualitativeValue.QualitativeValues value)
@@ -23,28 +27,26 @@ public class QualitativeFactor extends Factor
   {
     if (!(obj instanceof QualitativeFactor))
       return false;
-    QualitativeFactor other = (QualitativeFactor) obj;
+    QualitativeFactor other= (QualitativeFactor) obj;
 
     return super.equals(other) && value == other.value;
   }
 
   public String toString()
   {
-    return super.toString() + value;
+    return super.toString() + "\nValue: " + value;
   }
 
-  public boolean isHigherThan(QualitativeFactor qualitativeFactor)
-  {
+  public boolean isHigherThan(QualitativeFactor qualitativeFactor){
     if (getPoint() > qualitativeFactor.getPoint())
       return true;
     else
       return false;
 
   }
-
   @Override public QualitativeFactor copy()
   {
-    return new QualitativeFactor(super.getName(), super.getPoint(), super.getWeight(), super.isMA(), getValue());
+    return new QualitativeFactor(super.getName(),super.getPoint(),super.getWeight(), super.isMA(), getValue());
   }
 
   public void assignPoints()

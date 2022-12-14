@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Factor Class">
+    <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/Model/ModelIMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/ModelIMS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/QualitativeFactorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/QualitativeFactorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/ManageCountriesViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ManageCountriesViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/ModelIMS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/ModelIMS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/QualitativeFactorList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/QualitativeFactorList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/EditCountryViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/EditCountryViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ManageCountriesViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ManageCountriesViewController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670987373329</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Commit">
+      <created>1671011736953</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1671011736953</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,7 +240,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="View" />
     <MESSAGE value="Factor Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Factor Class" />
+    <MESSAGE value="Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SEP3_Spolishzuelans$MyApplication.ic" NAME="MyApplication Coverage Results" MODIFIED="1670947569142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

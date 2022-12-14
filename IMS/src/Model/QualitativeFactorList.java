@@ -74,7 +74,11 @@ public String toString(){
   }
 
   public QualitativeFactorList copy(){
-    return new QualitativeFactorList(factors);
+    QualitativeFactorList other = new QualitativeFactorList();
+    for(int i = 0; i < factors.size(); i++){
+      other.addFactor(factors.get(i).copy());
+    }
+    return other;
   }
 
   public QualitativeValue.QualitativeValues getValue(int index)

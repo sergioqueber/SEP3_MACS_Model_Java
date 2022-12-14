@@ -112,7 +112,7 @@ public class ManageCountriesViewController {
   }
 
   @FXML public void back(){
-    viewHandler2.openView("Home Page");
+    viewHandler2.openView("Home Page 2");
   }
 
 }

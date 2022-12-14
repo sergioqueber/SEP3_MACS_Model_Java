@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Factor Class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/Model/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/Model/ModelIMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/ModelIMS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/Model/QualitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/QualitativeFactor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/Model/QualitativeFactorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/QualitativeFactorList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/Model/QualitativeValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/QualitativeValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/View/EditCountryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/EditCountryView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/View/ViewHandler2.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ViewHandler2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/Country.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/CountryList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/CountryList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/ModelIMS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/ModelIMS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/QualitativeFactor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/QualitativeFactor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/QualitativeFactorList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/QualitativeFactorList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/QualitativeValue$QualitativeValues.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/QualitativeValue$QualitativeValues.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/QualitativeValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/QualitativeValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/QuantitativeFactorList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/QuantitativeFactorList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/EditCountryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/EditCountryView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/EditCountryViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/EditCountryViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ManageFactorsViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ManageFactorsViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ViewHandler2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ViewHandler2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/HomePageViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/HomePageViewController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,5 +211,8 @@
     <MESSAGE value="View" />
     <MESSAGE value="Factor Class" />
     <option name="LAST_COMMIT_MESSAGE" value="Factor Class" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SEP3_Spolishzuelans$MyApplication.ic" NAME="MyApplication Coverage Results" MODIFIED="1670947569142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

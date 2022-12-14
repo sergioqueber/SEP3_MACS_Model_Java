@@ -23,7 +23,7 @@ public class QuantitativeFactor extends Factor
 
     public String toString()
     {
-      return super.toString() + value;
+      return super.toString() + "\nValue: " + value;
     }
 
   public double getValue()

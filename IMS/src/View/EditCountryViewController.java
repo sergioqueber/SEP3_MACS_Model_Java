@@ -23,28 +23,28 @@ public class EditCountryViewController
   private Button deleteButton;
 
   @FXML
-  private TableView<Factor> qualiTableMA;
+  private TableView<QualitativeFactor> qualiTableMA;
 
   @FXML
-  private TableColumn<Factor,String> qualiFactorNameMA;
+  private TableColumn<QualitativeFactor,String> qualiFactorNameMA;
   @FXML
-  private TableColumn<Factor,Double> qualiFactorWeightMA;
+  private TableColumn<QualitativeFactor,Double> qualiFactorWeightMA;
   @FXML
-  private TableColumn<Factor,QualitativeFactor> qualiFactorValueMA;
+  private TableColumn<QualitativeFactor,QualitativeFactor> qualiFactorValueMA;
   @FXML
-  private TableColumn<Factor,String> qualiFactorSourceMA;
+  private TableColumn<QualitativeFactor,String> qualiFactorSourceMA;
 
   @FXML
-  private TableView <Factor> quantiTableMA;
+  private TableView <QuantitativeFactor> quantiTableMA;
 
   @FXML
-  private TableColumn<Factor,String> quantiFactorNameMA;
+  private TableColumn<QuantitativeFactor,String> quantiFactorNameMA;
   @FXML
-  private TableColumn<Factor,Double> quantiFactorWeightMA;
+  private TableColumn<QuantitativeFactor,Double> quantiFactorWeightMA;
   @FXML
-  private TableColumn<Factor,Double> quantiFactorValueMA;
+  private TableColumn<QuantitativeFactor,Double> quantiFactorValueMA;
   @FXML
-  private TableColumn<Factor,String> quantiFactorSourceMA;
+  private TableColumn<QuantitativeFactor,String> quantiFactorSourceMA;
 
   @FXML
   private Label labelCS;
@@ -73,10 +73,10 @@ public class EditCountryViewController
   @FXML
   private TextField textFieldSource;
   @FXML
-  private TableView<Factor> qualiTableCS;
+  private TableView<QualitativeFactor> qualiTableCS;
 
   @FXML
-  private TableColumn<Factor, String> qualiFactorNameCS;
+  private TableColumn<QualitativeFactor, String> qualiFactorNameCS;
 
   @FXML
   private CheckBox qualitativeCheck;
@@ -85,23 +85,23 @@ public class EditCountryViewController
   private CheckBox quantitativeCheck;
 
   @FXML
-  private TableColumn<Factor, Double> qualiFactorWeightCS;
+  private TableColumn<QualitativeFactor, Double> qualiFactorWeightCS;
   @FXML
-  private TableColumn<Factor,QualitativeFactor> qualiFactorValueCS;
+  private TableColumn<QualitativeFactor,QualitativeValue.QualitativeValues> qualiFactorValueCS;
   @FXML
-  private TableColumn<Factor,String> qualiFactorSourceCS;
+  private TableColumn<QualitativeFactor,String> qualiFactorSourceCS;
 
   @FXML
-  private TableView<Factor> quantiTableCS;
+  private TableView<QuantitativeFactor> quantiTableCS;
 
   @FXML
-  private TableColumn<Factor, String> quantiFactorNameCS;
+  private TableColumn<QuantitativeFactor, String> quantiFactorNameCS;
   @FXML
-  private TableColumn<Factor, Double> quantiFactorWeightCS;
+  private TableColumn<QuantitativeFactor, Double> quantiFactorWeightCS;
   @FXML
-  private TableColumn<Factor,Double> quantiFactorValueCS;
+  private TableColumn<QuantitativeFactor,Double> quantiFactorValueCS;
   @FXML
-  private TableColumn<Factor,String> quantiFactorSourceCS;
+  private TableColumn<QuantitativeFactor,String> quantiFactorSourceCS;
   @FXML
   private ChoiceBox<QualitativeValue.QualitativeValues> choiceBox;
 
@@ -126,17 +126,42 @@ public class EditCountryViewController
   @FXML public void refresh(){
     quantiFactorNameMA.setCellValueFactory(new PropertyValueFactory<>("name"));
     quantiFactorWeightMA.setCellValueFactory(new PropertyValueFactory<>("weight"));
+    quantiTableMA.getItems().clear();
     for (int i = 0; i < model.getList3().getCountry(model.getSelectedCountryIndex()).getQuantitativeFactors().getMAFactors().size(); i++)
     {
       quantiTableMA.getItems().add(model.getList3().getCountry(model.getSelectedCountryIndex()).getQuantitativeFactors().getMAFactors().get(i));
     }
+    qualiFactorNameMA.setCellValueFactory(new PropertyValueFactory<>("name"));
+    qualiFactorWeightMA.setCellValueFactory(new PropertyValueFactory<>("weight"));
+    qualiTableMA.getItems().clear();
+    for (int i = 0; i < model.getList3().getCountry(model.getSelectedCountryIndex()).getQualitativeFactors().getMAFactors().size(); i++)
+    {
+      qualiTableMA.getItems().add(model.getList3().getCountry(model.getSelectedCountryIndex()).getQualitativeFactors().getMAFactors().get(i));
+    }
+    quantiFactorNameCS.setCellValueFactory(new PropertyValueFactory<>("name"));
+    quantiFactorWeightCS.setCellValueFactory(new PropertyValueFactory<>("weight"));
+    quantiTableCS.getItems().clear();
+    for (int i = 0; i < model.getList3().getCountry(model.getSelectedCountryIndex()).getQuantitativeFactors().getCSFactors().size(); i++)
+    {
+      quantiTableCS.getItems().add(model.getList3().getCountry(model.getSelectedCountryIndex()).getQuantitativeFactors().getCSFactors().get(i));
+    }
+    qualiFactorNameCS.setCellValueFactory(new PropertyValueFactory<>("name"));
+    qualiFactorWeightCS.setCellValueFactory(new PropertyValueFactory<>("weight"));
+    qualiTableCS.getItems().clear();
+
+    for (int i = 0; i < model.getList3().getCountry(model.getSelectedCountryIndex()).getQualitativeFactors().getCSFactors().size(); i++)
+    {
+      qualiTableCS.getItems().add(model.getList3().getCountry(model.getSelectedCountryIndex()).getQualitativeFactors().getCSFactors().get(i));
+    }
+
   }
   @FXML public void saveMA(){
     if(quantitativeCheck.isSelected()){
       model.getList3().getCountry(model.getSelectedCountryIndex()).setQuantitativeValueMA(quantiTableMA.getSelectionModel().getSelectedIndex(),Double.parseDouble(textFieldValue.getText()));
-      System.out.println(model.getList1());
+      System.out.println(model.getList3().getCountry(model.getSelectedCountryIndex()).getQuantitativeFactors());
 
-
+      quantiFactorNameCS.setCellValueFactory(new PropertyValueFactory<>("name"));
+      quantiFactorWeightCS.setCellValueFactory(new PropertyValueFactory<>("weight"));
       quantiFactorValueMA.setCellValueFactory(new PropertyValueFactory<>("value"));
       quantiTableMA.getItems().clear();
 
@@ -152,12 +177,13 @@ public class EditCountryViewController
 
 
       qualiFactorNameMA.setCellValueFactory(new PropertyValueFactory<>("name"));
-      qualiFactorWeightMA.setCellValueFactory(new PropertyValueFactory<>("weight"));qualiFactorValueMA.setCellValueFactory(new PropertyValueFactory<>("value"));
+      qualiFactorWeightMA.setCellValueFactory(new PropertyValueFactory<>("weight"));
+      qualiFactorValueMA.setCellValueFactory(new PropertyValueFactory<>("value"));
       qualiTableMA.getItems().clear();
 
-      for (int i = 0; i < model.getList2().getMAFactors().size(); i++)
+      for (int i = 0; i < model.getList3().getCountry(model.getSelectedCountryIndex()).getQualitativeFactors().getMAFactors().size(); i++)
       {
-        qualiTableMA.getItems().add(model.getList2().getMAFactors().get(i));
+        qualiTableMA.getItems().add(model.getList3().getCountry(model.getSelectedCountryIndex()).getQualitativeFactors().getMAFactors().get(i));
       }
     }
 
@@ -167,7 +193,10 @@ public class EditCountryViewController
   @FXML public void saveCS(){
     if(quantitativeCheck.isSelected()){
       model.getList3().getCountry(model.getSelectedCountryIndex()).setQuantitativeValueCS(quantiTableCS.getSelectionModel().getSelectedIndex(),Double.parseDouble(textFieldValue.getText()));
-      System.out.println(model.getList1());
+      System.out.println(model.getList3().getCountry(model.getSelectedCountryIndex()).getQuantitativeFactors());
+
+      quantiFactorNameCS.setCellValueFactory(new PropertyValueFactory<>("name"));
+      quantiFactorWeightCS.setCellValueFactory(new PropertyValueFactory<>("weight"));
       quantiFactorNameCS.setCellValueFactory(new PropertyValueFactory<>("value"));
       quantiTableCS.getItems().clear();
 
@@ -192,8 +221,38 @@ public class EditCountryViewController
     resetFields();
   }
 
+  @FXML
+  public void editFactor(){
+    if(quantiTableMA.getSelectionModel().isSelected(quantiTableMA.getSelectionModel().getSelectedIndex()))
+    {
+      textFieldValue.setText(String.valueOf(quantiTableMA.getSelectionModel().getSelectedItem().getValue()));
+      quantitativeCheck.setSelected(true);
+    }
+    else if (qualiTableMA.getSelectionModel().isSelected(qualiTableMA.getSelectionModel().getSelectedIndex()))
+    {
+      choiceBox.setValue(qualiTableMA.getSelectionModel().getSelectedItem().getValue());
+      qualitativeCheck.setSelected(true);
+
+    }
+    if(quantiTableCS.getSelectionModel().isSelected(quantiTableCS.getSelectionModel().getSelectedIndex()))
+    {
+      textFieldValue.setText(String.valueOf(quantiTableCS.getSelectionModel().getSelectedItem().getValue()));
+      quantitativeCheck.setSelected(true);
+    }
+    else if (qualiTableCS.getSelectionModel().isSelected(qualiTableCS.getSelectionModel().getSelectedIndex()))
+    {
+      choiceBox.setValue(qualiTableCS.getSelectionModel().getSelectedItem().getValue());
+      qualitativeCheck.setSelected(true);
+    }
+  }
+  @FXML
   public void resetFields(){
      textFieldValue.setText("");
      textFieldSource.setText("");
+  }
+
+  @FXML
+  public void back(){
+    viewHandler2.openView("Manage Countries");
   }
 }

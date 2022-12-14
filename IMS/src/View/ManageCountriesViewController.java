@@ -46,7 +46,7 @@ public class ManageCountriesViewController {
   {
     if (!(listView.getSelectionModel().isSelected(listView.getSelectionModel().getSelectedIndex())))
     {
-      Country country = new Country(countryTextField.getText());
+      Country country = new Country(countryTextField.getText(),model.getList2(),model.getList1());
       model.getList3().addCountry(country);
       for (int i = 0; i < model.getList3().getCountries().size(); i ++ )
         System.out.println(model.getList3().getCountries().get(i));
@@ -94,19 +94,19 @@ public class ManageCountriesViewController {
 }
   }
 
-
-
+  public Region getRoot(){
+    return root;
+  }
 
   @FXML public void manageFactors()
   {
       if(listView.getSelectionModel().isSelected(listView.getSelectionModel().getSelectedIndex())){
         model.getList3().getCountry(listView.getSelectionModel().getSelectedIndex());
-        
+        model.setSelectedCountry(listView.getSelectionModel().getSelectedIndex());
+        System.out.println(model.getSelectedCountryIndex());
       }
-      {
 
-        viewHandler2.openView("Edit Country");
-      }
+      viewHandler2.openView("Edit Country");
 
 
   }

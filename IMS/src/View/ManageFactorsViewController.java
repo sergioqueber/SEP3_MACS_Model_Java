@@ -11,6 +11,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Region;
 import Model.*;
+import javafx.scene.control.Alert.AlertType;
+
+import java.util.Optional;
 
 public class ManageFactorsViewController
 {
@@ -320,6 +323,12 @@ public class ManageFactorsViewController
     }
 
     @FXML public void back(){
-        viewHandler2.openView("Home Page");
+        Alert noMoreEditing = new Alert(AlertType.CONFIRMATION);
+        noMoreEditing.setContentText("Are you sure you want to go back? You will not be able to edit the factors");
+        Optional<ButtonType> result = noMoreEditing.showAndWait();
+        if(result.get() == ButtonType.OK)
+            viewHandler2.openView("Home Page 2");
+        else if (result.get() == ButtonType.CANCEL)
+            noMoreEditing.close();
     }
 }

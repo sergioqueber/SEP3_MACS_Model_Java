@@ -57,17 +57,29 @@ public class ViewHandler2
   }*/
   private Region loadManageFactors(String fxmlFile)
   {
-    try
+    if(manageFactorsViewController == null)
     {
-      FXMLLoader loader = new FXMLLoader();
-      loader.setLocation(getClass().getResource(fxmlFile));
-      root = loader.load();
-      manageFactorsViewController = loader.getController();
-      manageFactorsViewController.init(this,root,model);
+      try
+      {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource(fxmlFile));
+        root = loader.load();
+        manageFactorsViewController = loader.getController();
+        manageFactorsViewController.init(this, root, model);
+      }
+      catch (Exception e)
+      {
+        e.printStackTrace();
+      }
     }
-    catch (Exception e)
-    {
-      e.printStackTrace();
+    else{
+      try
+      {
+        root =  manageFactorsViewController.getRoot();
+      }
+      catch (Exception e){
+        e.printStackTrace();
+      }
     }
     return root;
   }
@@ -102,7 +114,10 @@ public class ViewHandler2
       case "IMS Calculator":
         root = loadIMSCalculatorViewController("IMSCalculatorViewController.fxml");
         break;
-    }
+      case "Home Page 2":
+        root = loadHomePageView("HomePageView2.fxml");
+        break;
+      }
     currentScene.setRoot(root);
     String title = "";
     if (root.getUserData() != null){
@@ -158,6 +173,15 @@ public class ViewHandler2
         e.printStackTrace();
       }
     }
+    else{
+      try
+      {
+        root = manageCountriesViewController.getRoot();
+      }
+      catch (Exception e){
+        e.printStackTrace();
+      }
+    }
     return root;
   }
 
@@ -172,6 +196,16 @@ public class ViewHandler2
       }
       catch (Exception e)
       {
+        e.printStackTrace();
+      }
+    }
+    else {
+      try
+      {
+        root = editCountryViewController.getRoot();
+        editCountryViewController.init(this, root, model);
+      }
+      catch (Exception e){
         e.printStackTrace();
       }
     }

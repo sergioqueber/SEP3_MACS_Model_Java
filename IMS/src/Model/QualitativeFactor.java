@@ -34,7 +34,7 @@ public class QualitativeFactor extends Factor
 
   public String toString()
   {
-    return super.toString() + value;
+    return super.toString() + "\nValue: " + value;
   }
 
   public boolean isHigherThan(QualitativeFactor qualitativeFactor){

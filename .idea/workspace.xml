@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Factor Class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/View/ManageFactorsViewController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ManageFactorsViewController.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/View/ManageFactorsViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ManageFactorsViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/View/ViewHandler2.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ViewHandler2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/EditCountryViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/EditCountryViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ManageFactorsViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ManageFactorsViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ManageFactorsViewController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ManageFactorsViewController.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ViewHandler2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ViewHandler2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/ModelIMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/ModelIMS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670985623956</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Factor Class">
+      <created>1670987373329</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670987373329</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

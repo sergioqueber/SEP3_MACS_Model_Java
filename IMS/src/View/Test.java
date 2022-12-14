@@ -1,3 +1,5 @@
+package View;
+import Model.*;
 public class Test
 {
   public static void main(String[] args)
@@ -18,10 +20,10 @@ public class Test
     Country country2 = new Country("Austria",list2, list);
     Country country3 = new Country("China",list2, list);
 
-    country2.setQuantitativeValue(0,20000000);
-    country3.setQuantitativeValue(0,30000000);
-    country2.setQuantitativeValue(1,20000000);
-    country3.setQuantitativeValue(1,30000000);
+    country2.setQuantitativeValueMA(0,20000000);
+    country3.setQuantitativeValueMA(0,30000000);
+    country2.setQuantitativeValueMA(1,20000000);
+    country3.setQuantitativeValueMA(1,30000000);
     country2.setQualitativeValue(0, QualitativeValue.QualitativeValues.MEDIUM_BAD);
     country3.setQualitativeValue(0, QualitativeValue.QualitativeValues.GOOD);
     //System.out.println(country3.getQuantitativeFactors().getFactor(0).getValue());

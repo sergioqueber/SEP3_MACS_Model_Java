@@ -141,7 +141,6 @@ public class ViewHandler2
 
   private Region loadHomePageView(String fxmFile)
   {
-    //if (homePageViewController == null){
     try
     {
       FXMLLoader loader = new FXMLLoader();
@@ -154,7 +153,6 @@ public class ViewHandler2
     {
       e.printStackTrace();
     }
-  //}
     return root;
   }
 

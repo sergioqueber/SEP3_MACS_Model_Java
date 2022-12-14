@@ -93,6 +93,9 @@ public class ManageFactorsViewController
     @FXML
     private TableColumn<Factor, Double> quantiFactorWeightCS;
 
+    @FXML
+    private Label percentageLabel;
+
 
     public ManageFactorsViewController(){};
 
@@ -116,8 +119,8 @@ public class ManageFactorsViewController
             }
             else
             {
-                model.getList1().getCSFactors().get(quantiTableMA.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
-                model.getList1().getCSFactors().get(quantiTableMA.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
+                model.getList1().getMAFactors().get(quantiTableMA.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
+                model.getList1().getMAFactors().get(quantiTableMA.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
                 //model.getList1().getFactor(quantiTableMA.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
                 //model.getList1().getFactor(quantiTableMA.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
                 System.out.println(model.getList1());
@@ -140,8 +143,8 @@ public class ManageFactorsViewController
             }
             else
             {
-                model.getList2().getCSFactors().get(qualiTableMA.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
-                model.getList2().getCSFactors().get(qualiTableMA.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
+                model.getList2().getMAFactors().get(qualiTableMA.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
+                model.getList2().getMAFactors().get(qualiTableMA.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
                 //model.getList2().getFactor(qualiTableMA.getSelectionModel().getSelectedIndex()).setName(textFieldName.getText());
                 //model.getList2().getFactor(qualiTableMA.getSelectionModel().getSelectedIndex()).setWeight(Double.parseDouble(textFieldWeight.getText()));
                 System.out.println(model.getList2());
@@ -155,7 +158,7 @@ public class ManageFactorsViewController
                 qualiTableMA.getItems().add(model.getList2().getMAFactors().get(i));
             }
         }
-
+        percentageLabel.setText(String.valueOf(100 - ((model.getList1().calculateMAPercentage()) + model.getList2().calculateMAPercentage())));
         resetFields();
     }
 

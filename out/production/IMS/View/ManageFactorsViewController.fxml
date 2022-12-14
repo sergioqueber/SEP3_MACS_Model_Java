@@ -80,5 +80,6 @@
           <TableColumn fx:id="qualiFactorWeightCS" prefWidth="75.0" text="Weight" />
         </columns>
       </TableView>
+      <Label fx:id="percentageLabel" layoutX="139.0" layoutY="363.0" text="Label" />
    </children>
 </Pane>

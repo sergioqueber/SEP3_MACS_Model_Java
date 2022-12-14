@@ -7,6 +7,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Region;
 import Model.*;
+import javafx.scene.control.Alert.*;
 
 import javax.swing.text.View;
 
@@ -157,7 +158,7 @@ public class EditCountryViewController
   }
   @FXML public void saveMA(){
     if(quantitativeCheck.isSelected()){
-      model.getList3().getCountry(model.getSelectedCountryIndex()).setQuantitativeValueMA(quantiTableMA.getSelectionModel().getSelectedIndex(),Double.parseDouble(textFieldValue.getText()));
+      model.getList3().getCountry(model.getSelectedCountryIndex()).setQuantitativeValueMA(quantiTableMA.getSelectionModel().getSelectedIndex(), Double.parseDouble(textFieldValue.getText()));
       System.out.println(model.getList3().getCountry(model.getSelectedCountryIndex()).getQuantitativeFactors());
 
       quantiFactorNameCS.setCellValueFactory(new PropertyValueFactory<>("name"));

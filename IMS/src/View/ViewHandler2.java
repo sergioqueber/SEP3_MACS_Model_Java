@@ -147,7 +147,7 @@ public class ViewHandler2
       loader.setLocation(getClass().getResource(fxmFile));
       root = loader.load();
       homePageViewController = loader.getController();
-      homePageViewController.init(this, root);
+      homePageViewController.init(this, root,model);
     }
     catch (Exception e)
     {
@@ -175,6 +175,7 @@ public class ViewHandler2
       try
       {
         root = manageCountriesViewController.getRoot();
+        manageCountriesViewController.init(this, root,model);
       }
       catch (Exception e){
         e.printStackTrace();
@@ -201,7 +202,7 @@ public class ViewHandler2
       try
       {
         root = editCountryViewController.getRoot();
-        editCountryViewController.init(this, root, model);
+        //editCountryViewController.init(this, root, model);
       }
       catch (Exception e){
         e.printStackTrace();

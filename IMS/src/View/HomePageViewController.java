@@ -15,6 +15,7 @@ public class HomePageViewController
 {
   private Region root;
   private ViewHandler2 viewHandler2;
+  private ModelIMS model;
 
   @FXML
   private Button manageFactors;
@@ -32,9 +33,11 @@ public class HomePageViewController
 
   public HomePageViewController(){}
 
-  public void init (ViewHandler2 viewHandler2, Region root){
+  public void init (ViewHandler2 viewHandler2, Region root, ModelIMS model){
     this.viewHandler2 = viewHandler2;
     this.root = root;
+    this.model = model;
+
   }
 
   public void reset(){
@@ -54,6 +57,12 @@ public class HomePageViewController
   }
   @FXML private void calculatorPressed(){
     viewHandler2.openView("IMS Calculator");
+  }
+
+  @FXML private void deleteAllData(){
+    model.getList1().removeAllFactors();
+    model.getList2().removeAllFactors();
+    model.getList3().removeAllCountries();
   }
 
 

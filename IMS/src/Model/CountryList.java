@@ -47,6 +47,11 @@ public class CountryList
     countries.remove(index);
   }
 
+  public void removeAllCountries(){
+    for(int i = 0; i < countries.size(); i++)
+      countries.remove(i);
+  }
+
   public void clear()
   {
     countries.clear();

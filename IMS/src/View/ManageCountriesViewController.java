@@ -40,6 +40,12 @@ public class ManageCountriesViewController {
     this.viewHandler2 = viewHandler2;
     this.root = root;
     this.model = model;
+
+    listView.getItems().clear();
+    for (int i = 0; i < model.getList3().getCountries().size(); i++)
+    {
+      listView.getItems().add(model.getList3().getCountry(i).getName());
+    }
   }
 
   @FXML public void addCountry()

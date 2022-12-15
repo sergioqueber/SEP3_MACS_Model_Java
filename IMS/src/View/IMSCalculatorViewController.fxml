@@ -15,6 +15,6 @@
           <NumberAxis fx:id="MAaxis" label="Market Attractiveness" prefHeight="301.0" prefWidth="49.0" side="LEFT" upperBound="5.0" />
         </yAxis>
       </BubbleChart>
-      <Button layoutX="14.0" layoutY="385.0" mnemonicParsing="false" text="Back" />
+      <Button layoutX="14.0" layoutY="385.0" mnemonicParsing="false" onAction="#back" text="Back" />
    </children>
 </AnchorPane>

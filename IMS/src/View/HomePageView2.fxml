@@ -20,6 +20,6 @@
                 <Font size="18.0" />
             </font>
         </Label>
-        <Button fx:id="deletaAllData" layoutX="14.0" layoutY="348.0" mnemonicParsing="false" text="Delete All data" />
+        <Button fx:id="deletaAllData" layoutX="14.0" layoutY="348.0" mnemonicParsing="false" onAction="#deleteAllData" text="Delete All data" />
     </children>
 </Pane>

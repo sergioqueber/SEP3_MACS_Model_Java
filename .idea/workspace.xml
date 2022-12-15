@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Commit" />
+    <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/ViewHandler2.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ViewHandler2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ViewHandler2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ViewHandler2.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +98,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0d988685-00e1-4945-89e2-2edf79d0d7e5" name="Changes" comment="Factor Class" />
+      <changelist id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Commit" />
       <created>1669977082821</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

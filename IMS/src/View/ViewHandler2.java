@@ -202,7 +202,7 @@ public class ViewHandler2
       try
       {
         root = editCountryViewController.getRoot();
-        //editCountryViewController.init(this, root, model);
+        editCountryViewController.init(this, root, model);
       }
       catch (Exception e){
         e.printStackTrace();

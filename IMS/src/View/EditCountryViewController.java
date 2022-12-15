@@ -257,6 +257,7 @@ public class EditCountryViewController
 
   @FXML
   public void back(){
+    choiceBox.getItems().clear();
     viewHandler2.openView("Manage Countries");
   }
 }

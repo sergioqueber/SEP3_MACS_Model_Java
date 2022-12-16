@@ -53,7 +53,8 @@ public class HomePageViewController
   @FXML public void deleteAllData(){
     model.getList1().removeAllFactors();
     model.getList2().removeAllFactors();
-    model.getList3().removeAllCountries();
+    model.getList3().clear();
+    viewHandler2.openView("Home Page");
   }
 
 

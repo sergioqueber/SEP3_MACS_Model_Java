@@ -105,7 +105,13 @@ public class ManageFactorsViewController
         this.viewHandler2 = viewHandler2;
         this.root = root;
         this.model = model;
+        quantiTableMA.getItems().clear();
+        quantiTableCS.getItems().clear();
+        qualiTableMA.getItems().clear();
+        qualiTableCS.getItems().clear();
+
     }
+
 
     public Region getRoot(){
         return root;

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="452.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ManageCountriesViewController">
+<AnchorPane prefHeight="460.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ManageCountriesViewController">
     <children>
         <Label fx:id="countryLabel" layoutX="63.0" layoutY="58.0" text="Country:">
             <font>

@@ -89,6 +89,7 @@ public class ViewHandler2
       try
       {
         root =  manageFactorsViewController.getRoot();
+        manageFactorsViewController.init(this,root,model);
       }
       catch (Exception e){
         e.printStackTrace();

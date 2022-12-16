@@ -26,27 +26,31 @@ public class ViewHandler2
     this.model = model;
   }
 
-  /*public void start(Stage primaryStage)
-  {
-    this.primaryStage = primaryStage;
-    openView("Manage Factors");
-  }
-  public void openView(String id)
-  {
-    switch (id)
-    {
-      case "Manage Factors":
-        root = loadManageFactors("ManageFactorsViewController.fxml");
-        currentScene.setRoot(root);
-        break;
+  public void openView(String window){
+    root = null;
+    switch(window){
       case "Home Page":
-        Region root = loadHomePage("HomePageView.fxml");
-        currentScene.setRoot(root);
+        root = loadHomePageView("HomePageView.fxml");
         break;
-    }
+      case "Manage Factors":
+        root = loadManageFactorsView("ManageFactorsViewController.fxml");
+        break;
+      case "Manage Countries":
+        root = loadManageCountriesView("ManageCountriesView.fxml");
+        break;
+      case "Edit Country":
+        root = loadEditCountryView("EditCountryView.fxml");
+        break;
+      case "IMS Calculator":
+        root = loadIMSCalculatorView("IMSCalculatorViewController.fxml");
+        break;
+      case "Home Page 2":
+        root = loadHomePageView("HomePageView2.fxml");
+        break;
+      }
+    currentScene.setRoot(root);
     String title = "";
-    if (root.getUserData() != null)
-    {
+    if (root.getUserData() != null){
       title += root.getUserData();
     }
     primaryStage.setTitle(title);
@@ -54,8 +58,17 @@ public class ViewHandler2
     primaryStage.setWidth(root.getPrefWidth());
     primaryStage.setHeight(root.getPrefHeight());
     primaryStage.show();
-  }*/
-  private Region loadManageFactors(String fxmlFile)
+  }
+
+  public void start(Stage primaryStage) {
+    this.primaryStage = primaryStage;
+    openView("Home Page");
+  }
+  public void closeView(){
+    primaryStage.close();
+  }
+
+  private Region loadManageFactorsView(String fxmlFile)
   {
     if(manageFactorsViewController == null)
     {
@@ -83,61 +96,6 @@ public class ViewHandler2
     }
     return root;
   }
-  /*private Region loadHomePage(String fxmlFile){
-    try{
-      FXMLLoader loader = new FXMLLoader();
-      loader.setLocation(getClass().getResource(fxmlFile));
-      root = loader.load();
-      homePageViewController = loader.getController();
-      homePageViewController.init(this,root,model);
-    }
-    catch (Exception e){
-      e.printStackTrace();
-    }
-    return root;
-  }*/
-  public void openView(String window){
-    root = null;
-    switch(window){
-      case "Home Page":
-        root = loadHomePageView("HomePageView.fxml");
-        break;
-      case "Manage Factors":
-        root = loadManageFactors("ManageFactorsViewController.fxml");
-        break;
-      case "Manage Countries":
-        root = loadManageCountriesView("ManageCountriesView.fxml");
-        break;
-      case "Edit Country":
-        root = loadEditCountryViewController("EditCountryView.fxml");
-        break;
-      case "IMS Calculator":
-        root = loadIMSCalculatorViewController("IMSCalculatorViewController.fxml");
-        break;
-      case "Home Page 2":
-        root = loadHomePageView("HomePageView2.fxml");
-        break;
-      }
-    currentScene.setRoot(root);
-    String title = "";
-    if (root.getUserData() != null){
-      title += root.getUserData();
-    }
-    primaryStage.setTitle(title);
-    primaryStage.setScene(currentScene);
-    primaryStage.setWidth(root.getPrefWidth());
-    primaryStage.setHeight(root.getPrefHeight());
-    primaryStage.show();
-  }
-
-  public void start(Stage primaryStage) {
-    this.primaryStage = primaryStage;
-    openView("Home Page");
-  }
-  public void closeView(){
-    primaryStage.close();
-  }
-
 
   private Region loadHomePageView(String fxmFile)
   {
@@ -184,7 +142,7 @@ public class ViewHandler2
     return root;
   }
 
-  private Region loadEditCountryViewController(String fxmFile){
+  private Region loadEditCountryView(String fxmFile){
     if (editCountryViewController == null){
       try {
         FXMLLoader loader = new FXMLLoader();
@@ -211,7 +169,7 @@ public class ViewHandler2
     return root;
   }
 
-  private Region loadIMSCalculatorViewController(String fxmFile){
+  private Region loadIMSCalculatorView(String fxmFile){
     if (imsCalculatorViewController == null){
       try {
         FXMLLoader loader = new FXMLLoader();

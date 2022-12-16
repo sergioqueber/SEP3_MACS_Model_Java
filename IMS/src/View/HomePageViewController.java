@@ -2,13 +2,8 @@ package View;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Region;
 import Model.*;
 public class HomePageViewController
@@ -40,26 +35,22 @@ public class HomePageViewController
 
   }
 
-  public void reset(){
-
-  }
-
   public Region getRoot(){
     return root;
   }
 
-  @FXML private void ManageFactorsPressed(){
+  @FXML public void ManageFactorsPressed(){
     viewHandler2.openView("Manage Factors");
   }
 
-  @FXML private void ManageCountriesPressed(){
+  @FXML public void ManageCountriesPressed(){
     viewHandler2.openView("Manage Countries");
   }
-  @FXML private void calculatorPressed(){
+  @FXML public void calculatorPressed(){
     viewHandler2.openView("IMS Calculator");
   }
 
-  @FXML private void deleteAllData(){
+  @FXML public void deleteAllData(){
     model.getList1().removeAllFactors();
     model.getList2().removeAllFactors();
     model.getList3().removeAllCountries();

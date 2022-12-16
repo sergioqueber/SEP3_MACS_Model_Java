@@ -50,7 +50,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="saveCSbutton" layoutX="492.0" layoutY="386.0" mnemonicParsing="false" onAction="#saveCS" text="Save CS">
+      <Button fx:id="saveCSButton" layoutX="492.0" layoutY="386.0" mnemonicParsing="false" onAction="#saveCS" text="Save CS">
          <font>
             <Font size="14.0" />
          </font>
@@ -66,8 +66,8 @@
          </font>
       </Button>
       <Button fx:id="edit" layoutX="282.0" layoutY="388.0" mnemonicParsing="false" onAction="#editFactor" text="Edit" />
-      <CheckBox fx:id="quantitativeCheck" layoutX="489.0" layoutY="35.0" mnemonicParsing="false" text="Quantitative" />
-      <CheckBox fx:id="qualitativeCheck" layoutX="490.0" layoutY="55.0" mnemonicParsing="false" text="Qualitative" />
+      <CheckBox fx:id="quantitativeCheck" layoutX="472.0" layoutY="35.0" mnemonicParsing="false" text="Quantitative" />
+      <CheckBox fx:id="qualitativeCheck" layoutX="472.0" layoutY="55.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Qualitative" />
       <TableView fx:id="qualiTableMA" layoutX="43.0" layoutY="257.0" prefHeight="99.0" prefWidth="233.0">
         <columns>
           <TableColumn fx:id="qualiFactorNameMA" prefWidth="75.0" text="Factor" />
@@ -80,6 +80,7 @@
           <TableColumn fx:id="qualiFactorWeightCS" prefWidth="75.0" text="Weight" />
         </columns>
       </TableView>
-      <Label fx:id="percentageLabel" layoutX="139.0" layoutY="363.0" text="Label" />
+      <Label fx:id="percentageLabelMA" layoutX="139.0" layoutY="363.0" text="Label" />
+      <Label fx:id="percentageLabelCS" layoutX="430.0" layoutY="363.0" text="Label" />
    </children>
 </Pane>

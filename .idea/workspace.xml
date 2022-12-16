@@ -2,9 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Commit">
+      <change afterPath="$PROJECT_DIR$/IMS/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/CountryList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/CountryList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/Factor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/Factor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/ModelIMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/ModelIMS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/QualitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/QualitativeFactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/QualitativeFactorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/QualitativeFactorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/QuantitativeFactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/QuantitativeFactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/Model/QuantitativeFactorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/Model/QuantitativeFactorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/EditCountryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/EditCountryView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/EditCountryViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/HomePageView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/HomePageView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/HomePageView2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/HomePageView2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/HomePageViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/HomePageViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/IMSCalculatorViewController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/IMSCalculatorViewController.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/IMSCalculatorViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/IMSCalculatorViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/ManageCountriesView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ManageCountriesView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/ManageCountriesViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ManageCountriesViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/ManageFactorsViewController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ManageFactorsViewController.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/ManageFactorsViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ManageFactorsViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IMS/src/View/ViewHandler2.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ViewHandler2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/CountryList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/CountryList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/Factor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/Factor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/ModelIMS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/ModelIMS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/QualitativeFactor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/QualitativeFactor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/QualitativeFactorList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/QualitativeFactorList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/QuantitativeFactor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/QuantitativeFactor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/Model/QuantitativeFactorList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/Model/QuantitativeFactorList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/EditCountryViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/EditCountryViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/HomePageViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/HomePageViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/IMSCalculatorViewController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/IMSCalculatorViewController.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ManageCountriesViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ManageCountriesViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ManageFactorsViewController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ManageFactorsViewController.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ViewHandler2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ViewHandler2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +47,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,7 +91,7 @@
       <recent name="View" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyApplication">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="GUI.src.MyApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GUI.src.MyApplication" />
       <module name="SEP3-Spolishzuelans" />
@@ -69,6 +101,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="IMS" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,6 +128,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.MyApplication" />
         <item itemvalue="Application.GUI.src.MyApplication" />
         <item itemvalue="Application.MyApplication (1)" />
@@ -237,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671108455468</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Commit">
+      <created>1671118837566</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1671118837566</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

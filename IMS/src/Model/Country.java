@@ -5,7 +5,7 @@ public class Country
   private String name;
   private QualitativeFactorList qualitativeFactors;
   private QuantitativeFactorList quantitativeFactors;
-  private double finalPunctuation;
+  //private double finalPunctuation;
   private double marketAttractivenessPunctuation = 0;
   private double competitiveStrengthPunctuation = 0;
 
@@ -48,10 +48,10 @@ public class Country
     return quantitativeFactors;
   }
 
-  public double getFinalPunctuation()
+  /*public double getFinalPunctuation()
   {
     return finalPunctuation;
-  }
+  }*/
 
   public double getMarketAttractivenessPunctuation()
   {
@@ -78,10 +78,10 @@ public class Country
     this.quantitativeFactors = quantitativeFactors;
   }
 
-  public void setFinalPunctuation(double finalPunctuation)
+  /*public void setFinalPunctuation(double finalPunctuation)
   {
     this.finalPunctuation = finalPunctuation;
-  }
+  }*/
 
   public void setMarketAttractivenessPunctuation(
       double marketAttractivenessPunctuation)
@@ -95,25 +95,13 @@ public class Country
     this.competitiveStrengthPunctuation = competitiveStrengthPunctuation;
   }
 
-  public String toString()
+  public double getRemainingMAWeightPercentage()
   {
-    return "Name: " + name + "\nFinal Punctuation: " + finalPunctuation + "\nMarket Attractiveness Punctuation: "
-        + marketAttractivenessPunctuation + "\nCompetitive Strength Punctuation: "
-        + competitiveStrengthPunctuation;
+    return (100-((quantitativeFactors.calculateMAPercentage())+(qualitativeFactors.calculateMAPercentage())));
   }
-
-  public boolean equals(Object obj)
-  {
-    if (!(obj instanceof Country))
-      return false;
-
-    Country other = (Country) obj;
-
-    return name.equals(other.name) && finalPunctuation == other.finalPunctuation
-        && marketAttractivenessPunctuation == other.marketAttractivenessPunctuation
-        && competitiveStrengthPunctuation == other.competitiveStrengthPunctuation;
+  public double getRemainingCSWeightPercentage(){
+    return (100-((quantitativeFactors.calculateCSPercentage())+(qualitativeFactors.calculateCSPercentage())));
   }
-
   public void setQualitativeValueMA(int index, QualitativeValue.QualitativeValues value)
   {
     qualitativeFactors.getMAFactors().get(index).setValue(value);
@@ -131,13 +119,23 @@ public class Country
   public void setQuantitativeValueCS(int index, double value){
     quantitativeFactors.getCSFactors().get(index).setValue(value);
   }
-
-  public double getRemainingMAWeightPercentage()
+  public boolean equals(Object obj)
   {
-    return (100-((quantitativeFactors.calculateMAPercentage())+(qualitativeFactors.calculateMAPercentage())));
+    if (!(obj instanceof Country))
+      return false;
+
+    Country other = (Country) obj;
+
+    return name.equals(other.name)
+        && marketAttractivenessPunctuation == other.marketAttractivenessPunctuation
+        && competitiveStrengthPunctuation == other.competitiveStrengthPunctuation;
   }
-  public double getRemainingCSWeightPercentage(){
-    return (100-((quantitativeFactors.calculateCSPercentage())+(qualitativeFactors.calculateCSPercentage())));
+  public String toString()
+  {
+    return "Name: " + name + "\nMarket Attractiveness Punctuation: "
+        + marketAttractivenessPunctuation + "\nCompetitive Strength Punctuation: "
+        + competitiveStrengthPunctuation;
   }
+
 
 }

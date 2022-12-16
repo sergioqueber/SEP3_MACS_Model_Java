@@ -5,7 +5,6 @@ public class ModelIMS
   private QuantitativeFactorList list1;
   private QualitativeFactorList list2;
   private CountryList list3;
-
   private QualitativeValue qualitativeValues;
   private int selectedCountry;
 

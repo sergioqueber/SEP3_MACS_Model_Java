@@ -23,27 +23,6 @@ public class QualitativeFactor extends Factor
     return value;
   }
 
-  public boolean equals(Object obj)
-  {
-    if (!(obj instanceof QualitativeFactor))
-      return false;
-    QualitativeFactor other= (QualitativeFactor) obj;
-
-    return super.equals(other) && value == other.value;
-  }
-
-  public String toString()
-  {
-    return super.toString() + "\nValue: " + value;
-  }
-
-  public boolean isHigherThan(QualitativeFactor qualitativeFactor){
-    if (getPoint() > qualitativeFactor.getPoint())
-      return true;
-    else
-      return false;
-
-  }
   @Override public QualitativeFactor copy()
   {
     return new QualitativeFactor(super.getName(),super.getPoint(),super.getWeight(), super.isMA(), getValue());
@@ -62,5 +41,21 @@ public class QualitativeFactor extends Factor
     if (value.equals(QualitativeValue.QualitativeValues.GOOD))
       setPoint(5);
   }
+
+  public boolean equals(Object obj)
+  {
+    if (!(obj instanceof QualitativeFactor))
+      return false;
+    QualitativeFactor other= (QualitativeFactor) obj;
+
+    return super.equals(other) && value == other.value;
+  }
+
+  public String toString()
+  {
+    return super.toString() + "\nValue: " + value;
+  }
+
+
 }
 

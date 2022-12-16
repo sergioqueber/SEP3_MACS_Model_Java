@@ -9,9 +9,9 @@ public QualitativeFactorList(){
   factors = new ArrayList<>();
 }
 
-public QualitativeFactorList(ArrayList factors){
+/*public QualitativeFactorList(ArrayList factors){
   this.factors = factors;
-}
+}*/
 
 public void addFactor(QualitativeFactor factor){
   factors.add(factor);
@@ -42,13 +42,9 @@ public void removeFactor (int index){
       }
     }
   }
-public void removeAllFactors (){
-  factors.removeAll(factors);
-}
-
-public String toString(){
-  return factors.toString();
-}
+  public void removeAllFactors (){
+    factors.removeAll(factors);
+  }
 
   public ArrayList<QualitativeFactor> getMAFactors()
   {
@@ -60,7 +56,6 @@ public String toString(){
     }
     return MAFactors;
   }
-
 
   public ArrayList<QualitativeFactor> getCSFactors()
   {
@@ -107,6 +102,10 @@ public String toString(){
     }
     return result;
   }
+  public String toString(){
+    return factors.toString();
+  }
+
 }
 
 

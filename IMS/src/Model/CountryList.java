@@ -23,20 +23,6 @@ public class CountryList
     return countries;
   }
 
-  public String toString()
-  {
-    return countries.toString();
-  }
-
-  public boolean equals(Object obj)
-  {
-    if (!(obj instanceof CountryList))
-      return false;
-
-    CountryList other = (CountryList) obj;
-    return (countries == other.countries);
-  }
-
   public void addCountry(Country country)
   {
     countries.add(country);
@@ -188,5 +174,19 @@ public class CountryList
                 .get(c).getWeightedPoints()));
       }
     }
+  }
+
+  public boolean equals(Object obj)
+  {
+    if (!(obj instanceof CountryList))
+      return false;
+
+    CountryList other = (CountryList) obj;
+    return (countries == other.countries);
+  }
+
+  public String toString()
+  {
+    return countries.toString();
   }
 }

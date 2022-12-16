@@ -21,11 +21,11 @@ public abstract class Factor
     this.type = type;
     this.weight = weight;
   }
-  public Factor(String name, boolean type)
+  /*public Factor(String name, boolean type)
   {
     this.name = name;
     this.type = type;
-  }
+  }*/
 
   public void setName(String name)
   {

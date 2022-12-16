@@ -81,7 +81,7 @@ public class ManageCountriesViewController {
 
   }
      
-  private void resetFields()
+  public void resetFields()
   {
     countryTextField.setText("");
   }

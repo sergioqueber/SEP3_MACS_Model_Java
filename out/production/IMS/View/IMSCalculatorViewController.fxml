@@ -9,7 +9,7 @@
    <children>
       <BubbleChart fx:id="bubbleChart" layoutX="50.0" layoutY="13.0" title="MACS">
         <xAxis>
-          <NumberAxis fx:id="CSaxis" label="Competitive Strength" nodeOrientation="RIGHT_TO_LEFT" upperBound="5.0" />
+          <NumberAxis fx:id="CSaxis" label="Competitive Strength" nodeOrientation="LEFT_TO_RIGHT" upperBound="5.0" />
         </xAxis>
         <yAxis>
           <NumberAxis fx:id="MAaxis" label="Market Attractiveness" prefHeight="301.0" prefWidth="49.0" side="LEFT" upperBound="5.0" />

@@ -57,8 +57,6 @@ public class EditCountryViewController
   private Label labelMA;
 
   @FXML
-  private Label labelSource;
-  @FXML
   private Button saveCSButton;
 
   @FXML
@@ -67,12 +65,9 @@ public class EditCountryViewController
   @FXML
   private Button edit;
 
-
   @FXML
   private TextField textFieldValue;
 
-  @FXML
-  private TextField textFieldSource;
   @FXML
   private TableView<QualitativeFactor> qualiTableCS;
 
@@ -229,28 +224,35 @@ public class EditCountryViewController
     {
       textFieldValue.setText(String.valueOf(quantiTableMA.getSelectionModel().getSelectedItem().getValue()));
       quantitativeCheck.setSelected(true);
+      textFieldValue.setDisable(false);
+      choiceBox.setDisable(true);
     }
     else if (qualiTableMA.getSelectionModel().isSelected(qualiTableMA.getSelectionModel().getSelectedIndex()))
     {
       choiceBox.setValue(qualiTableMA.getSelectionModel().getSelectedItem().getValue());
       qualitativeCheck.setSelected(true);
+      textFieldValue.setDisable(true);
+      choiceBox.setDisable(false);
 
     }
     if(quantiTableCS.getSelectionModel().isSelected(quantiTableCS.getSelectionModel().getSelectedIndex()))
     {
       textFieldValue.setText(String.valueOf(quantiTableCS.getSelectionModel().getSelectedItem().getValue()));
       quantitativeCheck.setSelected(true);
+      textFieldValue.setDisable(false);
+      choiceBox.setDisable(true);
     }
     else if (qualiTableCS.getSelectionModel().isSelected(qualiTableCS.getSelectionModel().getSelectedIndex()))
     {
       choiceBox.setValue(qualiTableCS.getSelectionModel().getSelectedItem().getValue());
       qualitativeCheck.setSelected(true);
+      textFieldValue.setDisable(true);
+      choiceBox.setDisable(false);
     }
   }
   @FXML
   public void resetFields(){
      textFieldValue.setText("");
-     textFieldSource.setText("");
      qualitativeCheck.setSelected(false);
      quantitativeCheck.setSelected(false);
   }

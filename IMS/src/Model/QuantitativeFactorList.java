@@ -12,9 +12,9 @@ public class QuantitativeFactorList
   factors= new ArrayList<QuantitativeFactor>();
   }
 
-  public QuantitativeFactorList(ArrayList factors){
+  /*public QuantitativeFactorList(ArrayList factors){
     this.factors = factors;
-  }
+  }*/
 
   public void addFactor(QuantitativeFactor factor)
   {
@@ -35,6 +35,10 @@ public class QuantitativeFactorList
   {
     factors.remove(index);
   }
+  public void removeAllFactors()
+  {
+    factors.removeAll(factors);
+  }
 
   public void removeFactorByName(String name){
     for(int i = 0; i < factors.size(); i++){
@@ -44,16 +48,6 @@ public class QuantitativeFactorList
         break;
       }
     }
-  }
-
-  public void removeAllFactors()
-  {
-    factors.removeAll(factors);
-  }
-
-  public String toString()
-  {
-   return factors.toString();
   }
 
   public ArrayList<QuantitativeFactor> getMAFactors()
@@ -80,51 +74,51 @@ public class QuantitativeFactorList
   }
 
 
-public QuantitativeFactorList copy(){
+  public QuantitativeFactorList copy(){
     QuantitativeFactorList other =  new QuantitativeFactorList();
     for (int i = 0; i < factors.size(); i++){
       other.addFactor((QuantitativeFactor)factors.get(i).copy());
     }
     return other;
-}
-
-public double getValue(int index)
-{
-  return factors.get(index).getValue();
-}
-
-public double calculateMAPercentage()
-{
-  double MAPercentage = 0;
-  for (int i=0; i<factors.size(); i++ )
-  {
-    if (factors.get(i).isMA() )
-      MAPercentage = MAPercentage + factors.get(i).getWeight() ;
   }
-  return MAPercentage;
-}
 
-public double calculateCSPercentage()
-{
-  double result = 0;
-  for (int i=0; i<factors.size(); i++ )
+  public double getValue(int index)
   {
-    if (!(factors.get(i).isMA() ))
-      result = result + factors.get(i).getWeight() ;
+    return factors.get(index).getValue();
   }
-  return result;
+
+  public double calculateMAPercentage()
+  {
+    double MAPercentage = 0;
+    for (int i=0; i<factors.size(); i++ )
+    {
+      if (factors.get(i).isMA() )
+        MAPercentage = MAPercentage + factors.get(i).getWeight() ;
+    }
+    return MAPercentage;
+  }
+
+  public double calculateCSPercentage()
+  {
+    double result = 0;
+    for (int i=0; i<factors.size(); i++ )
+    {
+      if (!(factors.get(i).isMA() ))
+        result = result + factors.get(i).getWeight() ;
+    }
+    return result;
+  }
+  public QuantitativeFactor getFactor(int index)
+  {
+    return factors.get(index);
+  }
+
+  public String toString()
+  {
+    return factors.toString();
+  }
+
 }
-public QuantitativeFactor getFactor(int index)
-{
-  return factors.get(index);
-}
-
-
-
-
-
-
- }
 
 
 

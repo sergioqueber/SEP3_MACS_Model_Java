@@ -39,7 +39,7 @@ public class IMSCalculatorViewController implements Initializable
     this.model = model;
     model.getList3().defineRange();
     model.getList3().assignQuantitativePoints();
-    //model.getList3().assignQualitativePoints();
+    model.getList3().assignQualitativePoints();
     model.getList3().weightedMAPointsCalculation();
     model.getList3().weightedCSPointsCalculation();
     System.out.println(model.getList3().getCountries().get(0).getCompetitiveStrengthPunctuation());
@@ -47,13 +47,14 @@ public class IMSCalculatorViewController implements Initializable
     System.out.println(model.getList3().getCountries().get(1).getCompetitiveStrengthPunctuation());
     System.out.println(model.getList3().getCountries().get(1).getMarketAttractivenessPunctuation());
     System.out.println(model.getList3().getCountries().get(1).getQuantitativeFactors());
-    XYChart.Series series = new XYChart.Series();
+
     for (int i = 0; i < model.getList3().getCountries().size(); i++)
     {
+      XYChart.Series series = new XYChart.Series();
       series.setName(model.getList3().getCountry(i).getName());
       series.getData().add(new XYChart.Data(
-          model.getList3().getCountries().get(i).getCompetitiveStrengthPunctuation(),
-          model.getList3().getCountries().get(i).getMarketAttractivenessPunctuation(),0.2));
+          model.getList3().getCountries().get(i).getMarketAttractivenessPunctuation(),
+          model.getList3().getCountries().get(i).getCompetitiveStrengthPunctuation(),0.2));
       bubbleChart.getData().add(series);
     }
   }

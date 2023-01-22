@@ -2,26 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Commit">
-      <change beforePath="$PROJECT_DIR$/IMS/src/View/HomePageViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/HomePageViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/View/ManageFactorsViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/ManageFactorsViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/Country.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/CountryList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/Factor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/QualitativeFactor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/QualitativeFactorList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/QualitativeValue$QualitativeValues.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/QualitativeValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/QuantitativeFactor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/QuantitativeFactorList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/EditCountryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/EditCountryView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/HomePageView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/HomePageView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/HomePageView2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/HomePageView2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/HomePageViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/HomePageViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/IMSCalculatorViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/IMSCalculatorViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ManageCountriesView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ManageCountriesView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ManageFactorsViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ManageFactorsViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ViewHandler2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/ViewHandler2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/GUI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/EditCountryViewController.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/EditCountryViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/Factor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/HomePageView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/HomePageViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/ManageCountriesViewController.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/ManageCountriesViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/ManageFactorsViewController.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/ManageFactorsViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/MyApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/ViewHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/src/View/ViewHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ViewHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/peo/peo.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sergi/OneDrive/Documentos/GitHub/SEP3-Spolishzuelans/IMS/src/View&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sergi/OneDrive - ViaUC/College/3rd semster/SEP3/Software/SEP3-Spolishzuelans.zip&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -275,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671167546001</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Commit">
+      <created>1671167944234</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1671167944234</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

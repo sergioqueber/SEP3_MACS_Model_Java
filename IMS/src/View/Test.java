@@ -24,10 +24,6 @@ public class Test
     country3.setQuantitativeValueMA(0,30000000);
     country2.setQuantitativeValueMA(1,20000000);
     country3.setQuantitativeValueMA(1,30000000);
-    //country2.setQualitativeValue(0, QualitativeValue.QualitativeValues.MEDIUM_BAD);
-    //country3.setQualitativeValue(0, QualitativeValue.QualitativeValues.GOOD);
-    //System.out.println(country3.getQuantitativeFactors().getFactor(0).getValue());
-    //System.out.println(country2.getQuantitativeFactors().getValue(0));
 
     CountryList listOfCountries = new CountryList();
     listOfCountries.addCountry(country1);

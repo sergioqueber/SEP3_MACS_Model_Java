@@ -3,24 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b5c0497d-74c5-4fa0-998e-bb28ba3c29f5" name="Changes" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/GUI.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/Country.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/EditCountryViewController.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/EditCountryViewController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/Factor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/HomePageView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/HomePageViewController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/ManageCountriesViewController.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/ManageCountriesViewController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/ManageFactorsViewController.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/ManageFactorsViewController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/MyApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/ViewHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/View/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/IMS/src/View/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMS/src/View/ViewHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IMS/View/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IMS/View/ViewHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/peo/peo.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671167944234</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Commit">
+      <created>1674404854151</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1674404854151</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
